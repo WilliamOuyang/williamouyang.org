@@ -2,7 +2,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import NavResources from "@/pagecomponents/shared/NavResources";
 
 const transition = {
   type: "spring",
