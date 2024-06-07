@@ -1,10 +1,11 @@
-import { ModeToggle } from "@/components/mode-toggle"
+import Navbar from "@/pagecomponents/shared/Navbar"
 
 
 const Home = () => {
   return (
     <div>
-        <ModeToggle/>
+        <Navbar/>
+Home
 
     </div>
   )
