@@ -1,69 +1,63 @@
-import { Card } from '@/components/ui/card'
-import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area'
-import { Link } from 'react-router-dom'
+import Image from "@/assets/react.svg"
+import { Card } from "@/components/ui/card"
 
-const NavResources = () => {
-  return (
-    <ScrollArea style={{height:'300px', width:'100%'}}>
-    <div
-    style={{
-      display: "flex",
-      height: "300px",
-      width: "100%",
-      borderRadius: "30px",
-      alignContent: "center",
-      alignItems: "center",
-      paddingLeft: "20px",
-      paddingRight: "20px",
-      justifyContent: "space-around",
-      padding:'15px',
-      gap:'15px'
-    }}
-    className="bg-card border"
-  >
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
 
-
-    <Card style={{display:'flex', height:'100%', width:'33.3333%'}}>
-     <Link to="/whitepaper">
-         Schedule
-        </Link>
-    </Card>
-
-    <Card style={{display:'flex', height:'100%', width:'33.3333%'}}>
-        <Link to="/whitepaper">
-         Dashboard
-        </Link>
-    </Card>
-
-    <Card style={{display:'flex', height:'100%', width:'33.3333%'}}>
-        <Link to="/whitepaper">
-         Personal Vault
-        </Link>
-    </Card>
-
-    <Card style={{display:'flex', height:'100%', width:'33.3333%'}}>
-        <Link to="/whitepaper">
-         News
-        </Link>
-    </Card>
-
-    <Card style={{display:'flex', height:'100%', width:'33.3333%'}}>
-        <Link to="/whitepaper">
-         White paper
-        </Link>
-    </Card>
-
-
-    <Card style={{display:'flex', height:'100%', width:'33.3333%'}}>
-        <Link to="/whitepaper">
-         Test
-        </Link>
-    </Card>
- 
-  </div>
-  <ScrollBar orientation="horizontal" />
- </ScrollArea>
-  )
+export interface Artwork {
+  artist: string
+  art: string
 }
 
-export default NavResources
+export const works: Artwork[] = [
+  {
+    artist: "Ornella Binni",
+    art: "https://images.unsplash.com/photo-1465869185982-5a1a7522cbcb?auto=format&fit=crop&w=300&q=80",
+  },
+  {
+    artist: "Tom Byrom",
+    art: "https://images.unsplash.com/photo-1548516173-3cabfa4607e9?auto=format&fit=crop&w=300&q=80",
+  },
+  {
+    artist: "Vladimir Malyavko",
+    art: "https://images.unsplash.com/photo-1494337480532-3725c85fd2ab?auto=format&fit=crop&w=300&q=80",
+  },
+]
+
+const NavResources=()=> {
+  return (
+    <ScrollArea className="w-full whitespace-nowrap rounded-lg border bg-card" style={{height:'300px'}}>
+      <div style={{display:'flex',padding:'15px', gap:'15px'}}>
+       <Card style={{height:'260px', width:'33vw'}}>
+        One
+       </Card>
+       <Card style={{height:'260px', width:'33vw'}}>
+        Two
+       </Card>
+       <Card style={{height:'260px', width:'33vw'}}>
+        Three
+       </Card>
+       <Card style={{height:'260px', width:'33vw'}}>
+        Four
+       </Card>
+       <Card style={{height:'260px', width:'33vw'}}>
+        Five
+       </Card>
+       <Card style={{height:'260px', width:'33vw'}}>
+        Six
+       </Card>
+       <Card style={{height:'260px', width:'33vw'}}>
+        Seven
+       </Card>
+       <Card style={{height:'260px', width:'33vw'}}>
+        Eight
+       </Card>
+       <Card style={{height:'260px', width:'33vw'}}>
+        Nine
+       </Card>
+
+      </div>
+      <ScrollBar orientation="horizontal" />
+    </ScrollArea>
+  )
+}
+export default NavResources;
