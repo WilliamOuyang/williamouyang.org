@@ -9,37 +9,32 @@ import { Link } from "react-router-dom";
 const NavResources=()=> {
   const text = `Vault`;
   return (
-    <ScrollArea className="w-full whitespace-nowrap rounded-lg bg-white" style={{height:'300px'}}>
+    <ScrollArea className="w-full whitespace-nowrap" style={{position:'absolute', left:'0', height:'300px'}}>
       <div style={{display:'flex',padding:'15px', gap:'15px'}}>
-       <Card style={{height:'260px', width:'33vw'}}>
+       <Card style={{height:'260px', width:'31vw'}}>
         Schedule
        </Card>
-       <Card style={{height:'260px', width:'33vw'}}>
+       <Card style={{height:'260px', width:'31vw'}}>
         Dashboard
        </Card>
-       <Card style={{height:'260px', width:'33vw'}}>
+       <Card style={{height:'260px', width:'31vw'}}>
         Personal Vault
        </Card>
-       <Card style={{height:'260px', width:'33vw'}}>
+       <Card style={{height:'260px', width:'31vw'}}>
         News
        </Card>
-       <Card style={{height:'260px', width:'33vw'}}>
+       <Card style={{height:'260px', width:'31vw'}}>
         Five
        </Card>
-       <Card style={{height:'260px', width:'33vw'}}>
+       <Card style={{height:'260px', width:'31vw'}}>
         Six
        </Card>
-       <Card style={{height:'260px', width:'33vw'}}>
+       <Card style={{height:'260px', width:'31vw'}}>
         Seven
        </Card>
-       <Card style={{height:'260px', width:'33vw'}}>
+       <Card style={{height:'260px', width:'31vw'}}>
         Eight
        </Card>
-       <Link to="/whitepaper">
-       <Card style={{height:'260px', width:'33vw'}}>
-        White paper
-       </Card>
-       </Link>
 
        <Card style={{height:'260px', width:'33vw'}}>
        <EvervaultCard text={text}/>
