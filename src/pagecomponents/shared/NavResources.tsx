@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card"
+import { EvervaultCard } from "@/components/ui/evervault-card";
 
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
 import { Link } from "react-router-dom";
@@ -6,6 +7,7 @@ import { Link } from "react-router-dom";
 
 
 const NavResources=()=> {
+  const text = `Vault`;
   return (
     <ScrollArea className="w-full whitespace-nowrap rounded-lg border bg-card" style={{height:'300px'}}>
       <div style={{display:'flex',padding:'15px', gap:'15px'}}>
@@ -38,6 +40,10 @@ const NavResources=()=> {
         White paper
        </Card>
        </Link>
+
+       <Card style={{height:'260px', width:'33vw'}}>
+       <EvervaultCard text={text}/>
+       </Card>
 
       </div>
       <ScrollBar orientation="horizontal" />
