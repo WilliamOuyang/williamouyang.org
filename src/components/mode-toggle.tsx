@@ -7,13 +7,13 @@ export function ModeToggle() {
   return (
     <>
     
-        <button onClick={() => setTheme("light")}>
+        <button className="text-left" onClick={() => setTheme("light")}>
           Light
         </button>
-        <button onClick={() => setTheme("dark")}>
+        <button className="text-left" onClick={() => setTheme("dark")}>
           Dark
         </button>
-        <button onClick={() => setTheme("system")}>
+        <button className="text-left" onClick={() => setTheme("system")}>
           System
         </button>
    

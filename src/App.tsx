@@ -3,6 +3,8 @@ import Home from "./pages/Home";
 import { ThemeProvider } from "@/components/theme-provider";
 import '../globals.css'
 import Whitepaper from "./pages/Whitepaper";
+import Vault from "./pages/Vault";
+import Storage from "./pages/Storage";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
           <Route index element={<Home />} />
           <Route path="/" element={<Home />} />
           <Route path="/whitepaper" element={<Whitepaper />} />
+          <Route path="/vault" element={<Vault />} />
+          <Route path="/storage" element={<Storage />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
