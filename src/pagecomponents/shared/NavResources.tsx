@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card"
 
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area"
+import { Link } from "react-router-dom";
 
 
 
@@ -32,9 +33,11 @@ const NavResources=()=> {
        <Card style={{height:'260px', width:'33vw'}}>
         Eight
        </Card>
+       <Link to="/whitepaper">
        <Card style={{height:'260px', width:'33vw'}}>
         White paper
        </Card>
+       </Link>
 
       </div>
       <ScrollBar orientation="horizontal" />
