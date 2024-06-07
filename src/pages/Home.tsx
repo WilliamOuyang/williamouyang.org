@@ -1,11 +1,9 @@
-import Navbar from "@/pagecomponents/shared/Navbar"
-
+import Navbar2 from '@/pagecomponents/shared/Navbar2'
 
 const Home = () => {
   return (
     <div>
-        <Navbar/>
-Home
+      <Navbar2/>
 
     </div>
   )

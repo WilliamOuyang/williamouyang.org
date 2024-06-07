@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const NavResources=()=> {
   const text = `Vault`;
   return (
-    <ScrollArea className="w-full whitespace-nowrap rounded-lg border bg-card" style={{height:'300px'}}>
+    <ScrollArea className="w-full whitespace-nowrap rounded-lg bg-white" style={{height:'300px'}}>
       <div style={{display:'flex',padding:'15px', gap:'15px'}}>
        <Card style={{height:'260px', width:'33vw'}}>
         Schedule

@@ -5,7 +5,7 @@ import { useState } from "react";
 import NavResources from "./NavResources";
 
 
-const Navbar = () => {
+const Navbar1 = () => {
   
   const [isHovered, setIsHovered] = useState(false);
 
@@ -76,4 +76,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbar1;
