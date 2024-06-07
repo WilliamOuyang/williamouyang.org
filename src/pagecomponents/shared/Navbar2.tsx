@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/navbar-menu";
 import { cn } from "@/utils/cn";
 import { ModeToggle } from "@/components/mode-toggle";
+import { Link } from "react-router-dom";
 
 function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
@@ -18,16 +19,16 @@ function Navbar({ className }: { className?: string }) {
     >
       <Menu setActive={setActive}>
         <MenuItem setActive={setActive} active={active} item="Home">
-        {/* <Resourcex/> */}
+        <Link to="/">Home</Link>
 
         </MenuItem>
 
         <MenuItem setActive={setActive} active={active} item="About">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/web-dev">Web Development</HoveredLink>
-            <HoveredLink href="/interface-design">Interface Design</HoveredLink>
-            <HoveredLink href="/seo">Development</HoveredLink>
-            <HoveredLink href="/whitepaper">White paper</HoveredLink>
+            <HoveredLink href="/web-dev">Releases</HoveredLink>
+            <HoveredLink href="/interface-design">Timeline</HoveredLink>
+            <Link to="/seo">Profile</Link>
+            <Link to="/whitepaper">White paper</Link>
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Resources">

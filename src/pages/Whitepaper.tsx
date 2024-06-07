@@ -1,7 +1,8 @@
 import WhitepaperText from "@/pagecomponents/whitepapercomponents/WhitepaperText";
 import Download from "@/pagecomponents/whitepapercomponents/Download";
 import { motion, useScroll, useSpring } from "framer-motion";
-import Navbar1 from "@/pagecomponents/shared/Navbar1";
+import Navbar2 from "@/pagecomponents/shared/Navbar2";
+// import Navbar1 from "@/pagecomponents/shared/Navbar1";
 
 const Whitepaper = () => {
   const { scrollYProgress } = useScroll();
@@ -15,7 +16,8 @@ const Whitepaper = () => {
   return (
     <div>
 
-      <Navbar1 />
+    <Navbar2/>
+      {/* <Navbar1 /> */}
     {/* <Home/> */}
 
       <>
