@@ -26,10 +26,10 @@ function Navbar({ className }: { className?: string }) {
 
         <MenuItem setActive={setActive} active={active} item="About">
           <div className="flex flex-col space-y-4 text-sm text-left">
-            <HoveredLink href="/web-dev">Developers</HoveredLink>
+            <HoveredLink href="/web-dev">Code</HoveredLink>
             <HoveredLink href="/interface-design">Storage</HoveredLink>
-            <Link to="/seo">Introduction</Link>
-            <Link to="/whitepaper">White paper</Link>
+            <Link to="/seo">Docs</Link>
+            
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Resources">
@@ -38,6 +38,7 @@ function Navbar({ className }: { className?: string }) {
             <HoveredLink href="/interface-design">Dashboard</HoveredLink>
             <Link to="/vault">Vault</Link>
             <Link to="/vault">Tenet</Link>
+            <Link to="/whitepaper">White paper</Link>
           </div>
           {/* <div className="p-0" style={{minWidth:'800px', minHeight:'300px'}}>
             <NavResources/>
