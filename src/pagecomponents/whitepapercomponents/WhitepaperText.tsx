@@ -1,24 +1,43 @@
+// import '@/pagecomponents/whitepapercomponents/whitepaper.css'
+const indentp: string = "\u00A0";
+const indent1: string = "\u00A0\u00A0\u00A0\u00A0";
+const indent2: string =
+  "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0";
+
 const whitepaperText = () => {
   return (
     <>
-      <article style={{ marginTop: "150px" }}>
+      <article
+        style={{
+          maxWidth: "500px",
+          padding: "20px",
+          margin: "0 auto",
+          fontFamily: "sofia-pro, sans-serif",
+          fontStyle: "normal",
+          WebkitFontSmoothing: "antialiased",
+        }}
+        // className="select-none"
+      >
         <h1
           style={{
-            display: "block",
-            fontSize: "2em",
-            marginBlockStart: "0.67em",
-            marginBlockEnd: "0.67em",
-            marginInlineStart: "0px",
-            marginInlineEnd: "0px",
-            fontWeight: "bold",
-            unicodeBidi: "isolate",
+            fontSize: "36px",
+            fontWeight: "700",
+            letterSpacing: "-1px",
+            lineHeight: "1.2",
+            textAlign: "center",
+            margin: "100px 0 40px",
           }}
-          className="text-center mt-20"
         >
           The System: A Solution to Intention
         </h1>
 
-        <p className="text-center my-10">
+        <p
+          style={{
+            margin: "0 0 30px 0",
+            fontSize: "18px",
+            textAlign: "center",
+          }}
+        >
           William Ouyang
           <br />
           gwko624p@gmail.com
@@ -27,8 +46,11 @@ const whitepaperText = () => {
         </p>
 
         <p
-          className="text-justify"
-          style={{ marginRight: "30vw", marginLeft: "30vw" }}
+          style={{
+            margin: "0 0 30px 0",
+            fontSize: "18px",
+            textAlign: "justify",
+          }}
         >
           <strong>Abstract.</strong> A system designed to optimize efficiency in
           the individual, increase achievement, and eliminate hindrances. It's
@@ -45,13 +67,22 @@ const whitepaperText = () => {
           sake of ease.
         </p>
 
-        <h2 style={{ marginLeft: "20vw" }} className="mt-10">
+        <h2
+          style={{
+            fontSize: "1.5em",
+            fontWeight: "400",
+            margin: "50px 0 10px",
+          }}
+        >
           <strong>1. Introduction</strong>
         </h2>
 
         <p
-          className="text-justify"
-          style={{ marginRight: "20vw", marginLeft: "20vw" }}
+          style={{
+            margin: "0 0 30px 0",
+            fontSize: "18px",
+            textAlign: "justify",
+          }}
         >
           Humans are inherently power-driven creatures. For the three-hundred
           thousand years of modern human existence, it has been man's greatest
@@ -77,8 +108,8 @@ const whitepaperText = () => {
           there is no difference, greatness is power, and power is greatness.
           The only altering factor in the relationship between the two is the
           exchange rate – variety in either or both quantity and form. <br />
-          &nbsq; An important distinction to note is the difference between the
-          four categories of historical greats. First, there were those that
+          {indentp} An important distinction to note is the difference between
+          the four categories of historical greats. First, there were those that
           were adored, celebrated, and revered in their time, and in the next.
           Second, there were people who were favoured in their time, but later
           scrutinized, criticized, and mocked by modern standards. Third, people
@@ -93,13 +124,22 @@ const whitepaperText = () => {
           and their imprint upon history solidifies them as visionaries.
         </p>
 
-        <h2 style={{ marginLeft: "20vw" }} className="mt-10">
+        <h2
+          style={{
+            fontSize: "1.5em",
+            fontWeight: "400",
+            margin: "50px 0 10px",
+          }}
+        >
           <strong>2. Inception</strong>
         </h2>
 
         <p
-          className="text-justify"
-          style={{ marginRight: "20vw", marginLeft: "20vw" }}
+          style={{
+            margin: "0 0 30px 0",
+            fontSize: "18px",
+            textAlign: "justify",
+          }}
         >
           The idea behind the system originated from my personal need of a
           method to organize and control my own thought process. I aim to manage
@@ -127,7 +167,7 @@ const whitepaperText = () => {
           general knowledge, not specified structure, from the white paper's
           content. Now that the need for the structure is outlined, I will delve
           into a brief about the baser cause of everything. <br />
-          &nbsq; Since birth, I have always been possessed entirely by an
+          {indentp} Since birth, I have always been possessed entirely by an
           obsession with an objective. There is an ever-present fixation, in the
           form of a goal, which holds the utmost importance in my existence and
           from which I derive the justification of my being. I understand the
@@ -140,13 +180,22 @@ const whitepaperText = () => {
           thought.
         </p>
 
-        <h2 style={{ marginLeft: "20vw" }} className="mt-10">
+        <h2
+          style={{
+            fontSize: "1.5em",
+            fontWeight: "400",
+            margin: "50px 0 10px",
+          }}
+        >
           <strong>3. Structures</strong>
         </h2>
 
         <p
-          className="text-justify"
-          style={{ marginRight: "20vw", marginLeft: "20vw" }}
+          style={{
+            margin: "0 0 30px 0",
+            fontSize: "18px",
+            textAlign: "justify",
+          }}
         >
           The system is created through two parts. First, an outline that
           details the design of the system. Within this, the instructions to
@@ -154,13 +203,22 @@ const whitepaperText = () => {
           the content of the white paper.
         </p>
 
-        <h2 style={{ marginLeft: "20vw" }} className="mt-10">
+        <h2
+          style={{
+            fontSize: "1.5em",
+            fontWeight: "400",
+            margin: "50px 0 10px",
+          }}
+        >
           <strong>4. Component Purposes</strong>
         </h2>
 
         <p
-          className="text-justify"
-          style={{ marginRight: "20vw", marginLeft: "20vw" }}
+          style={{
+            margin: "0 0 30px 0",
+            fontSize: "18px",
+            textAlign: "justify",
+          }}
         >
           <em>
             Every component exists for a reason. The rationale for their
@@ -184,103 +242,987 @@ const whitepaperText = () => {
           investments.
         </p>
 
-        <h2 style={{ marginLeft: "20vw" }} className="mt-10">
+        <h2
+          style={{
+            fontSize: "1.5em",
+            fontWeight: "400",
+            margin: "50px 0 10px",
+          }}
+        >
           <strong>5. Time Management Format</strong>
         </h2>
 
         <p
-          className="text-justify"
-          style={{ marginRight: "20vw", marginLeft: "20vw" }}
+          style={{
+            margin: "0 0 30px 0",
+            fontSize: "18px",
+            textAlign: "justify",
+          }}
         >
           Table 1: Symbol Key for Time Management
           <table className="table-auto w-full">
             <thead>
               <tr>
-                <td className="border">Symbol</td>
-                <td className="border">Value</td>
+                <td className="border border-foreground">Symbol</td>
+                <td className="border border-foreground">Value</td>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td className="border">[ ]</td>
-                <td className="border">Definite time frame</td>
+                <td className="border border-foreground">[ ]</td>
+                <td className="border border-foreground">
+                  Definite time frame
+                </td>
               </tr>
               <tr>
-                <td className="border">
+                <td className="border border-foreground">
                   <em>ref</em>
                 </td>
-                <td className="border">
+                <td className="border border-foreground">
                   Refer to subsequent sections for content
                 </td>
               </tr>
 
               <tr>
-                <td className="border">( V )</td>
-                <td className="border">
+                <td className="border border-foreground">( V )</td>
+                <td className="border border-foreground">
                   A lenient time frame within constraint
                 </td>
               </tr>
 
               <tr>
-                <td className="border">{"> |"} </td>
-                <td className="border">
+                <td className="border border-foreground">{"> |"} </td>
+                <td className="border border-foreground">
                   Completion priority until next definite time frame
                 </td>
               </tr>
 
               <tr>
-                <td className="border">
+                <td className="border border-foreground">
                   <em>fill</em>
                 </td>
-                <td className="border">
+                <td className="border border-foreground">
                   Title for time frames without explicit blocks
                 </td>
               </tr>
             </tbody>
           </table>
-          {`Morning Period:
-1. Wake up [06:00 AM]
-2. Make Bed [06:00 AM – 06:05 AM]
-3. Initial Hygiene [06:05 AM – 06:15 AM]
-A. Use Restroom ( V ) 
-B. Wash Hands ( V )
-C. Floss ( V )
-D. Brush Teeth ( V )
-E. Rinse Face ( V )
-4. Callisthenics [06:15 AM – 06:50 AM]
-5. Stretching [06:50 AM – 07:10 AM]
-6. Morning Hygiene [07:10 AM – 07:40 AM]
-7. Read Tenet [07:40 AM – 07:50 AM]
-8. Scheduling [07:50 AM – 08:00 AM]
-Enforced Events:
-1. Piano Practice [60 Minutes]
-2. Guitar Practice [60 Minutes]
-3. Chores > |
-4. Cleaning (Saturday Only) > |
-5. Check Email > |
-6. Review Dashboard ref > |
-7. Cook & Eat > | 
-8. Wash Dishes > |
-Work Period:
-1. Event fill
-Night Period:
-1. Update Personal Vault ref [09:30 PM – 09:35 PM]
-2. Read Tenet ref [09:35 PM – 09:40 PM]
-3. Night Hygiene [09:35 PM – 10:00 PM]
-A. Use Restroom
-B. Wash Hands
-C. Floss
-D. Brush Teeth
-E. Shower
-4. Sleep [10:00 PM]
-`}
+          <br />
+          <strong>Morning Period:</strong>
+          <br />
+          {indent1}1. Wake up <span style={{ float: "right" }}>[06:00 AM]</span>
+          <br />
+          {indent1}2. Make Bed{" "}
+          <span style={{ float: "right" }}>[06:00 AM – 06:05 AM]</span>
+          <br />
+          {indent1}3. Initial Hygiene{" "}
+          <span style={{ float: "right" }}>[06:05 AM – 06:15 AM]</span>
+          <br />
+          {indent2}A. Use Restroom <span style={{ float: "right" }}>( V )</span>
+          <br />
+          {indent2}B. Wash Hands <span style={{ float: "right" }}>( V )</span>
+          <br />
+          {indent2}C. Floss <span style={{ float: "right" }}>( V )</span>
+          <br />
+          {indent2}D. Brush Teeth <span style={{ float: "right" }}>( V )</span>
+          <br />
+          {indent2}E. Rinse Face <span style={{ float: "right" }}>( V )</span>
+          <br />
+          {indent1}4. Callisthenics{" "}
+          <span style={{ float: "right" }}>[06:15 AM – 06:50 AM]</span>
+          <br />
+          {indent1}5. Stretching{" "}
+          <span style={{ float: "right" }}>[06:50 AM – 07:10 AM]</span>
+          <br />
+          {indent1}6. Morning Hygiene{" "}
+          <span style={{ float: "right" }}>[07:10 AM – 07:40 AM]</span>
+          <br />
+          {indent1}7. Read Tenet{" "}
+          <span style={{ float: "right" }}>[07:40 AM – 07:50 AM]</span>
+          <br />
+          {indent1}8. Scheduling{" "}
+          <span style={{ float: "right" }}>[07:50 AM – 08:00 AM]</span>
+          <br />
+          <br />
+          <strong>Enforced Events:</strong>
+          <br />
+          {indent1}1. Piano Practice{" "}
+          <span style={{ float: "right" }}>[60 Minutes]</span>
+          <br />
+          {indent1}2. Guitar Practice{" "}
+          <span style={{ float: "right" }}>[60 Minutes]</span>
+          <br />
+          {indent1}3. Chores <span style={{ float: "right" }}>{`> |`}</span>
+          <br />
+          {indent1}4. Cleaning {" "}
+          <span style={{ float: "right" }}>(Saturday Only){" "}{`> |`}</span>
+          <br />
+          {indent1}5. Check Email{" "}
+          <span style={{ float: "right" }}>{`> |`}</span>
+          <br />
+          {indent1}6. Review Dashboard
+          <span style={{ float: "right" }}> <em>ref</em>{" "}{`> |`}</span>
+          <br />
+          {indent1}7. Cook & Eat{" "}
+          <span style={{ float: "right" }}>{`> | `}</span>
+          <br />
+          {indent1}8. Wash Dishes{" "}
+          <span style={{ float: "right" }}>{`> |`}</span>
+          <br />
+          <br />
+          <strong>Work Period:</strong>
+          <br />
+          {indent1}1. Event{" "}
+          <span style={{ float: "right" }}>
+            <em>fill</em>
+          </span>
+          <br />
+          <br />
+          <strong>Night Period:</strong>
+          <br />
+          {indent1}1. Update Personal Vault
+          <span style={{ float: "right" }}><em>ref</em>{" "}[09:30 PM – 09:35 PM]</span>
+          <br />
+          {indent1}2. Read Tenet
+          <span style={{ float: "right" }}><em>ref</em>{" "}[09:35 PM – 09:40 PM]</span>
+          <br />
+          {indent1}3. Night Hygiene{" "}
+          <span style={{ float: "right" }}>[09:35 PM – 10:00 PM]</span>
+          <br />
+          {indent2}A. Use Restroom <span style={{ float: "right" }}>( V )</span>
+          <br />
+          {indent2}B. Wash Hands<span style={{ float: "right" }}>( V )</span>
+          <br />
+          {indent2}C. Floss<span style={{ float: "right" }}>( V )</span>
+          <br />
+          {indent2}D. Brush Teeth<span style={{ float: "right" }}>( V )</span>
+          <br />
+          {indent2}E. Shower<span style={{ float: "right" }}>( V )</span>
+          <br />
+          {indent1}4. Sleep <span style={{ float: "right" }}>[10:00 PM]</span>
+          <br />
         </p>
 
-        <h2 style={{ marginLeft: "20vw" }} className="mt-10">
+        <h2
+          style={{
+            fontSize: "1.5em",
+            fontWeight: "400",
+            margin: "50px 0 10px",
+          }}
+        >
           <strong>6. Scheduling</strong>
         </h2>
 
-        <p></p>
+        <p
+          style={{
+            margin: "0 0 30px 0",
+            fontSize: "18px",
+            textAlign: "justify",
+          }}
+        >
+          <table className="table-auto w-full">
+            <thead>
+              <tr>
+                <td className="border border-foreground w-2/5">
+                  12:00 AM – 12:30 AM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-foreground">
+                  12:30 AM – 01:00 AM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">
+                  01:00 AM – 01:30 AM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">
+                  01:30 AM – 02:00 AM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">
+                  02:00 AM – 02:30 AM{" "}
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">
+                  02:30 AM – 03:00 AM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">
+                  03:00 AM – 03:30 AM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">
+                  03:30 AM – 04:00 AM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">
+                  04:00 AM – 04:30 AM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">
+                  04:30 AM – 05:00 AM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">
+                  05:00 AM – 05:30 AM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">
+                  05:30 AM – 06:00 AM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">
+                  06:00 AM – 06:30 AM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">
+                  06:30 AM – 07:00 AM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">
+                  07:00 AM – 07:30 AM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">
+                  07:30 AM – 08:00 AM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">
+                  07:30 AM – 08:00 AM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">
+                  07:30 AM – 08:00 AM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">
+                  07:30 AM – 08:00 AM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">
+                  08:00 AM – 08:30 AM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">
+                  08:30 AM – 09:00 AM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">
+                  09:00 AM – 09:30 AM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">
+                  09:30 AM – 10:00 AM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">
+                  10:00 AM – 10:30 AM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">
+                  10:30 AM – 11:00 AM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">
+                  11:00 AM – 11:30 AM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">
+                  11:30 AM – 12:00 PM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">
+                  12:00 PM – 12:30 PM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">
+                  12:30 PM – 01:00 PM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">
+                  01:00 PM – 01:30 PM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">
+                  01:30 PM – 02:00 PM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">
+                  02:00 PM – 02:30 PM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">
+                  02:30 PM – 03:00 PM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">
+                  03:00 PM – 03:30 PM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+              <tr>
+                <td className="border border-foreground">
+                  03:30 PM – 04:00 PM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+              <tr>
+                <td className="border border-foreground">
+                  04:00 PM – 04:30 PM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+              <tr>
+                <td className="border border-foreground">
+                  04:30 PM – 05:00 PM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+              <tr>
+                <td className="border border-foreground">
+                  05:00 PM – 05:30 PM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+              <tr>
+                <td className="border border-foreground">
+                  05:30 PM – 06:00 PM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+              <tr>
+                <td className="border border-foreground">
+                  06:00 PM – 06:30 PM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+              <tr>
+                <td className="border border-foreground">
+                  06:30 PM – 07:00 PM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+              <tr>
+                <td className="border border-foreground">
+                  07:00 PM – 07:30 PM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+              <tr>
+                <td className="border border-foreground">
+                  07:30 PM – 08:00 PM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+              <tr>
+                <td className="border border-foreground">
+                  08:00 PM – 08:30 PM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+              <tr>
+                <td className="border border-foreground">
+                  08:30 PM – 09:00 PM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+              <tr>
+                <td className="border border-foreground">
+                  09:00 PM – 09:30 PM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+              <tr>
+                <td className="border border-foreground">
+                  09:30 PM – 10:00 PM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+              <tr>
+                <td className="border border-foreground">
+                  10:00 PM – 10:30 PM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+              <tr>
+                <td className="border border-foreground">
+                  10:30 PM – 11:00 PM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+              <tr>
+                <td className="border border-foreground">
+                  11:00 PM – 11:30 PM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+              <tr>
+                <td className="border border-foreground">
+                  11:30 PM – 12:00 AM
+                </td>
+                <td className="border border-foreground"></td>
+              </tr>
+            </tbody>
+          </table>
+        </p>
+
+        <h2
+          style={{
+            fontSize: "1.5em",
+            fontWeight: "400",
+            margin: "50px 0 10px",
+          }}
+        >
+          <strong>7. Exercise</strong>
+        </h2>
+
+        <p
+          style={{
+            margin: "0 0 30px 0",
+            fontSize: "18px",
+            textAlign: "justify",
+          }}
+        >
+          <strong>Callisthenics</strong>
+          <br />
+          {indent1}1. Push up – Until Failure
+          <br />
+          {indent1}2. Pull ups – Until Failure
+          <br />
+          {indent1}3. 100 Leg Raises
+          <br />
+          {indent1}4. 100 Squats
+          <br />
+          {indent1}5. 1 Mile Run
+          <br />
+          {indent1}6. 100 Calf Raises
+          <br />
+          <br />
+          <strong>Stretching</strong>
+          <br />
+          {indent1}1. Hamstring Stretching
+          <br />
+          {indent1}2. Quad Stretch
+          <br />
+          {indent1}3. Calf Stretch
+          <br />
+          {indent1}4. Triceps Stretch
+          <br />
+          {indent1}5. Shoulder Stretch
+          <br />
+          {indent1}6. Butterfly Stretch
+          <br />
+          {indent1}7. Chest Stretch
+          <br />
+          {indent1}8. Seated forward bend
+          <br />
+          {indent1}9. Pigeon Stretc
+        </p>
+
+        <h2
+          style={{
+            fontSize: "1.5em",
+            fontWeight: "400",
+            margin: "50px 0 10px",
+          }}
+        >
+          <strong>8. Tenet</strong>
+        </h2>
+
+        <p
+          style={{
+            margin: "0 0 30px 0",
+            fontSize: "18px",
+            textAlign: "justify",
+          }}
+        >
+          I will be the greatest and most powerful person ever to exist. <br />
+          I will be the very best. <br />
+          I will push myself to my limits. <br />
+          I will prove that I am the greatest. <br />
+          Why? <br />
+          A flower that blooms should aspire to be the most beautiful and
+          vibrant it can be in its <br />
+          fleeting existence. <br />
+          So too, I exist. <br />
+          I have a duty to reach as high as I can; <br />
+          To ascend and carve my place in history.
+          <br />
+          <br />
+          1. I will achieve these factors: <br />
+          2. I will refine my body to its utmost limits.
+          <br />
+          3. I will strengthen my mind to be unbreakable. <br />
+          4. I will preserve my honour. <br />
+          5. I will cultivate an unrivalled reputation. <br />
+          6. I will master revered arts of skill and technique. <br />
+          7. I will acquire unmatched wealth. <br />
+          <br />
+          I have an insatiable thirst for power and a burning desire for
+          greatness. I will achieve my dream, no matter the cost.
+          <br />
+          <br />
+          1. Do nothing that is of no use.
+          <br />
+          2. Do not regret what you have done.
+          <br />
+          3. Do not seek pleasure for its own sake.
+          <br />
+          4. Resentment and complaint are appropriate neither for oneself nor
+          others.
+          <br />
+          5. Do not let yourself be guided by the feeling of lust or love.
+          <br />
+          6. Anger. Control your anger. If you hold anger toward others, they
+          have control over you. <br />
+          7. Your opponent can dominate and defeat you if you allow him to get
+          you irritated.
+          <br />
+          8. Do not waste time idling or thinking after you have set your goals
+          <br />
+          <br />
+          Today is victory over yourself of yesterday; tomorrow is your victory
+          over lesser men
+          <br />
+        </p>
+
+        <h2
+          style={{
+            fontSize: "1.5em",
+            fontWeight: "400",
+            margin: "50px 0 10px",
+          }}
+        >
+          <strong> 9. Chores</strong>
+        </h2>
+
+        <p
+          style={{
+            margin: "0 0 30 0",
+            fontSize: "18px",
+            textAlign: "justify",
+          }}
+        >
+          Monday - Tuesday
+          <br />
+          {indent1}1. Dry and Put Away Washed Dishes <br />
+          {indent1}(Daily - Morning or Afternoon)
+          <br />
+          {indent1}2. Vacuum House Floor <br />
+          {indent1}(Daily – Afternoon)
+          <br />
+          {indent1}3. Wash Dishes and Wipe Table <br />
+          {indent1}(Daily – Night)
+          <br />
+          <br />
+          Wednesday
+          <br />
+          {indent1}1. Dry and Put Away Washed Dishes <br />
+          {indent1}(Daily - Morning or Afternoon)
+          <br />
+          {indent1}2. Clean Kitchen Stove top <br />
+          {indent1}(Wednesday)
+          <br />
+          {indent1}3. Vacuum House Floor <br />
+          {indent1}(Daily – Afternoon)
+          <br />
+          {indent1}4. Yard Work{indent1}(Wednesday)
+          <br />
+          {indent1}5. Wash Dishes and Wipe Table <br />
+          {indent1}(Daily – Night)
+          <br />
+          <br />
+          Thursday - Friday
+          <br />
+          {indent1}1. Dry and Put Away Washed Dishes <br />
+          {indent1}(Daily - Morning or Afternoon)
+          <br />
+          {indent1}2. Vacuum House Floor <br />
+          {indent1}(Daily – Afternoon)
+          <br />
+          {indent1}3. Take Out and Pull in Trash <br />
+          {indent1}(Thursday and Friday Respectively)
+          <br />
+          {indent1}4. Wash Dishes and Wipe Table <br />
+          {indent1}(Daily – Night)
+          <br />
+          <br />
+          Saturday - Sunday
+          <br />
+          {indent1}1. Dry and Put Away Washed Dishes <br />
+          {indent1}(Daily - Morning or Afternoon)
+          <br />
+          {indent1}2. Vacuum House Floor <br />
+          {indent1}(Daily – Afternoon)
+          <br />
+          {indent1}3. Wash Dishes and Wipe Table <br />
+          {indent1}(Daily – Night)
+          <br />
+        </p>
+
+        <h2
+          style={{
+            fontSize: "1.5em",
+            fontWeight: "400",
+            margin: "50px 0 10px",
+          }}
+        >
+          <strong> 10. Cleaning</strong>
+        </h2>
+
+        <p
+          style={{
+            margin: "0 0 30 0",
+            fontSize: "18px",
+            textAlign: "justify",
+          }}
+        >
+          Bedroom
+          <br />
+          {indent1}1. Wash Bed sheets
+          <br />
+          {indent1}2. Clean Furniture
+          <br />
+          {indent1}3. Vacuum Floor and Closet
+          <br />
+          {indent1}4. Clean Doorknobs and Light Switches
+          <br />
+          <br />
+          Work Areas
+          <br />
+          {indent1}1. Clean Computers, Charging Lines, and Headphones <br />
+          {indent1}2. Organize and Clean Desk
+          <br />
+          {indent1}3. Vacuum Floor
+          <br />
+          <br />
+          Bathroom
+          <br />
+          {indent1}1. Wash Towels, Loofah, and Mats
+          <br />
+          {indent1}2. Clean Clothes Hanger (for Towels)
+          <br />
+          {indent1}3. Clean Mirror
+          <br />
+          {indent1}4. Clean Doorknobs and Light Switches
+          <br />
+          {indent1}5. Clean Sink
+          <br />
+          {indent1}6. Wipe Floor
+          <br />
+          {indent1}7. Clean Toilet
+          <br />
+          {indent1}8. Clean Bathtub
+          <br />
+          <br />
+          Personal
+          <br />
+          {indent1}1. Make Bed (Arrange Bed Sheets)
+          <br />
+          {indent1}2. Fold and Store Laundry
+          <br />
+          {indent1}3. Hang Up Towels
+        </p>
+
+        <h2
+          style={{
+            fontSize: "1.5em",
+            fontWeight: "400",
+            margin: "50px 0 10px",
+          }}
+        >
+          <strong>11. Personal Vault</strong>
+        </h2>
+
+        <p
+          style={{
+            margin: "0 0 30 0",
+            fontSize: "18px",
+            textAlign: "justify",
+          }}
+        >
+          Table 2: Definition Key for Personal Vault
+          <table className="table-auto w-full">
+            <thead>
+              <tr>
+                <td className="border border-foreground">Term</td>
+                <td className="border border-foreground">Definition</td>
+                <td className="border border-foreground">Example</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-foreground">Category</td>
+                <td className="border border-foreground">
+                  Title of asset class [Cash and cash equivalents, Equities,
+                  Fixed Income, Real Estate, Commodities, Alternative Investment
+                  (label name of alternative investment directly) ]
+                </td>
+                <td className="border border-foreground">Bitcoin</td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">Cost Basis</td>
+                <td className="border border-foreground">
+                  Cost of asset in purchase denomination (USD or alternative)
+                </td>
+                <td className="border border-foreground">$1,040.00</td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">Total Quantity</td>
+                <td className="border border-foreground">
+                  Complete amount of asset in its denomination
+                </td>
+                <td className="border border-foreground">0.01436253 BTC</td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">Storage Method</td>
+                <td className="border border-foreground">
+                  Where asset is stored
+                </td>
+                <td className="border border-foreground">Trezor Model One </td>
+              </tr>
+
+              <tr>
+                <td className="border border-foreground">Date Acquired</td>
+                <td className="border border-foreground">
+                  Label the purchase date for single purchases. Use Aggregate
+                  for multiple investments with the same storage method
+                </td>
+                <td className="border border-foreground">Aggregate</td>
+              </tr>
+            </tbody>
+          </table>
+        </p>
+
+        <br />
+        <p
+          style={{
+            margin: "0 0 30 0",
+            fontSize: "18px",
+            textAlign: "justify",
+          }}
+        >
+          Personal Vault Table
+          <table>
+            <thead>
+              <tr>
+                <td className="border border-foreground">Category</td>
+                <td className="border border-foreground">Cost Basis </td>
+                <td className="border border-foreground">Total Quantity</td>
+                <td className="border border-foreground">Storage Method </td>
+                <td className="border border-foreground">Date Acquired</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+              </tr>
+              <tr>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+              </tr>
+              <tr>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+              </tr>
+              <tr>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+        </p>
+
+        <br />
+
+        <p
+          style={{
+            margin: "0 0 30 0",
+            fontSize: "18px",
+            textAlign: "justify",
+          }}
+        >
+
+
+          
+        <h2
+          style={{
+            fontSize: "1.5em",
+            fontWeight: "400",
+            margin: "50px 0 10px",
+          }}
+        >
+          <strong>12. Dashboard</strong>
+        </h2>
+          Dashboard Layout
+          <table>
+            <thead>
+              <tr>
+                <td className="border border-foreground">Symbol</td>
+                <td className="border border-foreground">Last Price </td>
+                <td className="border border-foreground">Today's Gain/Loss</td>
+                <td className="border border-foreground">Total Gain/ Loss </td>
+                <td className="border border-foreground">Current Value</td>
+                <td className="border border-foreground">Quantity</td>
+                <td className="border border-foreground"> Cost Basis</td>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+              </tr>
+              <tr>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+              </tr>
+              <tr>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+              </tr>
+              <tr>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+              </tr>
+          </tbody>
+          </table>
+        </p>
       </article>
     </>
   );
