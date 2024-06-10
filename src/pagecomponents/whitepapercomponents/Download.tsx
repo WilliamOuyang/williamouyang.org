@@ -1,5 +1,5 @@
 import ico_download from "@/assets/ico_download.svg"
-import PDF from './system.pdf'
+import PDF from './The System.pdf'
 
 function download(){
   window.open(PDF, "_blank")

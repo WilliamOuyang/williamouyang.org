@@ -1189,10 +1189,11 @@ const whitepaperText = () => {
           {indent1}3. Read news on assets ( Search Engine)<br/>
           {indent1}4. Review stock charting & analysis ( Fundamental or Technical – if
           applicable ) 
+          <br/>
           {indent1}5. Buy and sell assets accordingly (Owned or New assets) 
           <br/><br/>
 
-          Assets ( in accordance to Dashboard Table )
+          Dashboard Table 
           <table>
             <thead>
               <tr>
