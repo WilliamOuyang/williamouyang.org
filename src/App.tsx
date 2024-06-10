@@ -1,12 +1,14 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import { ThemeProvider } from "@/components/theme-provider";
-import '../globals.css'
+import "../globals.css";
 import Whitepaper from "./pages/Whitepaper";
 import Vault from "./pages/Vault";
 import Storage from "./pages/Storage";
-import Code from "./pages/Code";
 import Schedule from "./pages/Schedule";
+import Dashboarddb from "./pages/Dashboard";
+
+import Docs from "./pages/Docs";
 
 function App() {
   return (
@@ -18,8 +20,10 @@ function App() {
           <Route path="/whitepaper" element={<Whitepaper />} />
           <Route path="/vault" element={<Vault />} />
           <Route path="/storage" element={<Storage />} />
-          <Route path="/code" element={<Code />} />
           <Route path="/schedule" element={<Schedule />} />
+          <Route path="/dashboard" element={<Dashboarddb />} />
+
+          <Route path="/docs" element={<Docs />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

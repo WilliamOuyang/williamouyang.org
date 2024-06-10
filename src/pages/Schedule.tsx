@@ -156,7 +156,7 @@ const Schedule = () => {
   return (
     <div>
       <Navbar2 />
-      <Card style={{ padding: "20px", margin: "100px" }}>
+      <Card style={{ padding: "20px", marginRight:'20px', marginLeft:'10px', marginBottom:'10px',marginTop: "100px" }}>
         {loading && (
           <div
             style={{

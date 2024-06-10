@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import {
-  HoveredLink,
+  // HoveredLink,
   Menu,
   MenuItem,
   // ProductItem,
@@ -19,26 +19,26 @@ function Navbar({ className }: { className?: string }) {
       className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
     >
       <Menu setActive={setActive}>
-        <MenuItem setActive={setActive} active={active} item="Home">
+        
+        {/* <MenuItem setActive={setActive} active={active} item="Home">
         <Link to="/">Home</Link>
+        </MenuItem> */}
 
-        </MenuItem>
-
+<Link to="/" onMouseEnter={() => setActive(null)}>Home</Link>
+<Link to="/docs" onMouseEnter={() => setActive(null)}>Docs</Link>
+{/* 
         <MenuItem setActive={setActive} active={active} item="About">
           <div className="flex flex-col space-y-4 text-sm text-left">
-            <Link to="/code">Code</Link>
-            <HoveredLink href="/interface-design">Storage</HoveredLink>
-            <Link to="/seo">Docs</Link>
+            <Link to="/docs">Docs</Link>
             
           </div>
-        </MenuItem>
+        </MenuItem> */}
         <MenuItem setActive={setActive} active={active} item="Resources">
         <div className="flex flex-col space-y-4 text-sm text-left">
             <Link to="/schedule">Schedule</Link>
             <Link to="/dashboard">Dashboard</Link>
-            <Link to="/dashboard">News</Link>
             <Link to="/vault">Vault</Link>
-            <Link to="/vault">Tenet</Link>
+            <Link to="/storage">Storage</Link>
             <Link to="/whitepaper">White paper</Link>
           </div>
           {/* <div className="p-0" style={{minWidth:'800px', minHeight:'300px'}}>
