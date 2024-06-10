@@ -48,7 +48,7 @@ const Storage =()=> {
     return(
     <>
 <Navbar2/>
-<div style={{padding:'20px'}}>
+<div style={{padding:'20px', marginTop:'100px'}}>
 <h2 className="text-3xl font-semibold tracking-tight">Gmail</h2>   
 
 <Button variant="ouyang"className="w-[55px] mr-2 bg-neutral-900 hover:bg-neutral-900 mt-4" style={{ outline: '2px solid gray'}}>
