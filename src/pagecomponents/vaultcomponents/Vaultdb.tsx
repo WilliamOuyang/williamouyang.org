@@ -146,7 +146,7 @@ function Vaultdb() {
       <div style={{ marginLeft: 'auto', marginRight:'10px'}}>{item.COST}</div>  
     </div> 
       <div style={{marginRight:'20px', marginLeft:'20px'}}>  
-         <Separator className="bg-primary" />
+      <Separator  className="bg-gray-500"/>
        </div>
 
   </div>
