@@ -86,39 +86,37 @@ const whitepaperText = () => {
         >
           Humans are inherently power-driven creatures. For the three-hundred
           thousand years of modern human existence, it has been man's greatest
-          ambition to seize power, driven purely for the sake of satisfying
-          self-interests. Although power can be acquired under the justification
-          as a means to establish peace or for the cause of preserving the
-          species as a whole, these intentions remain definitive outliers in
-          history. By its design, power far better suits the individual. It's
-          benefits multiply when applied to the individual and comparatively
-          dilute when collectively shared. This makes retaining power too
-          tempting an offer and sharing seem insensible. Power is the ability to
-          enforce your will upon the world; power satiates fundamental human
-          desires, it grants control, protection, status, a sense of
+          ambition to seize power – a pursuit driven purely for the sake of
+          satisfying self-interests. Although power can be acquired under
+          different reasonable justifications - as a means to establish peace or
+          for the cause of “greater good”, these intentions remain definitive
+          outliers in history. By its design, power far better suits the
+          individual. It's benefits multiply when applied to the individual and
+          dilute when shared collectively. This principle makes retaining power
+          too tempting an offer and sharing seem insensible. Power is the
+          ability to enforce your will upon the world. It satiates fundamental
+          human desires, it grants control, protection, status, a sense of
           achievement, freedom, and comfort. Ironically, power is depicted as a
           morally corrupting force and a contemptible motive. In contradiction,
-          “greatness” is classed as far more socially acceptable and even noble
-          in certain cases. In reality, the truth couldn't be further than that
-          depiction. Greatness and power are inextricably intertwined, yet power
-          is condemned and greatness is commended. In conventional terms,
+          the pursuit of “greatness” is classed as socially acceptable and even
+          noble in certain cases. In reality, the truth couldn't be further than
+          that depiction. Greatness and power are inextricably intertwined, yet
+          power is condemned and greatness is commended. In conventional terms,
           greatness is defined as the acquisition of great wealth, expression of
           eminence, and the attainment of extraordinary capabilities. However, a
           more appropriate definition of greatness is power. Between the two,
           there is no difference, greatness is power, and power is greatness.
-          The only altering factor in the relationship between the two is the
-          exchange rate – variety in either or both quantity and form. <br />
-          {indentp} An important distinction to note is the difference between
-          the four categories of historical greats. First, there were those that
-          were adored, celebrated, and revered in their time, and in the next.
+          The only altering factor is the form in which they manifest. <br />
+          {indentp} Important comparisons to examine are historical successes of
+          attainment - four categories of greats. First, there were those that
+          were adored, celebrated, and revered in their era, and subsequently.
           Second, there were people who were favoured in their time, but later
-          scrutinized, criticized, and mocked by modern standards. Third, people
-          who are universally despised; and fourth, those who were those who
-          were considered great oppressors and villains in their times, and even
-          for ages, but later begrudgingly won respect from future generations
-          for their accomplishments and capabilities. The great difference in
-          these categories of individuals is in their methodology, they
-          carefully balance manipulation, planning, persona, and execution. The
+          faced scrutiny and criticism. Third, the universally despised. Fourth,
+          those who were those who were considered great oppressors for ages,
+          but later won respect from future generations for their
+          accomplishments and capabilities. The great disparity among these
+          cases lies in methodology, a difference of balancing manipulation,
+          strategic planning, public persona, execution, and purpose. The
           powerful figures of history will always be regarded with either
           adoration or disdain from the masses. Their influence is indisputable,
           and their imprint upon history solidifies them as visionaries.
@@ -171,7 +169,7 @@ const whitepaperText = () => {
           obsession with an objective. There is an ever-present fixation, in the
           form of a goal, which holds the utmost importance in my existence and
           from which I derive the justification of my being. I understand the
-          reality of my nature and the subsistence of the mind. The lofty
+          reality of my nature and the subsistence of my mind. The lofty
           ambition which I pursue is the most fundamental goal in human
           existence ever devised – power. It is based on this aspiration that
           the idea for the framework was devised. The result would be a
@@ -237,7 +235,7 @@ const whitepaperText = () => {
           on what I aspire to achieve. Chores: A list of routine tasks that must
           be completed regularly to maintain household living standards.
           Cleaning: A task list of upholding cleanliness in living and working
-          environments. Personal Vault: A record of personal financial assets.
+          environments. Vault: A record of personal financial assets.
           Dashboard: A method of reviewing and managing personal financial
           investments.
         </p>
@@ -354,14 +352,17 @@ const whitepaperText = () => {
           <br />
           {indent1}3. Chores <span style={{ float: "right" }}>{`> |`}</span>
           <br />
-          {indent1}4. Cleaning {" "}
-          <span style={{ float: "right" }}>(Saturday Only){" "}{`> |`}</span>
+          {indent1}4. Cleaning{" "}
+          <span style={{ float: "right" }}>(Saturday Only) {`> |`}</span>
           <br />
           {indent1}5. Check Email{" "}
           <span style={{ float: "right" }}>{`> |`}</span>
           <br />
           {indent1}6. Review Dashboard
-          <span style={{ float: "right" }}> <em>ref</em>{" "}{`> |`}</span>
+          <span style={{ float: "right" }}>
+            {" "}
+            <em>ref</em> {`> |`}
+          </span>
           <br />
           {indent1}7. Cook & Eat{" "}
           <span style={{ float: "right" }}>{`> | `}</span>
@@ -380,11 +381,15 @@ const whitepaperText = () => {
           <br />
           <strong>Night Period:</strong>
           <br />
-          {indent1}1. Update Personal Vault
-          <span style={{ float: "right" }}><em>ref</em>{" "}[09:30 PM – 09:35 PM]</span>
+          {indent1}1. Update Vault
+          <span style={{ float: "right" }}>
+            <em>ref</em> [09:30 PM – 09:35 PM]
+          </span>
           <br />
           {indent1}2. Read Tenet
-          <span style={{ float: "right" }}><em>ref</em>{" "}[09:35 PM – 09:40 PM]</span>
+          <span style={{ float: "right" }}>
+            <em>ref</em> [09:35 PM – 09:40 PM]
+          </span>
           <br />
           {indent1}3. Night Hygiene{" "}
           <span style={{ float: "right" }}>[09:35 PM – 10:00 PM]</span>
@@ -1031,7 +1036,7 @@ const whitepaperText = () => {
             margin: "50px 0 10px",
           }}
         >
-          <strong>11. Personal Vault</strong>
+          <strong>11. Vault</strong>
         </h2>
 
         <p
@@ -1041,7 +1046,7 @@ const whitepaperText = () => {
             textAlign: "justify",
           }}
         >
-          Table 2: Definition Key for Personal Vault
+          Table 2: Definition Key for Vault
           <table className="table-auto w-full">
             <thead>
               <tr>
@@ -1105,7 +1110,12 @@ const whitepaperText = () => {
             textAlign: "justify",
           }}
         >
-          Personal Vault Table
+          Update Vault ( Process ) <br />
+          {indent1}1. Add on newly acquired assets. <br />
+          {indent1}2. Removed disposed assets
+          <br />
+          <br/>
+          Vault Table
           <table>
             <thead>
               <tr>
@@ -1151,26 +1161,37 @@ const whitepaperText = () => {
 
         <br />
 
-        <p
-          style={{
-            margin: "0 0 30 0",
-            fontSize: "18px",
-            textAlign: "justify",
-          }}
-        >
-
-
+          <h2
+            style={{
+              fontSize: "1.5em",
+              fontWeight: "400",
+              margin: "50px 0 10px",
+              }}
+          >
+            <strong>12. Dashboard</strong>
+          </h2>
           
-        <h2
-          style={{
-            fontSize: "1.5em",
-            fontWeight: "400",
-            margin: "50px 0 10px",
-          }}
-        >
-          <strong>12. Dashboard</strong>
-        </h2>
-          Dashboard Layout
+              <p
+                style={{
+                  margin: "0 0 30 0",
+                  fontSize: "18px",
+                  textAlign: "justify",
+                }}
+              >
+
+          Review Dashboard ( Process ) <br/>
+          
+          {indent1}1. Update assets to reflect contents of
+          Vault <br/>
+          {indent1}2. Review asset performance ( Most assets are held in the
+          Dashboard Table, review financial platforms for inapplicable assets,
+          consult Vault for asset list.) <br/>
+          {indent1}3. Read news on assets ( Search Engine)<br/>
+          {indent1}4. Review stock charting & analysis ( Fundamental or Technical – if
+          applicable ) 
+          <br/><br/>
+
+          Assets ( in accordance to Dashboard Table )
           <table>
             <thead>
               <tr>
@@ -1184,15 +1205,6 @@ const whitepaperText = () => {
               </tr>
             </thead>
             <tbody>
-            <tr>
-                <td className="border border-foreground">&nbsp;</td>
-                <td className="border border-foreground">&nbsp;</td>
-                <td className="border border-foreground">&nbsp;</td>
-                <td className="border border-foreground">&nbsp;</td>
-                <td className="border border-foreground">&nbsp;</td>
-                <td className="border border-foreground">&nbsp;</td>
-                <td className="border border-foreground">&nbsp;</td>
-              </tr>
               <tr>
                 <td className="border border-foreground">&nbsp;</td>
                 <td className="border border-foreground">&nbsp;</td>
@@ -1220,7 +1232,16 @@ const whitepaperText = () => {
                 <td className="border border-foreground">&nbsp;</td>
                 <td className="border border-foreground">&nbsp;</td>
               </tr>
-          </tbody>
+              <tr>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+                <td className="border border-foreground">&nbsp;</td>
+              </tr>
+            </tbody>
           </table>
         </p>
       </article>
