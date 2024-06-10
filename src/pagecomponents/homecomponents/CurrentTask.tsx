@@ -146,7 +146,7 @@ const CurrentTask = () => {
             stroke-length="0.25"
             bg-opacity="0.1"
             speed="0.8"
-            color="white"
+            color="red"
           ></l-ring-2>
         </div>
       )}

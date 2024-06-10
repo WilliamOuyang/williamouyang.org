@@ -55,14 +55,14 @@ function Vaultdb() {
             stroke-length="0.25"
             bg-opacity="0.1"
             speed="0.8"
-            color="white"
+            color="red"
           ></l-ring-2>
         </div>
       )}
 
 {data.map((item, index) => (
   <>
-  <div key={index} className="hover:bg-primary" onClick={() => handleSheetClick(index)}>
+  <div key={index} className="hover:bg-background" onClick={() => handleSheetClick(index)}>
     
     <div style={{ display: 'flex', padding: '10px', paddingTop: '20px', paddingBottom: '20px', alignItems: 'center' }}>
       <div style={{ justifyContent: 'flex-start' }}>
@@ -73,16 +73,16 @@ function Vaultdb() {
     <SheetHeader>
       <SheetTitle style={{margin:'auto'}} className="select-none">Asset Purchase</SheetTitle>
       <SheetDescription style={{margin:'auto', paddingTop:'50px', paddingBottom:'60px'}}>
-      <h1 className="scroll-m-20 text-4xl font-medium tracking-tight lg:text-5xl text-white select-none">
+      <h1 className="scroll-m-20 text-4xl font-medium tracking-tight lg:text-5xl text-foreground select-none">
       {item.QUANTITY}
           </h1>
       </SheetDescription>
     </SheetHeader>
 
-    <Card style={{background: 'black'}}>
+    <Card>
   
         <div style={{display:'flex', padding:'10px', paddingTop:'20px', paddingBottom:'20px', alignItems:'center'}}>
-         <div style={{color:'white', marginLeft:'15px'}} className="select-none">
+         <div style={{marginLeft:'15px'}} className="select-none">
          Category
           <br/>
           <p className="text-gray-400 select-none">{item.CATEGORY}</p>
@@ -90,11 +90,11 @@ function Vaultdb() {
         </div>
           
           <div style={{ paddingRight: '20px', paddingLeft:'20px'}}>
-          <Separator  className="bg-primary"/>
+          <Separator  className="bg-gray-500"/>
           </div>
 
           <div style={{display:'flex', padding:'10px', paddingTop:'20px', paddingBottom:'20px', alignItems:'center'}}>
-         <div style={{color:'white', marginLeft:'15px'}} className="select-none">
+         <div style={{marginLeft:'15px'}} className="select-none">
          Cost Basis
           <br/>
           <p className="text-gray-400 select-none">{item.COST}</p>
@@ -102,11 +102,11 @@ function Vaultdb() {
         </div>
           
           <div style={{ paddingRight: '20px', paddingLeft:'20px'}}>
-          <Separator  className="bg-primary"/>
+          <Separator  className="bg-gray-500"/>
           </div>
 
           <div style={{display:'flex', padding:'10px', paddingTop:'20px', paddingBottom:'20px', alignItems:'center'}}>
-         <div style={{color:'white', marginLeft:'15px'}} className="select-none">
+         <div style={{ marginLeft:'15px'}} className="select-none">
          Total Quantity
           <br/>
           <p className="text-gray-400 select-none">{item.QUANTITY}</p>
@@ -114,11 +114,11 @@ function Vaultdb() {
         </div>
           
           <div style={{ paddingRight: '20px', paddingLeft:'20px'}}>
-          <Separator  className="bg-primary"/>
+          <Separator  className="bg-gray-500"/>
           </div>
 
           <div style={{display:'flex', padding:'10px', paddingTop:'20px', paddingBottom:'20px', alignItems:'center'}}>
-         <div style={{color:'white', marginLeft:'15px'}} className="select-none">
+         <div style={{ marginLeft:'15px'}} className="select-none">
           Storage Method
           <br/>
           <p className="text-gray-400 select-none">{item.STORAGE}</p>
@@ -126,11 +126,11 @@ function Vaultdb() {
         </div>
           
           <div style={{ paddingRight: '20px', paddingLeft:'20px'}}>
-          <Separator  className="bg-primary"/>
+          <Separator  className="bg-gray-500"/>
           </div>
 
           <div style={{display:'flex', padding:'10px', paddingTop:'20px', paddingBottom:'20px', alignItems:'center'}}>
-         <div style={{color:'white', marginLeft:'15px'}} className="select-none">
+         <div style={{marginLeft:'15px'}} className="select-none">
           Date Acquired
           <br/>
           <p className="text-gray-400 select-none">{item.DATE}</p>
