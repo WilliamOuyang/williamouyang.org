@@ -274,9 +274,9 @@ const Storage =()=> {
           </Button>
           
 
-          <Button variant="ouyang"className="w-[100px] mr-2 mt-4 bg-neutral-900 hover:bg-neutral-900" style={{ outline: '2px solid gray'}}>
+          <Button variant="ouyang"className="w-[55px] mr-2 mt-4 bg-neutral-900 hover:bg-neutral-900" style={{ outline: '2px solid gray'}}>
             <div style={{transition: 'transform 0.15s ease',  transform: isLocked19 ? 'translateY(-8px)' : 'translateY(0)'}} onMouseEnter={() => setIsLocked19(false)} onMouseLeave={() => setIsLocked19(true)}>
-            <Button variant="ouyang"className="w-[100px]" onClick={() => window.open('https://app.jointherealworld.com/chat/01GGDHJAQMA1D0VMK8WV22BJJN/01HYFVF7S7W3TP9HFFCWF1FB0J')}>
+            <Button variant="ouyang"className="w-[55px]" onClick={() => window.open('https://app.jointherealworld.com/chat/01GGDHJAQMA1D0VMK8WV22BJJN/01HYFVF7S7W3TP9HFFCWF1FB0J')}>
             <img className="select-none"
                 draggable="false"
                     src={TRW} 
