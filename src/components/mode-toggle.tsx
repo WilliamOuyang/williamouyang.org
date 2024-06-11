@@ -1,30 +1,38 @@
-
-import { useTheme } from "@/components/theme-provider"
-import { Moon, Sun, SunMoon } from "lucide-react"
+import { useTheme } from "@/components/theme-provider";
+import { Moon, Sun, SunMoon } from "lucide-react";
 
 export function ModeToggle() {
-  const { setTheme } = useTheme()
+  const { setTheme } = useTheme();
 
   return (
     <>
-    
-        <button className="text-left" onClick={() => setTheme("light")}>
-        <div style={{display:'flex',alignItems:'center'}}>
-        <Sun className="mr-2"/>Light
+      <button className="text-left" onClick={() => setTheme("light")}>
+        <div
+          style={{ display: "flex", alignItems: "center" }}
+          className="select-none"
+        >
+          <Sun className="mr-2" />
+          Light
         </div>
-        </button>
-        <button className="text-left" onClick={() => setTheme("dark")}>
-        <div style={{display:'flex',alignItems:'center'}}>
-        <Moon className="mr-2"/>Dark
+      </button>
+      <button className="text-left" onClick={() => setTheme("dark")}>
+        <div
+          style={{ display: "flex", alignItems: "center" }}
+          className="select-none"
+        >
+          <Moon className="mr-2" />
+          Dark
         </div>
-        </button>
-        <button className="text-left" onClick={() => setTheme("system")}>
-        <div style={{display:'flex',alignItems:'center'}}>
-        <SunMoon className="mr-2"/>System
+      </button>
+      <button className="text-left" onClick={() => setTheme("system")}>
+        <div
+          style={{ display: "flex", alignItems: "center" }}
+          className="select-none"
+        >
+          <SunMoon className="mr-2" />
+          System
         </div>
-        </button>
-   
-
+      </button>
     </>
-  )
+  );
 }
