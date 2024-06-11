@@ -30,7 +30,7 @@ const currentDate = new Date();
 
  const minutesStr: string = minutes.toString().padStart(2, '0');
  const secondsStr: string = seconds.toString().padStart(2, '0');
- const adjustedHours: number = hours > 12 ? hours - 12 : hours;
+ const adjustedHours: number = hours === 0 ? 12 : (hours > 12 ? hours - 12 : hours);
  const hourStr: string = adjustedHours.toString().padStart(2, '0');
  const amPmTag: string = hours >= 12 ? "PM" : "AM";
 // regular time above
