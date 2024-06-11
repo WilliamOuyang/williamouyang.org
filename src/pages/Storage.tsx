@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Trezor from "@/assets/trezor.svg";
 import VisualStudio from "@/assets/vscode.svg"
 import Node from "@/assets/nodejs.svg"
@@ -42,8 +42,11 @@ const Storage =()=> {
     const [isLocked16, setIsLocked16] = useState(true);
     const [isLocked17, setIsLocked17] = useState(true);
     const [isLocked18, setIsLocked18] = useState(true);
-    
     const [isLocked19, setIsLocked19] = useState(true);
+
+    useEffect(() => {
+      document.title = "Storage | williamouyang.org"
+    }, []);
 
     return(
     <>

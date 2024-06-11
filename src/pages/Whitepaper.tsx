@@ -2,6 +2,7 @@ import WhitepaperText from "@/pagecomponents/whitepapercomponents/WhitepaperText
 import Download from "@/pagecomponents/whitepapercomponents/Download";
 import { motion, useScroll, useSpring } from "framer-motion";
 import Navbar2 from "@/pagecomponents/shared/Navbar2";
+import { useEffect } from "react";
 // import Navbar1 from "@/pagecomponents/shared/Navbar1";
 
 const Whitepaper = () => {
@@ -12,6 +13,10 @@ const Whitepaper = () => {
     damping: 30,
     restDelta: 0.001
   });
+
+  useEffect(() => {
+    document.title = "White paper | williamouyang.org"
+  }, []);
 
   return (
     <div>

@@ -52,6 +52,10 @@ const currentDate = new Date();
   const seconds2 = time2 % 60;
   //timer
 
+  useEffect(() => {
+    document.title = "Home | williamouyang.org"
+  }, []);
+
   return (
     <div>
       <Navbar2/>

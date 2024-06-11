@@ -121,6 +121,10 @@ interface UserData {
 
 const Schedule = () => {
 
+  useEffect(() => {
+    document.title = "Schedule | williamouyang.org"
+  }, []);
+
   const [data, setData] = useState<UserData[]>([]);
   const [loading, setLoading] = useState(true);
 

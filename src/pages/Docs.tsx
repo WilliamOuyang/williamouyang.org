@@ -1,6 +1,12 @@
 import Navbar2 from "@/pagecomponents/shared/Navbar2"
+import { useEffect } from "react";
 
 const Docs = () => {
+
+  useEffect(() => {
+    document.title = "Docs | williamouyang.org"
+  }, []);
+
   return (
     <div>
         

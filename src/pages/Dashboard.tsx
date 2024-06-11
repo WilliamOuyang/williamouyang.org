@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import { ring2 } from 'ldrs'
 import Navbar2 from "@/pagecomponents/shared/Navbar2";
+
+
 ring2.register()
 
 interface UserData {
-
   SYMBOL: string,
   LAST_PRICE: number,
   
@@ -17,9 +18,9 @@ interface UserData {
   CURRENT_VALUE: number,
   QUANTITY: number,
   COST_BASIS: number,
-
-
 }
+
+
 
 const Dashboarddb = () => {
 
@@ -37,6 +38,9 @@ const Dashboarddb = () => {
       .catch(error => console.error('Error fetching data:', error));
   }, []);
 
+  useEffect(() => {
+    document.title = "Dashboard | williamouyang.org"
+  }, []);
 
   return (
     <div style={{marginTop:'100px', padding:'10px'}}>
