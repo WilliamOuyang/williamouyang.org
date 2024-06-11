@@ -10,9 +10,22 @@ import {
 import { cn } from "@/utils/cn";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Link } from "react-router-dom";
-import { AreaChart, CalendarDays, Database, File, FileText, Home, Landmark } from "lucide-react";
+import {
+  AreaChart,
+  CalendarDays,
+  Database,
+  File,
+  FileText,
+  Home,
+  Landmark,
+} from "lucide-react";
 import { Separator } from "@/components/ui/separator";
-// import NavResources from "./NavResources";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
@@ -21,23 +34,29 @@ function Navbar({ className }: { className?: string }) {
       className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
     >
       <Menu setActive={setActive}>
-        {/* <MenuItem setActive={setActive} active={active} item="Home">
-        <Link to="/">Home</Link>
-        </MenuItem> */}
-
         <Link to="/" onMouseEnter={() => setActive(null)}>
-          <Home />
+
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger><Home /></TooltipTrigger>
+              <TooltipContent>
+                <p>Home</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
         </Link>
         <Link to="/docs" onMouseEnter={() => setActive(null)}>
-          <FileText />
+          
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger><FileText /></TooltipTrigger>
+              <TooltipContent>
+                <p>Docs</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
         </Link>
-        {/* 
-        <MenuItem setActive={setActive} active={active} item="About">
-          <div className="flex flex-col space-y-4 text-sm text-left">
-            <Link to="/docs">Docs</Link>
-            
-          </div>
-        </MenuItem> */}
+ 
         <MenuItem
           setActive={setActive}
           active={active}
@@ -46,35 +65,51 @@ function Navbar({ className }: { className?: string }) {
           resources={true}
         >
           <div className="flex flex-col space-y-4 text-sm text-left">
-           <u className="select-none"><strong className="flex mb-0">RESOURCES </strong></u>
-
+            <u className="select-none">
+              <strong className="flex mb-0">RESOURCES</strong>
+            </u>
 
             <Link to="/schedule">
-              <div style={{ display: "flex", alignItems: "center" }} className="select-none">
-              <CalendarDays className="mr-2" />
+              <div
+                style={{ display: "flex", alignItems: "center" }}
+                className="select-none"
+              >
+                <CalendarDays className="mr-2" />
                 Schedule
               </div>
             </Link>
             <Link to="/dashboard">
-              <div style={{ display: "flex", alignItems: "center" }} className="select-none">
-              <AreaChart className="mr-2" />
+              <div
+                style={{ display: "flex", alignItems: "center" }}
+                className="select-none"
+              >
+                <AreaChart className="mr-2" />
                 Dashboard
               </div>
             </Link>
             <Link to="/vault">
-              <div style={{ display: "flex", alignItems: "center" }} className="select-none">
-              <Landmark  className="mr-2" />
+              <div
+                style={{ display: "flex", alignItems: "center" }}
+                className="select-none"
+              >
+                <Landmark className="mr-2" />
                 Vault
               </div>
             </Link>
             <Link to="/storage">
-              <div style={{ display: "flex", alignItems: "center" }} className="select-none">
-              <Database className="mr-2" />
+              <div
+                style={{ display: "flex", alignItems: "center" }}
+                className="select-none"
+              >
+                <Database className="mr-2" />
                 Storage
               </div>
             </Link>
             <Link to="/whitepaper">
-              <div style={{ display: "flex", alignItems: "center" }} className="select-none">
+              <div
+                style={{ display: "flex", alignItems: "center" }}
+                className="select-none"
+              >
                 <File className="mr-2" />
                 White paper
               </div>
