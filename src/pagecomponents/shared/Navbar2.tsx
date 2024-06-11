@@ -10,6 +10,7 @@ import {
 import { cn } from "@/utils/cn";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Link } from "react-router-dom";
+import { FileText, Home } from "lucide-react";
 // import NavResources from "./NavResources";
 
 function Navbar({ className }: { className?: string }) {
@@ -24,8 +25,8 @@ function Navbar({ className }: { className?: string }) {
         <Link to="/">Home</Link>
         </MenuItem> */}
 
-<Link to="/" onMouseEnter={() => setActive(null)}>Home</Link>
-<Link to="/docs" onMouseEnter={() => setActive(null)}>Docs</Link>
+<Link to="/" onMouseEnter={() => setActive(null)}><Home /></Link>
+<Link to="/docs" onMouseEnter={() => setActive(null)}><FileText /></Link>
 {/* 
         <MenuItem setActive={setActive} active={active} item="About">
           <div className="flex flex-col space-y-4 text-sm text-left">
@@ -33,7 +34,7 @@ function Navbar({ className }: { className?: string }) {
             
           </div>
         </MenuItem> */}
-        <MenuItem setActive={setActive} active={active} item="Resources">
+        <MenuItem setActive={setActive} active={active} item="" toggle={false} resources = {true}>
         <div className="flex flex-col space-y-4 text-sm text-left">
             <Link to="/schedule">Schedule</Link>
             <Link to="/dashboard">Dashboard</Link>
@@ -45,7 +46,7 @@ function Navbar({ className }: { className?: string }) {
             y
           </div> */}
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Theme">
+        <MenuItem setActive={setActive} active={active} item=" " toggle={true} resources={false}>
           <div className="flex flex-col text-sm p-0 space-y-4">
             <ModeToggle />
           </div>

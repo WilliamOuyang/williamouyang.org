@@ -1,5 +1,6 @@
 
 import { useTheme } from "@/components/theme-provider"
+import { Moon, Sun, SunMoon } from "lucide-react"
 
 export function ModeToggle() {
   const { setTheme } = useTheme()
@@ -8,13 +9,19 @@ export function ModeToggle() {
     <>
     
         <button className="text-left" onClick={() => setTheme("light")}>
-          Light
+        <div style={{display:'flex',alignItems:'center'}}>
+        <Sun className="mr-2"/>Light
+        </div>
         </button>
         <button className="text-left" onClick={() => setTheme("dark")}>
-          Dark
+        <div style={{display:'flex',alignItems:'center'}}>
+        <Moon className="mr-2"/>Dark
+        </div>
         </button>
         <button className="text-left" onClick={() => setTheme("system")}>
-          System
+        <div style={{display:'flex',alignItems:'center'}}>
+        <SunMoon className="mr-2"/>System
+        </div>
         </button>
    
 
