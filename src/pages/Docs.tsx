@@ -40,7 +40,8 @@ const Docs = () => {
           Strategy:<br/>
           1. Choose a Campus. Focus and stick with that Campus. 
           <br/><br/>
-
+          Current Income: 29,280 per year
+        
 
           
 

@@ -8,8 +8,12 @@ export function ModeToggle() {
     <>
       <button className="text-left" onClick={() => setTheme("light")}>
         <div
-          style={{ display: "flex", alignItems: "center" }}
-          className="select-none"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            
+          }}
+          className="select-none "
         >
           <Sun className="mr-2" />
           Light
@@ -17,8 +21,12 @@ export function ModeToggle() {
       </button>
       <button className="text-left" onClick={() => setTheme("dark")}>
         <div
-          style={{ display: "flex", alignItems: "center" }}
-          className="select-none"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            
+          }}
+          className="select-none "
         >
           <Moon className="mr-2" />
           Dark
@@ -26,8 +34,12 @@ export function ModeToggle() {
       </button>
       <button className="text-left" onClick={() => setTheme("system")}>
         <div
-          style={{ display: "flex", alignItems: "center" }}
-          className="select-none"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            
+          }}
+          className="select-none "
         >
           <SunMoon className="mr-2" />
           System

@@ -34,10 +34,11 @@ function Navbar({ className }: { className?: string }) {
     >
       <Menu setActive={setActive}>
         <Link to="/" onMouseEnter={() => setActive(null)}>
-
           <TooltipProvider>
             <Tooltip>
-              <TooltipTrigger><Home /></TooltipTrigger>
+              <TooltipTrigger>
+                <Home />
+              </TooltipTrigger>
               <TooltipContent>
                 <p>Home</p>
               </TooltipContent>
@@ -45,17 +46,18 @@ function Navbar({ className }: { className?: string }) {
           </TooltipProvider>
         </Link>
         <Link to="/docs" onMouseEnter={() => setActive(null)}>
-          
           <TooltipProvider>
             <Tooltip>
-              <TooltipTrigger><FileText /></TooltipTrigger>
+              <TooltipTrigger>
+                <FileText />
+              </TooltipTrigger>
               <TooltipContent>
                 <p>Docs</p>
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>
         </Link>
- 
+
         <MenuItem
           setActive={setActive}
           active={active}
@@ -64,14 +66,19 @@ function Navbar({ className }: { className?: string }) {
           resources={true}
         >
           <div className="flex flex-col space-y-4 text-sm text-left">
-            <u className="select-none">
-              <strong className="flex mb-0">RESOURCES</strong>
-            </u>
+            <span style={{ display: "flex", justifyContent: "center" }}>
+              <u className="select-none">
+                <strong className="flex mb-0">&nbsp;RESOURCES&nbsp;</strong>
+              </u>
+            </span>
 
             <Link to="/schedule">
               <div
-                style={{ display: "flex", alignItems: "center" }}
-                className="select-none"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                }}
+                className="select-none "
               >
                 <CalendarDays className="mr-2" />
                 Schedule
@@ -79,8 +86,11 @@ function Navbar({ className }: { className?: string }) {
             </Link>
             <Link to="/dashboard">
               <div
-                style={{ display: "flex", alignItems: "center" }}
-                className="select-none"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                }}
+                className="select-none "
               >
                 <AreaChart className="mr-2" />
                 Dashboard
@@ -88,8 +98,11 @@ function Navbar({ className }: { className?: string }) {
             </Link>
             <Link to="/vault">
               <div
-                style={{ display: "flex", alignItems: "center" }}
-                className="select-none"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                }}
+                className="select-none "
               >
                 <Landmark className="mr-2" />
                 Vault
@@ -97,8 +110,11 @@ function Navbar({ className }: { className?: string }) {
             </Link>
             <Link to="/storage">
               <div
-                style={{ display: "flex", alignItems: "center" }}
-                className="select-none"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                }}
+                className="select-none "
               >
                 <Database className="mr-2" />
                 Storage
@@ -106,8 +122,11 @@ function Navbar({ className }: { className?: string }) {
             </Link>
             <Link to="/whitepaper">
               <div
-                style={{ display: "flex", alignItems: "center" }}
-                className="select-none"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                }}
+                className="select-none "
               >
                 <File className="mr-2" />
                 White paper
