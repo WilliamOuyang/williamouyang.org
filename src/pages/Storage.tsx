@@ -71,7 +71,7 @@ const Storage =()=> {
           </Button>
 
 
-<Button variant="ouyang"className="w-[55px] mr-2 bg-neutral-900 hover:bg-neutral-900 mt-3" style={{ outline: '2px solid gray'}}>
+{/* <Button variant="ouyang"className="w-[55px] mr-2 bg-neutral-900 hover:bg-neutral-900 mt-3" style={{ outline: '2px solid gray'}}>
             <div style={{transition: 'transform 0.15s ease',  transform: isLocked9 ? 'translateY(-8px)' : 'translateY(0)'}} onMouseEnter={() => setIsLocked9(false)} onMouseLeave={() => setIsLocked9(true)}>
             <Button variant="ouyang"className="w-[55px]" onClick={() => window.open('https://mail.google.com/mail/u/0/#inbox')}>
                 <img className="select-none"
@@ -81,7 +81,7 @@ const Storage =()=> {
                     style={{width:'100%', height:'100%'}}/>
               </Button>
             </div>   
-          </Button>
+          </Button> */}
 
           <h2 className="text-3xl font-semibold tracking-tight">Applications</h2>   
 
