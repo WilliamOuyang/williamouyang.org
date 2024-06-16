@@ -21,8 +21,8 @@ import ETRADE from "@/assets/etrade.svg"
 import CASHAPP from "@/assets/cashapp.svg"
 import TRW from "@/assets/TRW.svg"
 import TV from "@/assets/TradingView.svg"
-import Navbar2 from "@/pagecomponents/shared/Navbar2";
-
+import GMX from "@/assets/GMX.svg"
+import Navbar2 from "@/pagecomponents/shared/Navbar2"
 
 const Storage =()=> {
     const [isLocked, setIsLocked] = useState(true);
@@ -45,6 +45,7 @@ const Storage =()=> {
     const [isLocked18, setIsLocked18] = useState(true);
     const [isLocked19, setIsLocked19] = useState(true);
     const [isLocked20, setIsLocked20] = useState(true);
+    const [isLocked21, setIsLocked21] = useState(true);
 
     useEffect(() => {
       document.title = "Storage | williamouyang.org"
@@ -55,6 +56,20 @@ const Storage =()=> {
 <Navbar2/>
 <div style={{padding:'20px', marginTop:'100px'}}>
 <h2 className="text-3xl font-semibold tracking-tight">Email</h2>   
+
+
+<Button variant="ouyang"className="w-[55px] mr-2 bg-neutral-900 hover:bg-neutral-900 mt-3" style={{backgroundColor:'#143170', outline: '2px solid gray'}}>
+            <div style={{transition: 'transform 0.15s ease',  transform: isLocked21 ? 'translateY(-8px)' : 'translateY(0)'}} onMouseEnter={() => setIsLocked21(false)} onMouseLeave={() => setIsLocked21(true)}>
+            <Button variant="ouyang"className="w-[55px] bg-#1C449B"style={{backgroundColor: '#1c449b'}} onClick={() => window.open('https://www.gmx.com/')}>
+                <img className="select-none"
+                draggable="false"
+                    src={GMX} 
+                    alt="GMX" 
+                    style={{width:'100%', height:'100%'}}/>
+              </Button>
+            </div>   
+          </Button>
+
 
 <Button variant="ouyang"className="w-[55px] mr-2 bg-neutral-900 hover:bg-neutral-900 mt-3" style={{ outline: '2px solid gray'}}>
             <div style={{transition: 'transform 0.15s ease',  transform: isLocked9 ? 'translateY(-8px)' : 'translateY(0)'}} onMouseEnter={() => setIsLocked9(false)} onMouseLeave={() => setIsLocked9(true)}>
