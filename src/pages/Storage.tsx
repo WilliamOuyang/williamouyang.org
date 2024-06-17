@@ -9,7 +9,7 @@ import BOA from "@/assets/BofA-logo.svg"
 import Strike from "@/assets/strike.svg"
 import OO from "@/assets/OpenOffice.svg"
 import W from "@/assets/OOoWriter.svg"
-import G from "@/assets/Gmail_icon_(2020).svg"
+// import G from "@/assets/Gmail_icon_(2020).svg"
 import Sheets from "@/assets/Google_Sheets_2020_Logo.svg"
 import Drive from "@/assets/Google_Drive_icon_(2020).svg"
 import GPT from "@/assets/ChatGPT-Logo.svg"
@@ -33,7 +33,7 @@ const Storage =()=> {
     const [isLocked6, setIsLocked6] = useState(true);
     const [isLocked7, setIsLocked7] = useState(true);
     const [isLocked8, setIsLocked8] = useState(true);
-    const [isLocked9, setIsLocked9] = useState(true);
+    // const [isLocked9, setIsLocked9] = useState(true);
     const [isLocked10, setIsLocked10] = useState(true);
     const [isLocked11, setIsLocked11] = useState(true);
     const [isLocked12, setIsLocked12] = useState(true);
