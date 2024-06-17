@@ -40,7 +40,7 @@ const whitepaperText = () => {
         >
           William Ouyang
           <br />
-          gwko624p@gmail.com
+          williamouyang@gmx.com
           <br />
           www.williamouyang.org
         </p>
