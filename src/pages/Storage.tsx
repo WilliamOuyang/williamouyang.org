@@ -26,6 +26,7 @@ import Passwords from "@/assets/passwords.svg"
 import Extend from "@/assets/extension.svg"
 import Vercel from "@/assets/Vercel_logo_black.svg"
 import Go from "@/assets/GoDaddy.svg"
+// import Schwab from "@/assets/Schwab.svg"
 
 import Navbar2 from "@/pagecomponents/shared/Navbar2"
 
@@ -55,6 +56,7 @@ const Storage =()=> {
     const [isLocked23, setIsLocked23] = useState(true);
     const [isLocked24, setIsLocked24] = useState(true);
     const [isLocked25, setIsLocked25] = useState(true);
+    // const [isLocked26, setIsLocked26] = useState(true);
 
     useEffect(() => {
       document.title = "Storage | williamouyang.org"
@@ -350,6 +352,23 @@ const Storage =()=> {
               </Button>
             </div>   
           </Button>
+
+
+          {/* <Button variant="ouyang"className="w-[100px] mr-2 mt-3 bg-neutral-900 hover:bg-neutral-900" style={{ outline: '2px solid gray'}}>
+            <div style={{transition: 'transform 0.15s ease',  transform: isLocked26 ? 'translateY(-8px)' : 'translateY(0)'}} onMouseEnter={() => setIsLocked26(false)} onMouseLeave={() => setIsLocked26(true)}>
+           <Button variant="ouyang"className="w-[100px]" onClick={() => window.open('https://www.schwab.com/')}>
+            <img className="select-none"
+                draggable="false"
+                    src={Schwab} 
+                    alt="Charles Schwab" 
+                    style={{width:'100%', height:'100%'}}/>
+              </Button>
+            </div>   
+          </Button> */}
+
+
+          https://www.schwab.com/
+
           <h2 className="text-3xl font-semibold tracking-tight">Database Management</h2>
      
 
