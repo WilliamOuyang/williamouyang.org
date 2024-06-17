@@ -26,6 +26,8 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 
+// import Wallet from "@/assets/wallet.svg"
+
 function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
   return (
@@ -104,6 +106,7 @@ function Navbar({ className }: { className?: string }) {
                 }}
                 className="select-none "
               >
+                {/* <img src={Wallet}/> */}
                 <Landmark className="mr-2" />
                 Vault
               </div>

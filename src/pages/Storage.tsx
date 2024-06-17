@@ -22,6 +22,11 @@ import CASHAPP from "@/assets/cashapp.svg"
 import TRW from "@/assets/TRW.svg"
 import TV from "@/assets/TradingView.svg"
 import GMX from "@/assets/GMX.svg"
+import Passwords from "@/assets/passwords.svg"
+import Extend from "@/assets/extension.svg"
+import Vercel from "@/assets/Vercel_logo_black.svg"
+import Go from "@/assets/GoDaddy.svg"
+
 import Navbar2 from "@/pagecomponents/shared/Navbar2"
 
 const Storage =()=> {
@@ -46,6 +51,10 @@ const Storage =()=> {
     const [isLocked19, setIsLocked19] = useState(true);
     const [isLocked20, setIsLocked20] = useState(true);
     const [isLocked21, setIsLocked21] = useState(true);
+    const [isLocked22, setIsLocked22] = useState(true);
+    const [isLocked23, setIsLocked23] = useState(true);
+    const [isLocked24, setIsLocked24] = useState(true);
+    const [isLocked25, setIsLocked25] = useState(true);
 
     useEffect(() => {
       document.title = "Storage | williamouyang.org"
@@ -55,7 +64,7 @@ const Storage =()=> {
     <>
 <Navbar2/>
 <div style={{padding:'20px', marginTop:'100px'}}>
-<h2 className="text-3xl font-semibold tracking-tight">Email</h2>   
+<h2 className="text-3xl font-semibold tracking-tight">E-Mail</h2>   
 
 
 <Button variant="ouyang"className="w-[55px] mr-2 bg-neutral-900 hover:bg-neutral-900 mt-3" style={{backgroundColor:'#143170', outline: '2px solid gray'}}>
@@ -199,8 +208,31 @@ const Storage =()=> {
             </div>   
           </Button>
 
+          <Button variant="ouyang"className="w-[100px] bg-neutral-900 hover:bg-neutral-900 mr-2 mt-3" style={{ outline: '2px solid gray'}}>
+            <div style={{transition: 'transform 0.15s ease',  transform: isLocked24 ? 'translateY(-8px)' : 'translateY(0)'}} onMouseEnter={() => setIsLocked24(false)} onMouseLeave={() => setIsLocked24(true)}>
+            <Button variant="ouyang"className="w-[100px]" onClick={() => window.open('https://vercel.com/williamouyangs-projects')}>
+            <img className="select-none"
+                draggable="false"
+                    src={Vercel} 
+                    alt="Vercel" 
+                    style={{width:'100%', height:'100%'}}/>
+              </Button>
+            </div>   
+          </Button>
+
+          <Button variant="ouyang"className="w-[100px] bg-neutral-900 hover:bg-neutral-900 mr-2 mt-3" style={{ outline: '2px solid gray'}}>
+            <div style={{transition: 'transform 0.15s ease',  transform: isLocked25 ? 'translateY(-8px)' : 'translateY(0)'}} onMouseEnter={() => setIsLocked25(false)} onMouseLeave={() => setIsLocked25(true)}>
+            <Button variant="ouyang"className="w-[100px]" onClick={() => window.open('https://www.godaddy.com/')}>
+            <img className="select-none"
+                draggable="false"
+                    src={Go} 
+                    alt="GoDaddy" 
+                    style={{width:'100%', height:'100%'}}/>
+              </Button>
+            </div>   
+          </Button>
           
-         
+          
        
           <h2 className="text-3xl font-semibold tracking-tight">Financial Platforms</h2>
 
@@ -341,6 +373,32 @@ const Storage =()=> {
                 draggable="false"
                     src={Drive} 
                     alt="Google Drive" 
+                    style={{width:'100%', height:'100%'}}/>
+              </Button>
+            </div>   
+          </Button>
+
+
+          <h2 className="text-3xl font-semibold tracking-tight">Passwords & Browser Extensions</h2>
+          <Button variant="ouyang"className="w-[55px] bg-neutral-900 hover:bg-neutral-900 mr-2 mt-3" style={{ outline: '2px solid gray'}}>
+            <div style={{transition: 'transform 0.15s ease',  transform: isLocked22 ? 'translateY(-8px)' : 'translateY(0)'}} onMouseEnter={() => setIsLocked22(false)} onMouseLeave={() => setIsLocked22(true)}>
+            <Button variant="ouyang"className="w-[55px]" onClick={() => window.open('https://c.gmx.com/@1383933226673766769/aBhSBM0OQ_mf0DjvbJL6xw')}>
+            <img className="select-none"
+                draggable="false"
+                    src={Passwords} 
+                    alt="Passwords" 
+                    style={{width:'100%', height:'100%'}}/>
+              </Button>
+            </div>   
+          </Button>
+
+          <Button variant="ouyang"className="w-[55px] bg-neutral-900 hover:bg-neutral-900 mr-2 mt-3" style={{ outline: '2px solid gray'}}>
+            <div style={{transition: 'transform 0.15s ease',  transform: isLocked23 ? 'translateY(-8px)' : 'translateY(0)'}} onMouseEnter={() => setIsLocked23(false)} onMouseLeave={() => setIsLocked23(true)}>
+            <Button variant="ouyang"className="w-[55px]" onClick={() => window.open('https://c.gmx.com/@1383933226673766769/rnNyrTaoS-mZn6J0PoM_4g')}>
+            <img className="select-none"
+                draggable="false"
+                    src={Extend} 
+                    alt="Extensions" 
                     style={{width:'100%', height:'100%'}}/>
               </Button>
             </div>   
