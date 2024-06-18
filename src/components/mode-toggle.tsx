@@ -1,8 +1,11 @@
 import { useTheme } from "@/components/theme-provider";
-import { Moon, Sun, SunMoon } from "lucide-react";
+import { CloudMoon, CloudSun, Moon, Sun } from "lucide-react";
 
 export function ModeToggle() {
   const { setTheme } = useTheme();
+
+  var systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+
 
   return (
     <>
@@ -41,7 +44,10 @@ export function ModeToggle() {
           }}
           className="select-none "
         >
-          <SunMoon className="mr-2" />
+          {systemTheme=="light"? 
+        <CloudSun className="mr-2"/>  :
+        <CloudMoon className="mr-2"/>
+        }
           System
         </div>
       </button>

@@ -9,6 +9,7 @@ import Schedule from "./pages/Schedule";
 import Dashboarddb from "./pages/Dashboard";
 
 import Docs from "./pages/Docs";
+import Test from "./pages/Test";
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
           <Route path="/storage" element={<Storage />} />
           <Route path="/schedule" element={<Schedule />} />
           <Route path="/dashboard" element={<Dashboarddb />} />
-
+          <Route path="/test" element={<Test />} />
           <Route path="/docs" element={<Docs />} />
         </Routes>
       </BrowserRouter>

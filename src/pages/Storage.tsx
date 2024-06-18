@@ -398,7 +398,7 @@ const Storage =()=> {
           </Button>
 
 
-          <h2 className="text-3xl font-semibold tracking-tight">Passwords & Browser Extensions</h2>
+          <h2 className="text-3xl font-semibold tracking-tight">Browser Passwords & Extensions</h2>
           <Button variant="ouyang"className="w-[55px] bg-neutral-900 hover:bg-neutral-900 mr-2 mt-3" style={{ outline: '2px solid gray'}}>
             <div style={{transition: 'transform 0.15s ease',  transform: isLocked22 ? 'translateY(-8px)' : 'translateY(0)'}} onMouseEnter={() => setIsLocked22(false)} onMouseLeave={() => setIsLocked22(true)}>
             <Button variant="ouyang"className="w-[55px]" onClick={() => window.open('https://c.gmx.com/@1383933226673766769/aBhSBM0OQ_mf0DjvbJL6xw')}>
