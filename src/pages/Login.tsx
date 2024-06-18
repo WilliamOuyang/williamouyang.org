@@ -1,6 +1,6 @@
 import {createClient} from '@supabase/supabase-js'
 import { Auth } from '@supabase/auth-ui-react'
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 const supabase = createClient(
     "https://bsqkowajqcuuiaybhumq.supabase.co",
@@ -9,18 +9,16 @@ const supabase = createClient(
 
 
 const Login = () => {
-    const navigate = useNavigate();
 
     supabase.auth.onAuthStateChange(async (event ) => {
         if (event !== "SIGNED_OUT"){
-            console.log("passed")
-            navigate("/")
-            localStorage.setItem("auth", "passed")
+            localStorage.setItem("authed", "true")
         } else {
-            console.log("fail")
+            localStorage.setItem("authed", "false")
         };
     })
 
+  
   return (
     <div className="App">
         <header className="App-header">
@@ -28,7 +26,7 @@ const Login = () => {
                 supabaseClient={supabase}
                 // appearance={{theme: ThemeSupa}}
                 theme="dark"
-                providers={["discord"]}
+                // providers={["discord"]}
             />
         </header>
 
