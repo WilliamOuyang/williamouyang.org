@@ -11,7 +11,7 @@ import OO from "@/assets/OpenOffice.svg"
 import W from "@/assets/OOoWriter.svg"
 // import G from "@/assets/Gmail_icon_(2020).svg"
 import Sheets from "@/assets/Google_Sheets_2020_Logo.svg"
-import Drive from "@/assets/Google_Drive_icon_(2020).svg"
+// import Drive from "@/assets/Google_Drive_icon_(2020).svg"
 import GPT from "@/assets/ChatGPT-Logo.svg"
 import YT from "@/assets/youtube.svg"
 import FID from "@/assets/Fidelity_logo_web_white_20200110T15261004.svg"
@@ -26,6 +26,7 @@ import Passwords from "@/assets/passwords.svg"
 import Extend from "@/assets/extension.svg"
 import Vercel from "@/assets/Vercel_logo_black.svg"
 import Go from "@/assets/GoDaddy.svg"
+import Mega from "@/assets/01_mega_logo.svg"
 // import Schwab from "@/assets/Schwab.svg"
 
 import Navbar2 from "@/pagecomponents/shared/Navbar2"
@@ -57,6 +58,7 @@ const Storage =()=> {
     const [isLocked23, setIsLocked23] = useState(true);
     const [isLocked24, setIsLocked24] = useState(true);
     const [isLocked25, setIsLocked25] = useState(true);
+    const [isLocked26, setIsLocked26] = useState(true);
     // const [isLocked26, setIsLocked26] = useState(true);
 
     useEffect(() => {
@@ -370,7 +372,7 @@ const Storage =()=> {
 
           https://www.schwab.com/
 
-          <h2 className="text-3xl font-semibold tracking-tight">Database Management</h2>
+          <h2 className="text-3xl font-semibold tracking-tight">Database, File Storage, & Backups</h2>
      
 
         <Button variant="ouyang"className="w-[55px] bg-neutral-900 hover:bg-neutral-900 mr-2 mt-3" style={{ outline: '2px solid gray'}}>
@@ -386,7 +388,7 @@ const Storage =()=> {
           </Button>
 
 
-          <Button variant="ouyang"className="w-[55px] bg-neutral-900 hover:bg-neutral-900 mr-2 mt-3" style={{ outline: '2px solid gray'}}>
+          {/* <Button variant="ouyang"className="w-[55px] bg-neutral-900 hover:bg-neutral-900 mr-2 mt-3" style={{ outline: '2px solid gray'}}>
             <div style={{transition: 'transform 0.15s ease',  transform: isLocked11 ? 'translateY(-8px)' : 'translateY(0)'}} onMouseEnter={() => setIsLocked11(false)} onMouseLeave={() => setIsLocked11(true)}>
             <Button variant="ouyang"className="w-[55px]" onClick={() => window.open('https://drive.google.com/drive/my-drive')}>
             <img className="select-none"
@@ -396,10 +398,22 @@ const Storage =()=> {
                     style={{width:'100%', height:'100%'}}/>
               </Button>
             </div>   
+          </Button> */}
+
+          <Button variant="ouyang"className="w-[100px] bg-neutral-900 hover:bg-neutral-900 mr-2 mt-3" style={{ outline: '2px solid gray'}}>
+            <div style={{transition: 'transform 0.15s ease',  transform: isLocked26 ? 'translateY(-8px)' : 'translateY(0)'}} onMouseEnter={() => setIsLocked26(false)} onMouseLeave={() => setIsLocked26(true)}>
+            <Button variant="ouyang"className="w-[100px]" onClick={() => window.open('https://mega.nz/')}>
+            <img className="select-none"
+                draggable="false"
+                    src={Mega } 
+                    alt="Mega"    
+                    style={{width:'100%', height:'100%'}}/>
+              </Button>
+            </div>   
           </Button>
 
 
-          <h2 className="text-3xl font-semibold tracking-tight">Browser Passwords & Extensions</h2>
+          <h2 className="text-3xl font-semibold tracking-tight">Passwords & Browser Extensions</h2>
           <Button variant="ouyang"className="w-[55px] bg-neutral-900 hover:bg-neutral-900 mr-2 mt-3" style={{ outline: '2px solid gray'}}>
             <div style={{transition: 'transform 0.15s ease',  transform: isLocked22 ? 'translateY(-8px)' : 'translateY(0)'}} onMouseEnter={() => setIsLocked22(false)} onMouseLeave={() => setIsLocked22(true)}>
             <Button variant="ouyang"className="w-[55px]" onClick={() => window.open('https://c.gmx.com/@1383933226673766769/aBhSBM0OQ_mf0DjvbJL6xw')}>
