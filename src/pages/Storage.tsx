@@ -29,7 +29,7 @@ import Go from "@/assets/GoDaddy.svg"
 // import Schwab from "@/assets/Schwab.svg"
 
 import Navbar2 from "@/pagecomponents/shared/Navbar2"
-import Login from "./Login";
+
 
 const Storage =()=> {
     const [isLocked, setIsLocked] = useState(true);
@@ -425,7 +425,7 @@ const Storage =()=> {
           </Button>
          
 
-<Login/>
+
       </div>
     </>
 
