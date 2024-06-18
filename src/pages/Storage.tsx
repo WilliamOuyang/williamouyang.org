@@ -43,7 +43,7 @@ const Storage =()=> {
     const [isLocked8, setIsLocked8] = useState(true);
     // const [isLocked9, setIsLocked9] = useState(true);
     const [isLocked10, setIsLocked10] = useState(true);
-    const [isLocked11, setIsLocked11] = useState(true);
+    // const [isLocked11, setIsLocked11] = useState(true);
     const [isLocked12, setIsLocked12] = useState(true);
     const [isLocked13, setIsLocked13] = useState(true);
     const [isLocked14, setIsLocked14] = useState(true);
