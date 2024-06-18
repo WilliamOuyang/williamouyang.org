@@ -1,5 +1,5 @@
 import CurrentTask from '@/pagecomponents/homecomponents/CurrentTask';
-import LoginButton from '@/pagecomponents/shared/LoginButton';
+// import LoginButton from '@/pagecomponents/shared/LoginButton';
 
 import Navbar2 from '@/pagecomponents/shared/Navbar2'
 import { useEffect, useState } from 'react';
@@ -60,7 +60,7 @@ const currentDate = new Date();
 
   return (
     <div>
-      <LoginButton/>
+      {/* <LoginButton/> */}
       <Navbar2/>
 
       <div className="flex w-full h-screen " style={{display:'flex', zIndex: 0, justifyContent: 'center', alignItems:'center'}}>
