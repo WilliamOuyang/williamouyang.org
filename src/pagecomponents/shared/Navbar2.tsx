@@ -1,11 +1,8 @@
 "use client";
 import { useState } from "react";
 import {
-  // HoveredLink,
   Menu,
   MenuItem,
-  // ProductItem,
-  // Resourcex,
 } from "@/components/ui/navbar-menu";
 import { cn } from "@/utils/cn";
 import { ModeToggle } from "@/components/mode-toggle";
@@ -16,7 +13,6 @@ import {
   Database,
   File,
   FileText,
-  // FolderOpen,
   Home,
   Landmark,
 } from "lucide-react";
@@ -26,9 +22,6 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-// import { IconHome } from '@tabler/icons-react';
-
-// import Wallet from "@/assets/wallet.svg"
 
 function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
@@ -138,9 +131,7 @@ function Navbar({ className }: { className?: string }) {
               </div>
             </Link>
           </div>
-          {/* <div className="p-0" style={{minWidth:'800px', minHeight:'300px'}}>
-            y
-          </div> */}
+          
         </MenuItem>
         <MenuItem
           setActive={setActive}

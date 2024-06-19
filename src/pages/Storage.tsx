@@ -30,6 +30,7 @@ import Mega from "@/assets/01_mega_logo.svg"
 // import Schwab from "@/assets/Schwab.svg"
 import SUPABASE from "@/assets/supabase-light.svg"
 // import Cloud from "@/assets/cloud.svg"
+import firefox from "@/assets/Firefox_brand_logo_and_wordmark_(horizontal),_2019.svg"
 
 import Navbar2 from "@/pagecomponents/shared/Navbar2"
 
@@ -115,13 +116,14 @@ const Storage =()=> {
             </div>   
           </Button>
 
-          <Button variant="ouyang"className="w-[100px] mr-2 bg-neutral-900 hover:bg-neutral-900 mt-3" style={{ outline: '2px solid gray'}}>
-            <div style={{transition: 'transform 0.15s ease',  transform: isLocked13 ? 'translateY(-8px)' : 'translateY(0)'}} onMouseEnter={() => setIsLocked13(false)} onMouseLeave={() => setIsLocked13(true)}>
-            <Button variant="ouyang"className="w-[100px]" onClick={() => window.open('https://www.youtube.com/')}>
-                <img className="select-none"
+
+          <Button variant="ouyang"className="w-[100px] mr-2 mt-3" style={{background:'lightgray', outline: '2px solid blue'}}>
+          <div style={{transition: 'transform 0.15s ease',  transform: isLocked13 ? 'translateY(-8px)' : 'translateY(0)'}} onMouseEnter={() => setIsLocked13(false)} onMouseLeave={() => setIsLocked13(true)}>
+            <Button variant="ouyang"className="w-[100px]" style={{background: 'white'}} onClick={() => window.open('https://www.mozilla.org/en-US/firefox/new/')}>
+            <img className="select-none"
                 draggable="false"
-                    src={YT} 
-                    alt="ChatGPT" 
+                    src={firefox} 
+                    alt="Firefox" 
                     style={{width:'100%', height:'100%'}}/>
               </Button>
             </div>   
@@ -390,7 +392,7 @@ const Storage =()=> {
 
           https://www.schwab.com/
 
-          <h2 className="text-3xl font-semibold tracking-tight"> Cloud File Storage</h2>
+          <h2 className="text-3xl font-semibold tracking-tight"> Cloud Storage</h2>
      
 {/* 
         <Button variant="ouyang"className="w-[55px] bg-neutral-900 hover:bg-neutral-900 mr-2 mt-3" style={{ outline: '2px solid gray'}}>
