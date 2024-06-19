@@ -31,9 +31,11 @@ function Schedule2() {
   function getCurrentBlockIndex() {
     const now = new Date();
     const hours = now.getHours();
-    const currentBlock = hours * 2; // Each block is half an hour
+    const minutes = now.getMinutes();
+    const totalMinutes = hours * 60 + minutes;
+    const currentBlock = Math.floor(totalMinutes / 30)-1;
     return currentBlock;
-  }
+}
 
   return (
     <>

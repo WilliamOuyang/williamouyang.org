@@ -4,12 +4,20 @@ import Navbar2 from "@/pagecomponents/shared/Navbar2";
 import { Separator } from "@/components/ui/separator";
 import { SquarePen } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { lineSpinner } from 'ldrs'
+
+lineSpinner.register()
+
+
+
+
 const supabase = createClient(
   "https://bsqkowajqcuuiaybhumq.supabase.co",
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJzcWtvd2FqcWN1dWlheWJodW1xIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTg2ODY3MjYsImV4cCI6MjAzNDI2MjcyNn0.JQziKNIcTKGBK0jbF7GZj5a0PawnZY2vHX9-vILJcJw"
 );
 
 function CurrentTask() {
+  const [loading, setLoading] = useState(true)
   const [blocks, setBlocks] = useState([]);
 
   useEffect(() => {
@@ -23,6 +31,7 @@ function CurrentTask() {
         throw error;
       }
       setBlocks(data);
+      setLoading(false);
     } catch (error) {
       console.error("Error fetching blocks:", error.message);
     }
@@ -31,13 +40,15 @@ function CurrentTask() {
   function getCurrentBlockIndex() {
     const now = new Date();
     const hours = now.getHours();
-    const currentBlock = hours * 2; // Each block is half an hour
+    const minutes = now.getMinutes();
+    const totalMinutes = hours * 60 + minutes;
+    const currentBlock = Math.floor(totalMinutes / 30)-1;
     return currentBlock;
-  }
+}
 
   return (
     <>
-      <Navbar2 />
+
 
       <ul>
       {blocks.map((block, index) => {
@@ -53,6 +64,15 @@ function CurrentTask() {
           return null;
         })}
       </ul>
+
+      {loading ? 
+<l-line-spinner
+  size="40"
+  stroke="3"
+  speed="1" 
+  color="#ff0055" 
+></l-line-spinner>
+: ""}
     </>
   );
 }
