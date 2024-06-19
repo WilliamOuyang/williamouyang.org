@@ -28,6 +28,13 @@ function Schedule2() {
     }
   }
 
+  function getCurrentBlockIndex() {
+    const now = new Date();
+    const hours = now.getHours();
+    const currentBlock = hours * 2; // Each block is half an hour
+    return currentBlock;
+  }
+
   return (
     <>
       <Navbar2 />
@@ -41,31 +48,53 @@ function Schedule2() {
         }}
       >
         <div>
-          <div className="border border-foreground" style={{padding:'10px', marginBottom:'30px'}}>
-          <strong>
-            <h1 className="text-2xl">Supabase Organizer of William Ouyang</h1>
-          </strong>
-          <Button variant="edit" style={{display:'flex', alignItems:'center'}} onClick={()=>window.open("https://supabase.com/dashboard/project/bsqkowajqcuuiaybhumq/sql/8e82ee3d-13fe-475c-b270-111eea98ce40")}><SquarePen className="mr-2"/><p>Edit Schedule</p></Button>
-          
+          <div
+            className="border border-foreground"
+            style={{ padding: "10px", marginBottom: "30px" }}
+          >
+            <strong>
+              <h1 className="text-2xl">Supabase Organizer of William Ouyang</h1>
+            </strong>
+            <Button
+              variant="edit"
+              style={{ display: "flex", alignItems: "center" }}
+              onClick={() =>
+                window.open(
+                  "https://supabase.com/dashboard/project/bsqkowajqcuuiaybhumq/sql/8e82ee3d-13fe-475c-b270-111eea98ce40"
+                )
+              }
+            >
+              <SquarePen className="mr-2" />
+              <p>Edit Schedule</p>
+            </Button>
           </div>
 
           <strong>
             <h1 className="text-2xl">Tuesday, 18.06.2024</h1>
           </strong>
 
-        <Separator className="border border-foreground"/>
+          <Separator className="border border-foreground" />
 
           <ul>
-            {blocks.map((block) => (
-              <li key={block.id}>
-                <div style={{marginLeft:'23px'}}>
-                <p className="text-lg">
-                  <span className="text-lg font-bold">{block.time}</span>{" "}
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  {block.event}
-                </p>
-                </div>
-              </li>
+            {blocks.map((block, index) => (
+
+              <div
+                style={{
+                  backgroundColor:
+                    index === getCurrentBlockIndex() ? "#ff0055" : "transparent",
+                }}
+              >
+
+                <li key={block.id}>
+                  <div style={{ marginLeft: "23px" }}>
+                    <p className="text-lg">
+                      <span className="text-lg font-bold ">{block.time}</span>{" "}
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      {block.event}
+                    </p>
+                  </div>
+                </li>
+              </div>
             ))}
           </ul>
         </div>
