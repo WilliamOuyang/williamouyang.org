@@ -14,7 +14,7 @@ import Test from "./pages/Test";
 
 function App() {
   return (
-    <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
+    <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
       <BrowserRouter>
         <Routes>
           <Route index element={<Home />} />

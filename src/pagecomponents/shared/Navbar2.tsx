@@ -1,9 +1,6 @@
 "use client";
 import { useState } from "react";
-import {
-  Menu,
-  MenuItem,
-} from "@/components/ui/navbar-menu";
+import { Menu } from "@/components/ui/navbar-menu";
 import { cn } from "@/utils/cn";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Link } from "react-router-dom";
@@ -13,6 +10,7 @@ import {
   Database,
   File,
   FileText,
+  FolderOpen,
   Home,
   Landmark,
 } from "lucide-react";
@@ -22,6 +20,14 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
@@ -55,33 +61,37 @@ function Navbar({ className }: { className?: string }) {
           </TooltipProvider>
         </Link>
 
-        <MenuItem
+        {/* <MenuItem
           setActive={setActive}
           active={active}
           item=""
           toggle={false}
           resources={true}
         >
-          <div className="flex flex-col space-y-4 text-sm text-left">
-            <span style={{ display: "flex", justifyContent: "center" }}>
-              <u className="select-none">
-                <strong className="flex mb-0">&nbsp;RESOURCES&nbsp;</strong>
-              </u>
-            </span>
+        
+        </MenuItem> */}
 
-            <Link to="/schedule">
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                }}
-                className="select-none "
-              >
-                <CalendarDays className="mr-2" />
-                Schedule
-              </div>
-            </Link>
-            <Link to="/dashboard">
+      
+        <DropdownMenu>
+          <DropdownMenuTrigger><FolderOpen /></DropdownMenuTrigger>
+          <DropdownMenuContent>
+            <DropdownMenuLabel>Resources</DropdownMenuLabel>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem>
+              <Link to="/schedule">
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                  }}
+                  className="select-none "
+                >
+                  <CalendarDays className="mr-2" />
+                  Schedule
+                </div>
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem> <Link to="/dashboard">
               <div
                 style={{
                   display: "flex",
@@ -92,8 +102,8 @@ function Navbar({ className }: { className?: string }) {
                 <AreaChart className="mr-2" />
                 Dashboard
               </div>
-            </Link>
-            <Link to="/vault">
+            </Link></DropdownMenuItem>
+            <DropdownMenuItem><Link to="/vault">
               <div
                 style={{
                   display: "flex",
@@ -101,12 +111,11 @@ function Navbar({ className }: { className?: string }) {
                 }}
                 className="select-none "
               >
-                {/* <img src={Wallet}/> */}
                 <Landmark className="mr-2" />
                 Vault
               </div>
-            </Link>
-            <Link to="/storage">
+            </Link></DropdownMenuItem>
+            <DropdownMenuItem> <Link to="/storage">
               <div
                 style={{
                   display: "flex",
@@ -117,8 +126,8 @@ function Navbar({ className }: { className?: string }) {
                 <Database className="mr-2" />
                 Storage
               </div>
-            </Link>
-            <Link to="/whitepaper">
+            </Link></DropdownMenuItem>
+            <DropdownMenuItem>  <Link to="/whitepaper">
               <div
                 style={{
                   display: "flex",
@@ -129,21 +138,12 @@ function Navbar({ className }: { className?: string }) {
                 <File className="mr-2" />
                 White paper
               </div>
-            </Link>
-          </div>
-          
-        </MenuItem>
-        <MenuItem
-          setActive={setActive}
-          active={active}
-          item=" "
-          toggle={true}
-          resources={false}
-        >
-          <div className="flex flex-col text-sm p-0 space-y-4">
-            <ModeToggle />
-          </div>
-        </MenuItem>
+            </Link></DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
+
+        <ModeToggle />
+        
       </Menu>
     </div>
   );
