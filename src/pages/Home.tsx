@@ -65,7 +65,7 @@ const currentDate = new Date();
 
       <div className="flex w-full h-screen " style={{display:'flex', zIndex: 0, justifyContent: 'center', alignItems:'center'}}>
     
-    <div className="text-center">
+    <div className="text-center select-none">
 
       <span className="font-mono font-medium text-5xl sm:text-5xl md:text-6xl xl:text-7xl 2xl:text-8xl select-none text-center">{hourStr}:{minutesStr}:{secondsStr}</span> {amPmTag}
        
