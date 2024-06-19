@@ -2,7 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Contrast, Folder } from "lucide-react";
+import { Contrast, FolderOpen } from "lucide-react";
 
 const transition = {
   type: "spring",
@@ -34,7 +34,7 @@ export const MenuItem = ({
         transition={{ duration: 0.3 }}
         className="cursor-pointer text-black hover:opacity-[0.9] dark:text-white"
       >
-        {item} {toggle ? <Contrast /> : null} {resources ? <Folder /> : null}
+        {item} {toggle ? <Contrast /> : null} {resources ?<FolderOpen /> : null}
       </motion.p>
       {active !== null && (
         <motion.div

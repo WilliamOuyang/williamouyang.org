@@ -374,7 +374,7 @@ const Storage =()=> {
 
           https://www.schwab.com/
 
-          <h2 className="text-3xl font-semibold tracking-tight">Database, File Storage, & Backups</h2>
+          <h2 className="text-3xl font-semibold tracking-tight">Database & File Storage</h2>
      
 {/* 
         <Button variant="ouyang"className="w-[55px] bg-neutral-900 hover:bg-neutral-900 mr-2 mt-3" style={{ outline: '2px solid gray'}}>

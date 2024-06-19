@@ -56,7 +56,7 @@ function CurrentTask() {
             return (
               <li key={block.id}>
                 <p className="text-2xl font-bold">
-                  {block.time}:{block.event}
+                  {block.time}{' '}:{' '}{block.event}
                 </p>
               </li>
             );

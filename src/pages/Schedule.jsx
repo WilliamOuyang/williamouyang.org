@@ -2,14 +2,20 @@ import { useEffect, useState } from "react";
 import { createClient } from "@supabase/supabase-js";
 import Navbar2 from "@/pagecomponents/shared/Navbar2";
 import { Separator } from "@/components/ui/separator";
-import { SquarePen } from "lucide-react";
+import { Edit2Icon, SquarePen } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { IconEdit } from "@tabler/icons-react";
+import { lineSpinner } from "ldrs";
+
+lineSpinner.register();
+
 const supabase = createClient(
   "https://bsqkowajqcuuiaybhumq.supabase.co",
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJzcWtvd2FqcWN1dWlheWJodW1xIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTg2ODY3MjYsImV4cCI6MjAzNDI2MjcyNn0.JQziKNIcTKGBK0jbF7GZj5a0PawnZY2vHX9-vILJcJw"
 );
 
 function Schedule2() {
+  const [loading, setLoading] = useState(true);
   const [blocks, setBlocks] = useState([]);
 
   useEffect(() => {
@@ -23,6 +29,7 @@ function Schedule2() {
         throw error;
       }
       setBlocks(data);
+      setLoading(false);
     } catch (error) {
       console.error("Error fetching blocks:", error.message);
     }
@@ -33,9 +40,25 @@ function Schedule2() {
     const hours = now.getHours();
     const minutes = now.getMinutes();
     const totalMinutes = hours * 60 + minutes;
-    const currentBlock = Math.floor(totalMinutes / 30)-1;
+    const currentBlock = Math.floor(totalMinutes / 30) - 1;
     return currentBlock;
-}
+  }
+
+  //TIME SCRIPT BELOW
+  const [currentDate, setCurrentDate] = useState(new Date());
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentDate(new Date());
+    }, 1000);
+    return () => clearInterval(intervalId);
+  }, []);
+  const formattedDate = currentDate.toLocaleString("en-US", {
+    weekday: "long",
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+  });
+  //TIME SCRIPT ABOVE
 
   return (
     <>
@@ -49,6 +72,7 @@ function Schedule2() {
           justifyContent: "center",
         }}
       >
+    
         <div>
           <div
             className="border border-foreground"
@@ -66,27 +90,27 @@ function Schedule2() {
                 )
               }
             >
-              <SquarePen className="mr-2" />
+              <IconEdit stroke={2} className="mr-1" />
               <p>Edit Schedule</p>
             </Button>
           </div>
 
           <strong>
-            <h1 className="text-2xl">Tuesday, 18.06.2024</h1>
+            <h1 className="text-2xl">{formattedDate}</h1>
           </strong>
 
           <Separator className="border border-foreground" />
 
           <ul>
             {blocks.map((block, index) => (
-
               <div
                 style={{
                   backgroundColor:
-                    index === getCurrentBlockIndex() ? "#ff0055" : "transparent",
+                    index === getCurrentBlockIndex()
+                      ? "#ff0055"
+                      : "transparent",
                 }}
               >
-
                 <li key={block.id}>
                   <div style={{ marginLeft: "23px" }}>
                     <p className="text-lg">
@@ -96,11 +120,19 @@ function Schedule2() {
                     </p>
                   </div>
                 </li>
-              
               </div>
-
             ))}
           </ul>
+          {loading ? (
+          <l-line-spinner
+            size="40"
+            stroke="3"
+            speed="1"
+            color="#ff0055"
+          ></l-line-spinner>
+        ) : (
+          ""
+        )}
         </div>
       </div>
     </>

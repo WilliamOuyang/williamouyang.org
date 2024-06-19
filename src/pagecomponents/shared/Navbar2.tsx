@@ -16,6 +16,7 @@ import {
   Database,
   File,
   FileText,
+  // FolderOpen,
   Home,
   Landmark,
 } from "lucide-react";
@@ -25,6 +26,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+// import { IconHome } from '@tabler/icons-react';
 
 // import Wallet from "@/assets/wallet.svg"
 
