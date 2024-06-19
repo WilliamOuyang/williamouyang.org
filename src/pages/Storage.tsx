@@ -33,6 +33,7 @@ import SUPABASE from "@/assets/supabase-light.svg"
 import firefox from "@/assets/Firefox_brand_logo_and_wordmark_(horizontal),_2019.svg"
 
 import Navbar2 from "@/pagecomponents/shared/Navbar2"
+import { Braces, Mail } from "lucide-react";
 
 
 
@@ -73,7 +74,8 @@ const Storage =()=> {
     <>
 <Navbar2/>
 <div style={{padding:'20px', marginTop:'100px'}}>
-<h2 className="text-3xl font-semibold tracking-tight">E-mail</h2>   
+
+<div style={{display:'flex', alignItems:'center'}}><h2 className="text-3xl font-semibold tracking-tight">E-mail</h2><Mail className="ml-2"/></div>
 
 
 <Button variant="ouyang"className="w-[55px] mr-2 bg-neutral-900 hover:bg-neutral-900 mt-3" style={{backgroundColor:'#143170', outline: '2px solid gray'}}>
@@ -164,8 +166,8 @@ const Storage =()=> {
 
     
 
-        <h2 className="text-3xl font-semibold tracking-tight">Coding Development</h2>
-     
+        <div style={{display:'flex', alignItems:'center'}}><h2 className="text-3xl font-semibold tracking-tight">Coding Development</h2><Braces className="ml-2"/>
+     </div>
 
         <Button variant="ouyang"className="w-[55px] bg-neutral-900 hover:bg-neutral-900 mr-2 mt-3" style={{ outline: '2px solid gray'}}>
             <div style={{transition: 'transform 0.15s ease',  transform: isLocked2 ? 'translateY(-8px)' : 'translateY(0)'}} onMouseEnter={() => setIsLocked2(false)} onMouseLeave={() => setIsLocked2(true)}>
