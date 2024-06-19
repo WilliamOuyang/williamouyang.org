@@ -45,7 +45,7 @@ function Schedule2() {
           <strong>
             <h1 className="text-2xl">Supabase Organizer of William Ouyang</h1>
           </strong>
-          <Button variant="edit" style={{display:'flex', alignItems:'center'}} onClick={()=>window.open("https://supabase.com/dashboard/project/bsqkowajqcuuiaybhumq/editor/29281")}><SquarePen className="mr-2"/><p>Edit Schedule</p></Button>
+          <Button variant="edit" style={{display:'flex', alignItems:'center'}} onClick={()=>window.open("https://supabase.com/dashboard/project/bsqkowajqcuuiaybhumq/sql/8e82ee3d-13fe-475c-b270-111eea98ce40")}><SquarePen className="mr-2"/><p>Edit Schedule</p></Button>
           
           </div>
 
