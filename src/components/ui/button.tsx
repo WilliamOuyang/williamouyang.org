@@ -9,6 +9,7 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
+        edit: "hover:bg-accent hover:text-underline",
         ouyang: "bg-neutral-700 text-primary-foreground",
         login: "bg-card text-foreground border drop-shadow-md",
 
