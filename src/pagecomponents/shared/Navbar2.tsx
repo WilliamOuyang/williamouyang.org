@@ -1,7 +1,3 @@
-// "use client";
-// import { useState } from "react";
-// import { Menu } from "@/components/ui/navbar-menu";
-// import { cn } from "@/utils/cn";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Link } from "react-router-dom";
 import {
@@ -32,17 +28,8 @@ import {
 function Navbar() {
 
   return (
-    <div
-      className="fixed top-2 inset-x-0 max-w-2xl mx-auto z-50"
-    >
-      
-      <nav
-      // onMouseLeave={() => setActive(null)} // resets the state
-      className="relative rounded-full border bg-card shadow-input flex justify-center space-x-4 px-8 py-6 drop-shadow-md"
-      style={{display:'flex', alignItems:'center'}}
-   >
-   
-    
+    <div className="fixed top-2 inset-x-0 max-w-2xl mx-auto z-50">
+      <nav className="relative rounded-full border bg-card shadow-input flex justify-center space-x-4 px-8 py-6 drop-shadow-md">
         <Link to="/">
           <TooltipProvider>
             <Tooltip>
@@ -55,6 +42,7 @@ function Navbar() {
             </Tooltip>
           </TooltipProvider>
         </Link>
+
         <Link to="/docs">
           <TooltipProvider>
             <Tooltip>
@@ -68,7 +56,7 @@ function Navbar() {
           </TooltipProvider>
         </Link>
 
-      
+      <Link to={""}>
         <DropdownMenu>
           <DropdownMenuTrigger><FolderOpen /></DropdownMenuTrigger>
           <DropdownMenuContent>
@@ -138,11 +126,12 @@ function Navbar() {
             </Link></DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
+        </Link>
 
+        <Link to={""}>
         <ModeToggle />
+        </Link>
         </nav>
-        
-      
     </div>
   );
 }
