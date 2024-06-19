@@ -1,7 +1,7 @@
-"use client";
-import { useState } from "react";
-import { Menu } from "@/components/ui/navbar-menu";
-import { cn } from "@/utils/cn";
+// "use client";
+// import { useState } from "react";
+// import { Menu } from "@/components/ui/navbar-menu";
+// import { cn } from "@/utils/cn";
 import { ModeToggle } from "@/components/mode-toggle";
 import { Link } from "react-router-dom";
 import {
@@ -29,14 +29,21 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-function Navbar({ className }: { className?: string }) {
-  const [active, setActive] = useState<string | null>(null);
+function Navbar() {
+
   return (
     <div
-      className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
+      className="fixed top-2 inset-x-0 max-w-2xl mx-auto z-50"
     >
-      <Menu setActive={setActive}>
-        <Link to="/" onMouseEnter={() => setActive(null)}>
+      
+      <nav
+      // onMouseLeave={() => setActive(null)} // resets the state
+      className="relative rounded-full border bg-card shadow-input flex justify-center space-x-4 px-8 py-6 drop-shadow-md"
+      style={{display:'flex', alignItems:'center'}}
+   >
+   
+    
+        <Link to="/">
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger>
@@ -48,7 +55,7 @@ function Navbar({ className }: { className?: string }) {
             </Tooltip>
           </TooltipProvider>
         </Link>
-        <Link to="/docs" onMouseEnter={() => setActive(null)}>
+        <Link to="/docs">
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger>
@@ -60,16 +67,6 @@ function Navbar({ className }: { className?: string }) {
             </Tooltip>
           </TooltipProvider>
         </Link>
-
-        {/* <MenuItem
-          setActive={setActive}
-          active={active}
-          item=""
-          toggle={false}
-          resources={true}
-        >
-        
-        </MenuItem> */}
 
       
         <DropdownMenu>
@@ -143,8 +140,9 @@ function Navbar({ className }: { className?: string }) {
         </DropdownMenu>
 
         <ModeToggle />
+        </nav>
         
-      </Menu>
+      
     </div>
   );
 }
@@ -152,7 +150,7 @@ function Navbar({ className }: { className?: string }) {
 const Navbar2 = () => {
   return (
     <div className="relative w-full flex items-center justify-center">
-      <Navbar className="top-2" />
+      <Navbar/>
     </div>
   );
 };
