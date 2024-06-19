@@ -29,6 +29,7 @@ import Go from "@/assets/GoDaddy.svg"
 import Mega from "@/assets/01_mega_logo.svg"
 // import Schwab from "@/assets/Schwab.svg"
 import SUPABASE from "@/assets/supabase-light.svg"
+// import Cloud from "@/assets/cloud.svg"
 
 import Navbar2 from "@/pagecomponents/shared/Navbar2"
 
@@ -71,7 +72,7 @@ const Storage =()=> {
     <>
 <Navbar2/>
 <div style={{padding:'20px', marginTop:'100px'}}>
-<h2 className="text-3xl font-semibold tracking-tight">E-Mail</h2>   
+<h2 className="text-3xl font-semibold tracking-tight">E-mail</h2>   
 
 
 <Button variant="ouyang"className="w-[55px] mr-2 bg-neutral-900 hover:bg-neutral-900 mt-3" style={{backgroundColor:'#143170', outline: '2px solid gray'}}>
@@ -201,6 +202,18 @@ const Storage =()=> {
             </div>   
           </Button>
 
+          <Button variant="ouyang"className="w-[100px] bg-neutral-900 hover:bg-neutral-900 mr-2 mt-3" style={{ outline: '2px solid gray'}}>
+            <div style={{transition: 'transform 0.15s ease',  transform: isLocked11 ? 'translateY(-8px)' : 'translateY(0)'}} onMouseEnter={() => setIsLocked11(false)} onMouseLeave={() => setIsLocked11(true)}>
+            <Button variant="ouyang"className="w-[100px]" onClick={() => window.open('https://supabase.com/dashboard/projects')}>
+                <img className="select-none"
+                draggable="false"
+                    src={SUPABASE} 
+                    alt="Supabase" 
+                    style={{width:'100%', height:'100%'}}/>
+              </Button>
+            </div>   
+          </Button>
+          
 
 
           <Button variant="ouyang"className="w-[55px] bg-neutral-900 hover:bg-neutral-900 mr-2 mt-3" style={{ outline: '2px solid gray'}}>
@@ -214,6 +227,9 @@ const Storage =()=> {
               </Button>
             </div>   
           </Button>
+
+    
+          
 
           <Button variant="ouyang"className="w-[100px] bg-neutral-900 hover:bg-neutral-900 mr-2 mt-3" style={{ outline: '2px solid gray'}}>
             <div style={{transition: 'transform 0.15s ease',  transform: isLocked24 ? 'translateY(-8px)' : 'translateY(0)'}} onMouseEnter={() => setIsLocked24(false)} onMouseLeave={() => setIsLocked24(true)}>
@@ -239,7 +255,7 @@ const Storage =()=> {
             </div>   
           </Button>
           
-          
+    
        
           <h2 className="text-3xl font-semibold tracking-tight">Financial Platforms</h2>
 
@@ -374,7 +390,7 @@ const Storage =()=> {
 
           https://www.schwab.com/
 
-          <h2 className="text-3xl font-semibold tracking-tight">Database & File Storage</h2>
+          <h2 className="text-3xl font-semibold tracking-tight"> Cloud File Storage</h2>
      
 {/* 
         <Button variant="ouyang"className="w-[55px] bg-neutral-900 hover:bg-neutral-900 mr-2 mt-3" style={{ outline: '2px solid gray'}}>
@@ -389,17 +405,7 @@ const Storage =()=> {
             </div>   
           </Button> */}
 
-          <Button variant="ouyang"className="w-[100px] mr-2 mt-3" style={{background:'lightgray', outline: '2px solid gray'}}>
-            <div style={{transition: 'transform 0.15s ease',  transform: isLocked11 ? 'translateY(-8px)' : 'translateY(0)'}} onMouseEnter={() => setIsLocked11(false)} onMouseLeave={() => setIsLocked11(true)}>
-            <Button variant="ouyang"className="w-[100px]" style={{background: 'white'}} onClick={() => window.open('https://supabase.com/dashboard/projects')}>
-                <img className="select-none"
-                draggable="false"
-                    src={SUPABASE} 
-                    alt="Supabase" 
-                    style={{width:'100%', height:'100%'}}/>
-              </Button>
-            </div>   
-          </Button>
+      
 
 
 
