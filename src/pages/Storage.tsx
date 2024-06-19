@@ -28,8 +28,10 @@ import Vercel from "@/assets/Vercel_logo_black.svg"
 import Go from "@/assets/GoDaddy.svg"
 import Mega from "@/assets/01_mega_logo.svg"
 // import Schwab from "@/assets/Schwab.svg"
+import SUPABASE from "@/assets/supabase-light.svg"
 
 import Navbar2 from "@/pagecomponents/shared/Navbar2"
+
 
 
 const Storage =()=> {
@@ -43,7 +45,7 @@ const Storage =()=> {
     const [isLocked8, setIsLocked8] = useState(true);
     // const [isLocked9, setIsLocked9] = useState(true);
     const [isLocked10, setIsLocked10] = useState(true);
-    // const [isLocked11, setIsLocked11] = useState(true);
+    const [isLocked11, setIsLocked11] = useState(true);
     const [isLocked12, setIsLocked12] = useState(true);
     const [isLocked13, setIsLocked13] = useState(true);
     const [isLocked14, setIsLocked14] = useState(true);
@@ -387,6 +389,19 @@ const Storage =()=> {
             </div>   
           </Button>
 
+          <Button variant="ouyang"className="w-[100px] mr-2 mt-3" style={{background:'lightgray', outline: '2px solid gray'}}>
+            <div style={{transition: 'transform 0.15s ease',  transform: isLocked11 ? 'translateY(-8px)' : 'translateY(0)'}} onMouseEnter={() => setIsLocked11(false)} onMouseLeave={() => setIsLocked11(true)}>
+            <Button variant="ouyang"className="w-[100px]" style={{background: 'white'}} onClick={() => window.open('https://supabase.com/dashboard/projects')}>
+                <img className="select-none"
+                draggable="false"
+                    src={SUPABASE} 
+                    alt="Supabase" 
+                    style={{width:'100%', height:'100%'}}/>
+              </Button>
+            </div>   
+          </Button>
+
+
 
           {/* <Button variant="ouyang"className="w-[55px] bg-neutral-900 hover:bg-neutral-900 mr-2 mt-3" style={{ outline: '2px solid gray'}}>
             <div style={{transition: 'transform 0.15s ease',  transform: isLocked11 ? 'translateY(-8px)' : 'translateY(0)'}} onMouseEnter={() => setIsLocked11(false)} onMouseLeave={() => setIsLocked11(true)}>
@@ -411,6 +426,8 @@ const Storage =()=> {
               </Button>
             </div>   
           </Button>
+
+      
 
 
           <h2 className="text-3xl font-semibold tracking-tight">Passwords & Browser Extensions</h2>

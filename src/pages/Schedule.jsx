@@ -94,7 +94,9 @@ function Schedule2() {
                     </p>
                   </div>
                 </li>
+              
               </div>
+
             ))}
           </ul>
         </div>
