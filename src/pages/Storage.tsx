@@ -30,8 +30,9 @@ import Grammarly from "@/assets/Grammarly_logo.svg";
 import Invid from "@/assets/Invidious-logo.svg";
 import Positas from "@/assets/positas.jpg"
 import PassGen from "@/assets/PassGen.png"
-import Navbar from "@/pagecomponents/shared/Navbar";
-import { Braces, Mail } from "lucide-react";
+// import MAIL from "@/assets/mail.svg"
+import Navbar from "@/pagecomponents/shared/Navbar";  
+import { Braces } from "lucide-react";
 
 const Storage = () => {
   const [isLocked, setIsLocked] = useState(true);
@@ -75,8 +76,16 @@ const Storage = () => {
       <div style={{ padding: "20px", marginTop: "100px" }}>
         <div style={{ display: "flex", alignItems: "center" }}>
           <h2 className="text-3xl font-semibold tracking-tight">E-mail</h2>
-          <Mail className="ml-2" />
-        </div>
+             
+           
+
+  </div>  
+       
+    
+
+      
+
+
         <Button
           variant="ouyang"
           className="w-[55px] mr-2 bg-neutral-900 hover:bg-neutral-900 mt-3"

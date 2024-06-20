@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { ring2 } from 'ldrs'
+import { lineSpinner } from 'ldrs'
 import Navbar from "@/pagecomponents/shared/Navbar";
 
 
-ring2.register()
+lineSpinner.register()
 
 interface UserData {
   SYMBOL: string,
@@ -48,21 +48,19 @@ const Dashboarddb = () => {
       
       {loading && (
         <div style={{ display: 'flex', justifyContent: 'center', paddingTop: '100px', paddingBottom: '100px' }}>
-          <l-ring-2
-            size="40"
-            stroke="5"
-            stroke-length="0.25"
-            bg-opacity="0.1"
-            speed="0.8"
-            color="red"
-          ></l-ring-2>
+         <l-line-spinner
+  size="40"
+  stroke="3"
+  speed="1" 
+  color="#ff0055" 
+></l-line-spinner>
         </div>
       )}
         
 
-           
    
   <h2 className="text-1x1 2xl:text-2xl font-light ">
+        {loading==false && (
 <table className="table-fixed w-full">
 
 <thead>
@@ -114,6 +112,7 @@ const Dashboarddb = () => {
 
 </tbody>
 </table>
+        )}
 </h2>
 
 
