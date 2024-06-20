@@ -1,16 +1,14 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import { ThemeProvider } from "@/components/theme-provider";
 import "../globals.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { ThemeProvider } from "@/components/theme-provider";
+import Home from "./pages/Home";
 import Whitepaper from "./pages/Whitepaper";
 import Vault from "./pages/Vault";
 import Storage from "./pages/Storage";
 import Schedule from "./pages/Schedule";
 import Dashboarddb from "./pages/Dashboard";
-
 import Docs from "./pages/Docs";
 import Test from "./pages/Test";
-
 
 function App() {
   return (
@@ -26,7 +24,6 @@ function App() {
           <Route path="/dashboard" element={<Dashboarddb />} />
           <Route path="/test" element={<Test />} />
           <Route path="/docs" element={<Docs />} />
-          
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

@@ -6,7 +6,6 @@ import { Edit2Icon, SquarePen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { IconEdit } from "@tabler/icons-react";
 import { lineSpinner } from "ldrs";
-
 lineSpinner.register();
 
 const supabase = createClient(
@@ -17,11 +16,9 @@ const supabase = createClient(
 function Schedule() {
   const [loading, setLoading] = useState(true);
   const [blocks, setBlocks] = useState([]);
-
   useEffect(() => {
     fetchBlocks();
   }, []);
-
   async function fetchBlocks() {
     try {
       const { data, error } = await supabase.from("block").select("*");
@@ -34,7 +31,6 @@ function Schedule() {
       console.error("Error fetching blocks:", error.message);
     }
   }
-
   function getCurrentBlockIndex() {
     const now = new Date();
     const hours = now.getHours();
@@ -43,7 +39,6 @@ function Schedule() {
     const currentBlock = Math.floor(totalMinutes / 30) - 1;
     return currentBlock;
   }
-
   //TIME SCRIPT BELOW
   const [currentDate, setCurrentDate] = useState(new Date());
   useEffect(() => {
@@ -72,7 +67,6 @@ function Schedule() {
           justifyContent: "center",
         }}
       >
-    
         <div>
           <div
             className="border border-foreground"
@@ -81,7 +75,6 @@ function Schedule() {
             <strong>
               <h1 className="text-2xl">Supabase Organizer of William Ouyang</h1>
             </strong>
-
             <button
               style={{ display: "flex", alignItems: "center", justifyContent:'center', }}
               onClick={() =>
@@ -94,13 +87,10 @@ function Schedule() {
               <p>Edit Schedule</p>
             </button>
           </div>
-
           <strong>
             <h1 className="text-2xl">{formattedDate}</h1>
           </strong>
-
           <Separator className="border border-foreground" />
-
           <ul>
             {blocks.map((block, index) => (
               <div

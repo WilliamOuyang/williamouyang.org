@@ -6,7 +6,6 @@ import { Edit2Icon, SquarePen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { IconEdit } from "@tabler/icons-react";
 import { lineSpinner } from "ldrs";
-
 lineSpinner.register();
 
 const supabase = createClient(
@@ -17,11 +16,9 @@ const supabase = createClient(
 function Schedule2() {
   const [loading, setLoading] = useState(true);
   const [blocks, setBlocks] = useState([]);
-
   useEffect(() => {
     fetchBlocks();
   }, []);
-
   async function fetchBlocks() {
     try {
       const { data, error } = await supabase.from("vault").select("*");
@@ -48,11 +45,9 @@ function Schedule2() {
         }}
       >
         <div>
-        <h1 className="text-2xl" style={{marginBottom:'10px'}}>
-          VAULT - A record of personal financial assets
+          <h1 className="text-2xl" style={{ marginBottom: "10px" }}>
+            VAULT - A record of personal financial assets
           </h1>
-          
-         
           <div className="overflow-x-auto">
             <table className="min-w-full table-auto">
               <thead>
@@ -123,19 +118,18 @@ function Schedule2() {
             ""
           )}
           <button
-              style={{ display: "flex", alignItems: "center" }}
-              onClick={() =>
-                window.open(
-                  "https://supabase.com/dashboard/project/bsqkowajqcuuiaybhumq/sql/a6391c22-cae2-4df9-b57d-475eedab3d72"
-                )
-              }
-            >
-              <IconEdit stroke={2} className="mr-1" />
-              <p>Edit Vault</p>
-            </button>
+            style={{ display: "flex", alignItems: "center" }}
+            onClick={() =>
+              window.open(
+                "https://supabase.com/dashboard/project/bsqkowajqcuuiaybhumq/sql/a6391c22-cae2-4df9-b57d-475eedab3d72"
+              )
+            }
+          >
+            <IconEdit stroke={2} className="mr-1" />
+            <p>Edit Vault</p>
+          </button>
         </div>
       </div>
-      
     </>
   );
 }

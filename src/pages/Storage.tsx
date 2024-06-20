@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-
 import { useEffect, useState } from "react";
 import Trezor from "@/assets/trezor.svg";
 import VisualStudio from "@/assets/vscode.svg";
@@ -31,8 +30,6 @@ import Grammarly from "@/assets/Grammarly_logo.svg";
 import Invid from "@/assets/Invidious-logo.svg";
 import Positas from "@/assets/positas.jpg"
 import PassGen from "@/assets/PassGen.png"
-
-
 import Navbar from "@/pagecomponents/shared/Navbar";
 import { Braces, Mail } from "lucide-react";
 
@@ -109,17 +106,7 @@ const Storage = () => {
             </Button>
           </div>
         </Button>
-        {/* <Button variant="ouyang"className="w-[55px] mr-2 bg-neutral-900 hover:bg-neutral-900 mt-3" style={{ outline: '2px solid gray'}}>
-            <div style={{transition: 'transform 0.15s ease',  transform: isLocked9 ? 'translateY(-8px)' : 'translateY(0)'}} onMouseEnter={() => setIsLocked9(false)} onMouseLeave={() => setIsLocked9(true)}>
-            <Button variant="ouyang"className="w-[55px]" onClick={() => window.open('https://mail.google.com/mail/u/0/#inbox')}>
-                <img className="select-none"
-                draggable="false"
-                    src={G} 
-                    alt="Gmail" 
-                    style={{width:'100%', height:'100%'}}/>
-              </Button>
-            </div>   
-          </Button> */}
+    
         <h2 className="text-3xl font-semibold tracking-tight">
           Browser Download & Extensions
         </h2>
@@ -155,7 +142,6 @@ const Storage = () => {
             </Button>
           </div>
         </Button>
-
 
         <Button variant="ouyang"className="w-[55px] bg-neutral-900 hover:bg-neutral-900 mr-2 mt-3" style={{ outline: '2px solid gray'}}>
             <div style={{transition: 'transform 0.15s ease',  transform: isLocked23 ? 'translateY(-8px)' : 'translateY(0)'}} onMouseEnter={() => setIsLocked23(false)} onMouseLeave={() => setIsLocked23(true)}>
@@ -228,10 +214,6 @@ const Storage = () => {
           </div>
         </Button>
 
-
-
-
-
         <Button
           variant="ouyang"
           className="w-[100px] mr-2 mt-3"
@@ -291,10 +273,6 @@ const Storage = () => {
           </div>
         </Button>
 
-
-
-
-
         <Button
           variant="ouyang"
           className="w-[55px] mr-2 mt-3"
@@ -324,12 +302,6 @@ const Storage = () => {
             </Button>
           </div>
         </Button>
-
-
-
-
-
-
 
 
         <Button
@@ -660,11 +632,6 @@ const Storage = () => {
           </div>
         </Button>
 
-
-     
-
-        
-       
         <h2 className="text-3xl font-semibold tracking-tight">
           Financial Platforms
         </h2>
@@ -965,29 +932,7 @@ const Storage = () => {
           {" "}
           Cloud Storage
         </h2>
-        {/* 
-        <Button variant="ouyang"className="w-[55px] bg-neutral-900 hover:bg-neutral-900 mr-2 mt-3" style={{ outline: '2px solid gray'}}>
-            <div style={{transition: 'transform 0.15s ease',  transform: isLocked10 ? 'translateY(-8px)' : 'translateY(0)'}} onMouseEnter={() => setIsLocked10(false)} onMouseLeave={() => setIsLocked10(true)}>
-            <Button variant="ouyang"className="w-[55px]" onClick={() => window.open('https://docs.google.com/spreadsheets/u/0/?ec=asw-sheets-hero-goto')}>
-            <img className="select-none"
-                draggable="false"
-                    src={Sheets} 
-                    alt="Google Sheets" 
-                    style={{width:'100%', height:'100%'}}/>
-              </Button>
-            </div>   
-          </Button> */}
-        {/* <Button variant="ouyang"className="w-[55px] bg-neutral-900 hover:bg-neutral-900 mr-2 mt-3" style={{ outline: '2px solid gray'}}>
-            <div style={{transition: 'transform 0.15s ease',  transform: isLocked11 ? 'translateY(-8px)' : 'translateY(0)'}} onMouseEnter={() => setIsLocked11(false)} onMouseLeave={() => setIsLocked11(true)}>
-            <Button variant="ouyang"className="w-[55px]" onClick={() => window.open('https://drive.google.com/drive/my-drive')}>
-            <img className="select-none"
-                draggable="false"
-                    src={Drive} 
-                    alt="Google Drive" 
-                    style={{width:'100%', height:'100%'}}/>
-              </Button>
-            </div>   
-          </Button> */}
+        
         <Button
           variant="ouyang"
           className="w-[100px] bg-neutral-900 hover:bg-neutral-900 mr-2 mt-3"
