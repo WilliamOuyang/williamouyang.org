@@ -33,6 +33,7 @@ import SUPABASE from "@/assets/supabase-light.svg";
 import firefox from "@/assets/Firefox3.svg"
 import Rumble from "@/assets/Rumble_logo.svg";
 import Grammarly from "@/assets/Grammarly_logo.svg";
+import Invid from "@/assets/Invidious-logo.svg";
 
 import Navbar2 from "@/pagecomponents/shared/Navbar2";
 import { Braces, Mail } from "lucide-react";
@@ -64,7 +65,7 @@ const Storage = () => {
   const [isLocked24, setIsLocked24] = useState(true);
   const [isLocked25, setIsLocked25] = useState(true);
   const [isLocked26, setIsLocked26] = useState(true);
-  // const [isLocked26, setIsLocked26] = useState(true);
+  const [isLocked27, setIsLocked27] = useState(true);
 
   useEffect(() => {
     document.title = "Storage | williamouyang.org";
@@ -196,6 +197,40 @@ const Storage = () => {
             </Button>
           </div>
         </Button>
+
+        <Button
+          variant="ouyang"
+          className="w-[55px] mr-2 bg-neutral-900 hover:bg-neutral-900 mt-3"
+          style={{ outline: "2px solid gray" }}
+        >
+          <div
+            style={{
+              transition: "transform 0.15s ease",
+              transform: isLocked27 ? "translateY(-8px)" : "translateY(0)",
+            }}
+            onMouseEnter={() => setIsLocked27(false)}
+            onMouseLeave={() => setIsLocked27(true)}
+          >
+            <Button
+              variant="ouyang"
+              className="w-[55px]"
+              onClick={() => window.open("https://inv.tux.pizza/")}
+            >
+              <img
+                className="select-none"
+                draggable="false"
+                src={Invid}
+                alt="ChatGPT"
+                style={{ width: "100%", height: "100%" }}
+              />
+            </Button>
+          </div>
+        </Button>
+
+
+
+
+
         <Button
           variant="ouyang"
           className="w-[100px] mr-2 mt-3"
