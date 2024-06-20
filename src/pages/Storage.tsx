@@ -9,11 +9,7 @@ import BOA from "@/assets/BofA-logo.svg";
 import Strike from "@/assets/strike.svg";
 import OO from "@/assets/OpenOffice.svg";
 import W from "@/assets/OOoWriter.svg";
-// import G from "@/assets/Gmail_icon_(2020).svg"
-// import Sheets from "@/assets/Google_Sheets_2020_Logo.svg"
-// import Drive from "@/assets/Google_Drive_icon_(2020).svg"
 import GPT from "@/assets/ChatGPT-Logo.svg";
-// import YT from "@/assets/youtube.svg"
 import FID from "@/assets/Fidelity_logo_web_white_20200110T15261004.svg";
 import FUND from "@/assets/logo-hz-color.svg";
 import Github from "@/assets/Github_logo_svg.svg";
@@ -27,15 +23,17 @@ import Extend from "@/assets/extension.svg";
 import Vercel from "@/assets/Vercel_logo_black.svg";
 import Go from "@/assets/GoDaddy.svg";
 import Mega from "@/assets/01_mega_logo.svg";
-// import Schwab from "@/assets/Schwab.svg"
+import Schwab from "@/assets/Charles_Schwab_Corporation_logo.svg"
 import SUPABASE from "@/assets/supabase-light.svg";
-// import Cloud from "@/assets/cloud.svg"
 import firefox from "@/assets/Firefox3.svg"
 import Rumble from "@/assets/Rumble_logo.svg";
 import Grammarly from "@/assets/Grammarly_logo.svg";
 import Invid from "@/assets/Invidious-logo.svg";
+import Positas from "@/assets/positas.jpg"
+import PassGen from "@/assets/PassGen.png"
 
-import Navbar2 from "@/pagecomponents/shared/Navbar2";
+
+import Navbar from "@/pagecomponents/shared/Navbar";
 import { Braces, Mail } from "lucide-react";
 
 const Storage = () => {
@@ -66,6 +64,9 @@ const Storage = () => {
   const [isLocked25, setIsLocked25] = useState(true);
   const [isLocked26, setIsLocked26] = useState(true);
   const [isLocked27, setIsLocked27] = useState(true);
+  const [isLocked28, setIsLocked28] = useState(true);
+  const [isLocked29, setIsLocked29] = useState(true);
+  const [isLocked30, setIsLocked30] = useState(true);
 
   useEffect(() => {
     document.title = "Storage | williamouyang.org";
@@ -73,7 +74,7 @@ const Storage = () => {
 
   return (
     <>
-      <Navbar2 />
+      <Navbar />
       <div style={{ padding: "20px", marginTop: "100px" }}>
         <div style={{ display: "flex", alignItems: "center" }}>
           <h2 className="text-3xl font-semibold tracking-tight">E-mail</h2>
@@ -289,7 +290,80 @@ const Storage = () => {
             </Button>
           </div>
         </Button>
-        https://passwordsgenerator.net/
+
+
+
+
+
+        <Button
+          variant="ouyang"
+          className="w-[55px] mr-2 mt-3"
+          style={{ background: "lightgray", outline: "2px solid gray" }}
+        >
+          <div
+            style={{
+              transition: "transform 0.15s ease",
+              transform: isLocked28 ? "translateY(-8px)" : "translateY(0)",
+            }}
+            onMouseEnter={() => setIsLocked28(false)}
+            onMouseLeave={() => setIsLocked28(true)}
+          >
+            <Button
+              variant="ouyang"
+              className="w-[55px]"
+              style={{ background: "white" }}
+              onClick={() => window.open("https://banssprod.clpccd.cc.ca.us/ssbprod/twbkwbis.P_WWWLogin")}
+            >
+              <img
+                className="select-none"
+                draggable="false"
+                src={Positas}
+                alt="Class-Web"
+                style={{ width: "100%", height: "100%" }}
+              />
+            </Button>
+          </div>
+        </Button>
+
+
+
+
+
+
+
+
+        <Button
+          variant="ouyang"
+          className="w-[55px] mr-2 mt-3"
+          style={{ background: "lightgray", outline: "2px solid gray" }}
+        >
+          <div
+            style={{
+              transition: "transform 0.15s ease",
+              transform: isLocked30 ? "translateY(-8px)" : "translateY(0)",
+            }}
+            onMouseEnter={() => setIsLocked30(false)}
+            onMouseLeave={() => setIsLocked30(true)}
+          >
+            <Button
+              variant="ouyang"
+              className="w-[55px]"
+              style={{ background: "white" }}
+              onClick={() => window.open("https://passwordsgenerator.net/")}
+            >
+              <img
+                className="select-none"
+                draggable="false"
+                src={PassGen}
+                alt="Class-Web"
+                style={{ width: "100%", height: "100%" }}
+              />
+            </Button>
+          </div>
+        </Button>
+
+
+  
         <h2 className="text-3xl font-semibold tracking-tight">
           OpenOffice 2.4.0
         </h2>
@@ -875,9 +949,9 @@ const Storage = () => {
             </Button>
           </div>
         </Button>
-        {/* <Button variant="ouyang"className="w-[100px] mr-2 mt-3 bg-neutral-900 hover:bg-neutral-900" style={{ outline: '2px solid gray'}}>
-            <div style={{transition: 'transform 0.15s ease',  transform: isLocked26 ? 'translateY(-8px)' : 'translateY(0)'}} onMouseEnter={() => setIsLocked26(false)} onMouseLeave={() => setIsLocked26(true)}>
-           <Button variant="ouyang"className="w-[100px]" onClick={() => window.open('https://www.schwab.com/')}>
+        <Button variant="ouyang"className="w-[55px] mr-2 mt-3 bg-neutral-900 hover:bg-neutral-900" style={{ outline: '2px solid gray'}}>
+            <div style={{transition: 'transform 0.15s ease',  transform: isLocked29 ? 'translateY(-8px)' : 'translateY(0)'}} onMouseEnter={() => setIsLocked29(false)} onMouseLeave={() => setIsLocked29(true)}>
+           <Button variant="ouyang"className="w-[55px]" onClick={() => window.open('https://www.schwab.com/')}>
             <img className="select-none"
                 draggable="false"
                     src={Schwab} 
@@ -885,8 +959,8 @@ const Storage = () => {
                     style={{width:'100%', height:'100%'}}/>
               </Button>
             </div>   
-          </Button> */}
-        https://www.schwab.com/
+          </Button>
+
         <h2 className="text-3xl font-semibold tracking-tight">
           {" "}
           Cloud Storage

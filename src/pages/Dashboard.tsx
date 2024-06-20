@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { ring2 } from 'ldrs'
-import Navbar2 from "@/pagecomponents/shared/Navbar2";
+import Navbar from "@/pagecomponents/shared/Navbar";
 
 
 ring2.register()
@@ -44,7 +44,7 @@ const Dashboarddb = () => {
 
   return (
     <div style={{marginTop:'100px', padding:'10px'}}>
-        <Navbar2/>
+        <Navbar/>
       
       {loading && (
         <div style={{ display: 'flex', justifyContent: 'center', paddingTop: '100px', paddingBottom: '100px' }}>

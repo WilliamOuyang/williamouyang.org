@@ -1,15 +1,11 @@
 import { useEffect, useState } from "react";
 import { createClient } from "@supabase/supabase-js";
-import Navbar2 from "@/pagecomponents/shared/Navbar2";
 import { Separator } from "@/components/ui/separator";
 import { SquarePen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { lineSpinner } from 'ldrs'
 
 lineSpinner.register()
-
-
-
 
 const supabase = createClient(
   "https://bsqkowajqcuuiaybhumq.supabase.co",
@@ -48,8 +44,6 @@ function CurrentTask() {
 
   return (
     <>
-
-
       <ul>
       {blocks.map((block, index) => {
           if (index === getCurrentBlockIndex()) {
@@ -64,7 +58,6 @@ function CurrentTask() {
           return null;
         })}
       </ul>
-
       {loading ? 
 <l-line-spinner
   size="40"

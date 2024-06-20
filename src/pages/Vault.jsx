@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { createClient } from "@supabase/supabase-js";
-import Navbar2 from "@/pagecomponents/shared/Navbar2";
+import Navbar from "@/pagecomponents/shared/Navbar";
 import { Separator } from "@/components/ui/separator";
 import { Edit2Icon, SquarePen } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -37,7 +37,7 @@ function Schedule2() {
 
   return (
     <>
-      <Navbar2 />
+      <Navbar />
       <div
         style={{
           display: "flex",
