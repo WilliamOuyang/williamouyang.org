@@ -30,7 +30,7 @@ import Mega from "@/assets/01_mega_logo.svg";
 // import Schwab from "@/assets/Schwab.svg"
 import SUPABASE from "@/assets/supabase-light.svg";
 // import Cloud from "@/assets/cloud.svg"
-import firefox from "@/assets/Firefox_brand_logo_and_wordmark_(horizontal),_2019.svg";
+import firefox from "@/assets/Firefox3.svg"
 import Rumble from "@/assets/Rumble_logo.svg";
 import Grammarly from "@/assets/Grammarly_logo.svg";
 
@@ -124,7 +124,7 @@ const Storage = () => {
 
         <Button
           variant="ouyang"
-          className="w-[100px] mr-2 mt-3"
+          className="w-[180px] mr-2 mt-3"
           style={{ background: "lightgray", outline: "2px solid gray" }}
         >
           <div
@@ -137,7 +137,7 @@ const Storage = () => {
           >
             <Button
               variant="ouyang"
-              className="w-[100px]"
+              className="w-[180px]"
               style={{ background: "white" }}
               onClick={() =>
                 window.open("https://www.mozilla.org/en-US/firefox/new/")
