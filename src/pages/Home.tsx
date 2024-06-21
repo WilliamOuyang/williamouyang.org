@@ -49,12 +49,6 @@ const Home = () => {
   //timer
   useEffect(() => {
     document.title = "Home | williamouyang.org";
-
-    const metaDescriptionTag = document.querySelector('meta[name="description"]');
-    if (metaDescriptionTag) {
-      metaDescriptionTag.setAttribute('content', 'My website documentation');
-    }
-    
   }, []);
 
   return (

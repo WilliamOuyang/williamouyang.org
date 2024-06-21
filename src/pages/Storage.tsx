@@ -31,6 +31,7 @@ import Invid from "@/assets/Invidious-logo.svg";
 import Positas from "@/assets/positas.jpg"
 import PassGen from "@/assets/PassGen.png"
 // import MAIL from "@/assets/mail.svg"
+import Canvas from "@/assets/Canvas.ico"
 import Navbar from "@/pagecomponents/shared/Navbar";  
 import { Braces } from "lucide-react";
 
@@ -65,6 +66,7 @@ const Storage = () => {
   const [isLocked28, setIsLocked28] = useState(true);
   const [isLocked29, setIsLocked29] = useState(true);
   const [isLocked30, setIsLocked30] = useState(true);
+  const [isLocked31, setIsLocked31] = useState(true);
 
   useEffect(() => {
     document.title = "Storage | williamouyang.org";
@@ -294,6 +296,36 @@ const Storage = () => {
             }}
             onMouseEnter={() => setIsLocked28(false)}
             onMouseLeave={() => setIsLocked28(true)}
+          >
+            <Button
+              variant="ouyang"
+              className="w-[55px]"
+              style={{ background: "white" }}
+              onClick={() => window.open("https://clpccd.instructure.com/login/canvas")}
+            >
+              <img
+                className="select-none"
+                draggable="false"
+                src={Canvas}
+                alt="Canvas"
+                style={{ width: "100%", height: "100%" }}
+              />
+            </Button>
+          </div>
+        </Button>
+
+        <Button
+          variant="ouyang"
+          className="w-[55px] mr-2 mt-3"
+          style={{ background: "lightgray", outline: "2px solid gray" }}
+        >
+          <div
+            style={{
+              transition: "transform 0.15s ease",
+              transform: isLocked31 ? "translateY(-8px)" : "translateY(0)",
+            }}
+            onMouseEnter={() => setIsLocked31(false)}
+            onMouseLeave={() => setIsLocked31(true)}
           >
             <Button
               variant="ouyang"

@@ -4,12 +4,6 @@ import { useEffect } from "react";
 const Docs = () => {
   useEffect(() => {
     document.title = "Docs | williamouyang.org";
-
-    const metaDescriptionTag = document.querySelector('meta[name="description"]');
-    if (metaDescriptionTag) {
-      metaDescriptionTag.setAttribute('content', 'My website documentation');
-    }
-    
   }, []);
 
   return (
