@@ -13,7 +13,7 @@ const supabase = createClient(
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJzcWtvd2FqcWN1dWlheWJodW1xIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTg2ODY3MjYsImV4cCI6MjAzNDI2MjcyNn0.JQziKNIcTKGBK0jbF7GZj5a0PawnZY2vHX9-vILJcJw"
 );
 
-function Schedule2() {
+function Vault() {
   const [loading, setLoading] = useState(true);
   const [blocks, setBlocks] = useState([]);
   useEffect(() => {
@@ -134,4 +134,4 @@ function Schedule2() {
   );
 }
 
-export default Schedule2;
+export default Vault;

@@ -12,33 +12,29 @@ import { useState } from "react";
 
 export function ModeToggle() {
 
-  const [themex, setThemex] = useState<string>("default")
+  const [themex, setThemex] = useState<string>("light")
   const { setTheme } = useTheme();
 
   var systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  // setThemex(systemTheme === "light");
 
   return (
     <>
     <DropdownMenu>
   <DropdownMenuTrigger>
-    {
-      themex==="default" ? 
-      <Sun className="mr-2" />:
-      <Moon className="mr-2" />
-    }
- 
-
+    { themex==="light" && <Sun className="mr-2" />   }
+    { themex==="dark" && <Moon className="mr-2" /> }
+    {themex === "system" && (systemTheme === "light" ? 
+    <CloudSun className="mr-2" /> : 
+    <CloudMoon className="mr-2" />)}
   </DropdownMenuTrigger>
   <DropdownMenuContent>
     <DropdownMenuLabel>Theme</DropdownMenuLabel>
     <DropdownMenuSeparator />
-    <DropdownMenuItem> <button className="text-left" onClick={() => {setTheme("light"); setThemex("default")}}>
+    <DropdownMenuItem> <button className="text-left" onClick={() => {setTheme("light"); setThemex("light")}}>
         <div
           style={{
             display: "flex",
-            alignItems: "center",
-            
+            alignItems: "center", 
           }}
           className="select-none "
         >
@@ -60,7 +56,7 @@ export function ModeToggle() {
         </div>
       </button></DropdownMenuItem>
     <DropdownMenuItem>
-      <button className="text-left" onClick={() => setTheme("system")}>
+      <button className="text-left" onClick={() => {setTheme("system") ; setThemex("system")}}>
         <div
           style={{
             display: "flex",
@@ -69,10 +65,8 @@ export function ModeToggle() {
           }}
           className="select-none "
         >
-          {systemTheme=="light"? 
-        <CloudSun className="mr-2"/>  :
-        <CloudMoon className="mr-2"/>
-        }
+          {systemTheme=="light" && <CloudSun className="mr-2"/> }
+          {systemTheme=="dark" && <CloudMoon className="mr-2"/>}
           System
         </div>
       </button></DropdownMenuItem>

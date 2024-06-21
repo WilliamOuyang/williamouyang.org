@@ -1,7 +1,6 @@
 import { ModeToggle } from "@/components/mode-toggle";
 import { Link } from "react-router-dom";
 import {
-  AreaChart,
   CalendarDays,
   Database,
   File,
@@ -76,18 +75,6 @@ function Navbar() {
                 </div>
               </Link>
             </DropdownMenuItem>
-            <DropdownMenuItem> <Link to="/dashboard">
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                }}
-                className="select-none "
-              >
-                <AreaChart className="mr-2" />
-                Dashboard
-              </div>
-            </Link></DropdownMenuItem>
             <DropdownMenuItem><Link to="/vault">
               <div
                 style={{

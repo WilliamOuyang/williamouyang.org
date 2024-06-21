@@ -6,7 +6,6 @@ import Whitepaper from "./pages/Whitepaper";
 import Vault from "./pages/Vault";
 import Storage from "./pages/Storage";
 import Schedule from "./pages/Schedule";
-import Dashboarddb from "./pages/Dashboard";
 import Docs from "./pages/Docs";
 import Test from "./pages/Test";
 
@@ -21,7 +20,6 @@ function App() {
           <Route path="/vault" element={<Vault />} />
           <Route path="/storage" element={<Storage />} />
           <Route path="/schedule" element={<Schedule />} />
-          <Route path="/dashboard" element={<Dashboarddb />} />
           <Route path="/test" element={<Test />} />
           <Route path="/docs" element={<Docs />} />
         </Routes>

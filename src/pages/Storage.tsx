@@ -30,7 +30,6 @@ import Grammarly from "@/assets/Grammarly_logo.svg";
 import Invid from "@/assets/Invidious-logo.svg";
 import Positas from "@/assets/positas.jpg"
 import PassGen from "@/assets/PassGen.png"
-// import MAIL from "@/assets/mail.svg"
 import Canvas from "@/assets/Canvas.ico"
 import Navbar from "@/pagecomponents/shared/Navbar";  
 import { Braces } from "lucide-react";
@@ -83,11 +82,6 @@ const Storage = () => {
 
   </div>  
        
-    
-
-      
-
-
         <Button
           variant="ouyang"
           className="w-[55px] mr-2 bg-neutral-900 hover:bg-neutral-900 mt-3"

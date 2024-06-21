@@ -1,4 +1,3 @@
-// import '@/pagecomponents/whitepapercomponents/whitepaper.css'
 const indentp: string = "\u00A0"; 
 
 const whitepaperText = () => {
@@ -13,7 +12,6 @@ const whitepaperText = () => {
           fontStyle: "normal",
           WebkitFontSmoothing: "antialiased",
         }}
-        // className="select-none"
       >
         <h1
           style={{
