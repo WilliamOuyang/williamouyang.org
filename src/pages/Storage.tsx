@@ -32,7 +32,6 @@ import Positas from "@/assets/positas.jpg"
 import PassGen from "@/assets/PassGen.png"
 import Canvas from "@/assets/Canvas.ico"
 import Navbar from "@/pagecomponents/shared/Navbar";  
-import { Braces } from "lucide-react";
 
 const Storage = () => {
   const [isLocked, setIsLocked] = useState(true);
@@ -440,12 +439,10 @@ const Storage = () => {
             </Button>
           </div>
         </Button>
-        <div style={{ display: "flex", alignItems: "center" }}>
+       
           <h2 className="text-3xl font-semibold tracking-tight">
             Coding Development
           </h2>
-          <Braces className="ml-2" />
-        </div>
 
         <Button
           variant="ouyang"

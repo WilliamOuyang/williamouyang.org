@@ -14,6 +14,11 @@ const supabase = createClient(
 );
 
 function Schedule() {
+
+  useEffect(() => {
+    document.title = "Schedule | williamouyang.org";
+  }, []);
+
   const [loading, setLoading] = useState(true);
   const [blocks, setBlocks] = useState([]);
   useEffect(() => {

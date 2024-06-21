@@ -14,6 +14,11 @@ const supabase = createClient(
 );
 
 function Vault() {
+
+  useEffect(() => {
+    document.title = "Storage | williamouyang.org";
+  }, []);
+  
   const [loading, setLoading] = useState(true);
   const [blocks, setBlocks] = useState([]);
   useEffect(() => {
