@@ -20,7 +20,7 @@ const Docs = () => {
         </div>
 
         <div style={{ maxWidth: "50px" }}>
-          <svg id="nav_cloud_new" fill="white" stroke="black" viewBox="0 0 32 32">
+        <svg fill="white" stroke="black" viewBox="-1 0 34 32">
             <path
               d="M6 12.5a7.5 7.5 0 0 1 14.301-3.165 4.5 4.5 0 0 1 7.303 5.013A6.503 6.503 0 0 1 32 20.5c0 3.422-2.64 6.5-6 6.5H7a7 7 0 0 1-.979-13.932A7.608 7.608 0 0 1 6 12.5z"
               fill-rule="evenodd"
@@ -28,7 +28,8 @@ const Docs = () => {
           </svg>
         </div>
 
-        
+     
+
       </div>
     </div>
   );
