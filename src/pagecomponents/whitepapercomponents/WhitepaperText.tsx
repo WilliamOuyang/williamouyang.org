@@ -1,8 +1,5 @@
 // import '@/pagecomponents/whitepapercomponents/whitepaper.css'
-const indentp: string = "\u00A0";
-const indent1: string = "\u00A0\u00A0\u00A0\u00A0";
-const indent2: string =
-  "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0";
+const indentp: string = "\u00A0"; 
 
 const whitepaperText = () => {
   return (
@@ -308,104 +305,120 @@ const whitepaperText = () => {
           <br />
           <strong>Morning Period:</strong>
           <br />
-          {indent1}1. Wake up <span style={{ float: "right" }}>[06:00 AM]</span>
+          <div className="ml-5">
+          1. Wake up <span style={{ float: "right" }}>[06:00 AM]</span>
           <br />
-          {indent1}2. Make Bed{" "}
+          2. Make Bed{" "}
           <span style={{ float: "right" }}>[06:00 AM – 06:05 AM]</span>
           <br />
-          {indent1}3. Initial Hygiene{" "}
+          3. Initial Hygiene{" "}
           <span style={{ float: "right" }}>[06:05 AM – 06:15 AM]</span>
           <br />
-          {indent2}A. Use Restroom <span style={{ float: "right" }}>( V )</span>
+          </div>
+          <div className="ml-10">
+          A. Use Restroom <span style={{ float: "right" }}>( V )</span>
           <br />
-          {indent2}B. Wash Hands <span style={{ float: "right" }}>( V )</span>
+          B. Wash Hands <span style={{ float: "right" }}>( V )</span>
           <br />
-          {indent2}C. Floss <span style={{ float: "right" }}>( V )</span>
+          C. Floss <span style={{ float: "right" }}>( V )</span>
           <br />
-          {indent2}D. Brush Teeth <span style={{ float: "right" }}>( V )</span>
+          D. Brush Teeth <span style={{ float: "right" }}>( V )</span>
           <br />
-          {indent2}E. Rinse Face <span style={{ float: "right" }}>( V )</span>
+          E. Rinse Face <span style={{ float: "right" }}>( V )</span>
           <br />
-          {indent1}4. Callisthenics{" "}
+          </div>
+          <div className="ml-5">
+          4. Callisthenics{" "}
           <span style={{ float: "right" }}>[06:15 AM – 06:50 AM]</span>
           <br />
-          {indent1}5. Stretching{" "}
+          5. Stretching{" "}
           <span style={{ float: "right" }}>[06:50 AM – 07:10 AM]</span>
           <br />
-          {indent1}6. Morning Hygiene{" "}
+          6. Morning Hygiene{" "}
           <span style={{ float: "right" }}>[07:10 AM – 07:40 AM]</span>
           <br />
-          {indent1}7. Read Tenet{" "}
+          7. Read Tenet{" "}
           <span style={{ float: "right" }}>[07:40 AM – 07:50 AM]</span>
           <br />
-          {indent1}8. Scheduling{" "}
+          8. Scheduling{" "}
           <span style={{ float: "right" }}>[07:50 AM – 08:00 AM]</span>
           <br />
+          </div>
           <br />
           <strong>Enforced Events:</strong>
           <br />
-          {indent1}1. Piano Practice{" "}
+          <div className="ml-5">
+          1. Piano Practice{" "}
           <span style={{ float: "right" }}>[60 Minutes]</span>
           <br />
-          {indent1}2. Guitar Practice{" "}
+          2. Guitar Practice{" "}
           <span style={{ float: "right" }}>[60 Minutes]</span>
           <br />
-          {indent1}3. Chores <span style={{ float: "right" }}>{`> |`}</span>
+          3. Chores <span style={{ float: "right" }}>{`> |`}</span>
           <br />
-          {indent1}4. Cleaning{" "}
+          4. Cleaning{" "}
           <span style={{ float: "right" }}>(Saturday Only) {`> |`}</span>
           <br />
-          {indent1}5. Check Email{" "}
+          5. Check E-mail{" "}
           <span style={{ float: "right" }}>{`> |`}</span>
           <br />
-          {indent1}6. Review Dashboard
+          6. Review Dashboard
           <span style={{ float: "right" }}>
             {" "}
             <em>ref</em> {`> |`}
           </span>
           <br />
-          {indent1}7. Cook & Eat{" "}
+          7. Cook & Eat{" "}
           <span style={{ float: "right" }}>{`> | `}</span>
           <br />
-          {indent1}8. Wash Dishes{" "}
+          8. Wash Dishes{" "}
           <span style={{ float: "right" }}>{`> |`}</span>
           <br />
+          </div>
           <br />
           <strong>Work Period:</strong>
           <br />
-          {indent1}1. Event{" "}
+          <div className="ml-5">
+          1. Event{" "}
           <span style={{ float: "right" }}>
             <em>fill</em>
           </span>
           <br />
+          </div>
           <br />
           <strong>Night Period:</strong>
           <br />
-          {indent1}1. Update Vault
+          <div className="ml-5">
+          1. Update Vault & Storage
           <span style={{ float: "right" }}>
             <em>ref</em> [09:30 PM – 09:35 PM]
           </span>
           <br />
-          {indent1}2. Read Tenet
+          2. Read Tenet
           <span style={{ float: "right" }}>
             <em>ref</em> [09:35 PM – 09:40 PM]
           </span>
           <br />
-          {indent1}3. Night Hygiene{" "}
+          3. Night Hygiene{" "}
           <span style={{ float: "right" }}>[09:35 PM – 10:00 PM]</span>
           <br />
-          {indent2}A. Use Restroom <span style={{ float: "right" }}>( V )</span>
+          </div>
+          <div className="ml-10">
+          A. Use Restroom <span style={{ float: "right" }}>( V )</span>
           <br />
-          {indent2}B. Wash Hands<span style={{ float: "right" }}>( V )</span>
+          B. Wash Hands<span style={{ float: "right" }}>( V )</span>
           <br />
-          {indent2}C. Floss<span style={{ float: "right" }}>( V )</span>
+          C. Floss<span style={{ float: "right" }}>( V )</span>
           <br />
-          {indent2}D. Brush Teeth<span style={{ float: "right" }}>( V )</span>
+          D. Brush Teeth<span style={{ float: "right" }}>( V )</span>
           <br />
-          {indent2}E. Shower<span style={{ float: "right" }}>( V )</span>
+          E. Shower<span style={{ float: "right" }}>( V )</span>
           <br />
-          {indent1}4. Sleep <span style={{ float: "right" }}>[10:00 PM]</span>
+          </div>
+          <div className="ml-5">
+          4. Sleep <span style={{ float: "right" }}>[10:00 PM]</span>
           <br />
+          </div>
         </p>
 
         <h2
@@ -790,38 +803,43 @@ const whitepaperText = () => {
         >
           <strong>Callisthenics</strong>
           <br />
-          {indent1}1. Push up – Until Failure
+          <div className="ml-5">
+          1. Push up – Until Failure
           <br />
-          {indent1}2. Pull ups – Until Failure
+          2. Pull ups – Until Failure
           <br />
-          {indent1}3. 100 Leg Raises
+          3. 100 Leg Raises
           <br />
-          {indent1}4. 100 Squats
+          4. 100 Squats
           <br />
-          {indent1}5. 1 Mile Run
+          5. 1 Mile Run
           <br />
-          {indent1}6. 100 Calf Raises
+          6. 100 Calf Raises
           <br />
+          </div>
           <br />
+
           <strong>Stretching</strong>
           <br />
-          {indent1}1. Hamstring Stretching
+          <div className="ml-5">
+          1. Hamstring Stretching
           <br />
-          {indent1}2. Quad Stretch
+          2. Quad Stretch
           <br />
-          {indent1}3. Calf Stretch
+          3. Calf Stretch
           <br />
-          {indent1}4. Triceps Stretch
+          4. Triceps Stretch
           <br />
-          {indent1}5. Shoulder Stretch
+          5. Shoulder Stretch
           <br />
-          {indent1}6. Butterfly Stretch
+          6. Butterfly Stretch
           <br />
-          {indent1}7. Chest Stretch
+          7. Chest Stretch
           <br />
-          {indent1}8. Seated forward bend
+          8. Seated forward bend
           <br />
-          {indent1}9. Pigeon Stretc
+          9. Pigeon Stretch
+          </div>
         </p>
 
         <h2
@@ -910,59 +928,65 @@ const whitepaperText = () => {
         >
           Monday - Tuesday
           <br />
-          {indent1}1. Dry and Put Away Washed Dishes <br />
-          {indent1}(Daily - Morning or Afternoon)
+          <div className="ml-5">
+          1. Dry and Put Away Washed Dishes <br />
+          (Daily - Morning or Afternoon)
           <br />
-          {indent1}2. Vacuum House Floor <br />
-          {indent1}(Daily – Afternoon)
+          2. Vacuum House Floor <br />
+          (Daily – Afternoon)
           <br />
-          {indent1}3. Wash Dishes and Wipe Table <br />
-          {indent1}(Daily – Night)
+          3. Wash Dishes and Wipe Table <br />
+          (Daily – Night)
           <br />
+          </div>
           <br />
           Wednesday
           <br />
-          {indent1}1. Dry and Put Away Washed Dishes <br />
-          {indent1}(Daily - Morning or Afternoon)
+          <div className="ml-5">
+          1. Dry and Put Away Washed Dishes <br />
+          (Daily - Morning or Afternoon)
           <br />
-          {indent1}2. Clean Kitchen Stove top <br />
-          {indent1}(Wednesday)
+          2. Clean Kitchen Stove top <br />
+          (Wednesday)
           <br />
-          {indent1}3. Vacuum House Floor <br />
-          {indent1}(Daily – Afternoon)
+          3. Vacuum House Floor <br />
+          (Daily – Afternoon)
           <br />
-          {indent1}4. Yard Work{indent1}(Wednesday)
+          4. Yard Work (Wednesday)
           <br />
-          {indent1}5. Wash Dishes and Wipe Table <br />
-          {indent1}(Daily – Night)
+          5. Wash Dishes and Wipe Table <br />
+          (Daily – Night)
           <br />
+          </div>
           <br />
           Thursday - Friday
           <br />
-          {indent1}1. Dry and Put Away Washed Dishes <br />
-          {indent1}(Daily - Morning or Afternoon)
+          <div className="ml-5">
+          1. Dry and Put Away Washed Dishes <br />
+          (Daily - Morning or Afternoon)
           <br />
-          {indent1}2. Vacuum House Floor <br />
-          {indent1}(Daily – Afternoon)
+          2. Vacuum House Floor <br />
+          (Daily – Afternoon)
           <br />
-          {indent1}3. Take Out and Pull in Trash <br />
-          {indent1}(Thursday and Friday Respectively)
+          3. Take Out and Pull in Trash <br />
+          (Thursday and Friday Respectively)
           <br />
-          {indent1}4. Wash Dishes and Wipe Table <br />
-          {indent1}(Daily – Night)
+          4. Wash Dishes and Wipe Table <br />
+          (Daily – Night)
           <br />
+          </div>
           <br />
           Saturday - Sunday
           <br />
-          {indent1}1. Dry and Put Away Washed Dishes <br />
-          {indent1}(Daily - Morning or Afternoon)
+          <div className="ml-5">
+          1. Dry and Put Away Washed Dishes <br />
+          (Daily - Morning or Afternoon)<br />
+          2. Vacuum House Floor <br />
+          (Daily – Afternoon)<br />
+          3. Wash Dishes and Wipe Table <br />
+          (Daily – Night)
           <br />
-          {indent1}2. Vacuum House Floor <br />
-          {indent1}(Daily – Afternoon)
-          <br />
-          {indent1}3. Wash Dishes and Wipe Table <br />
-          {indent1}(Daily – Night)
-          <br />
+          </div>
         </p>
 
         <h2
@@ -984,49 +1008,55 @@ const whitepaperText = () => {
         >
           Bedroom
           <br />
-          {indent1}1. Wash Bed sheets
+          <div className="ml-5">
+          1. Wash Bed sheets
           <br />
-          {indent1}2. Clean Furniture
+          2. Clean Furniture
           <br />
-          {indent1}3. Vacuum Floor and Closet
+          3. Vacuum Floor and Closet
           <br />
-          {indent1}4. Clean Doorknobs and Light Switches
+          4. Clean Doorknobs and Light Switches
           <br />
+          </div>
           <br />
           Work Areas
           <br />
-          {indent1}1. Clean Computers, Charging Lines, and Headphones <br />
-          {indent1}2. Organize and Clean Desk
-          <br />
-          {indent1}3. Vacuum Floor
-          <br />
+          <div className="ml-5">
+          1. Clean Computers, Charging Lines, and Headphones <br />
+          2. Organize and Clean Desk<br />
+          3. Vacuum Floor<br />
+          </div>
           <br />
           Bathroom
           <br />
-          {indent1}1. Wash Towels, Loofah, and Mats
+          <div className="ml-5">  
+          1. Wash Towels, Loofah, and Mats
           <br />
-          {indent1}2. Clean Clothes Hanger (for Towels)
+          2. Clean Clothes Hanger (for Towels)
           <br />
-          {indent1}3. Clean Mirror
+          3. Clean Mirror
           <br />
-          {indent1}4. Clean Doorknobs and Light Switches
+          4. Clean Doorknobs and Light Switches
           <br />
-          {indent1}5. Clean Sink
+          5. Clean Sink
           <br />
-          {indent1}6. Wipe Floor
+          6. Wipe Floor
           <br />
-          {indent1}7. Clean Toilet
+          7. Clean Toilet
           <br />
-          {indent1}8. Clean Bathtub
+          8. Clean Bathtub
           <br />
+          </div>
           <br />
           Personal
           <br />
-          {indent1}1. Make Bed (Arrange Bed Sheets)
+          <div className="ml-5">
+          1. Make Bed (Arrange Bed Sheets)
           <br />
-          {indent1}2. Fold and Store Laundry
+          2. Fold and Store Laundry
           <br />
-          {indent1}3. Hang Up Towels
+          3. Hang Up Towels
+          </div>
         </p>
 
         <h2
@@ -1111,8 +1141,11 @@ const whitepaperText = () => {
           }}
         >
           Update Vault ( Process ) <br />
-          {indent1}1. Add on newly acquired assets. <br />
-          {indent1}2. Removed disposed assets
+          <div className="ml-5">
+          1. Add on newly acquired assets. <br />
+          (Only long term assets, short-term trading assets are an exception)<br/>
+          2. Removed disposed assets
+          </div>
           <br />
           <br/>
           Vault Table
@@ -1180,72 +1213,42 @@ const whitepaperText = () => {
               >
 
           Review Dashboard ( Process ) <br/>
-          
-          {indent1}1. Update assets to reflect contents of
-          Vault <br/>
-          {indent1}2. Review asset performance ( Most assets are held in the
-          Dashboard Table, review financial platforms for inapplicable assets,
-          consult Vault for asset list.) <br/>
-          {indent1}3. Read news on assets ( Search Engine)<br/>
-          {indent1}4. Review stock charting & analysis ( Fundamental or Technical – if
-          applicable ) 
+          <div className="ml-5">
+          1. Review asset performance ( Review financial platforms for assets. Consult Vault for
+            asset list & Storage for financial platforms.)<br/>
+          2. Read news on assets ( Search engine & platforms )<br/>
+          3. Review stock analysis – if applicable
           <br/>
-          {indent1}5. Buy and sell assets accordingly (Owned or New assets) 
+          4. Buy and sell assets accordingly
           <br/><br/>
-
-          Dashboard Table 
-          <table>
-            <thead>
-              <tr>
-                <td className="border border-foreground">Symbol</td>
-                <td className="border border-foreground">Last Price </td>
-                <td className="border border-foreground">Today's Gain/Loss</td>
-                <td className="border border-foreground">Total Gain/ Loss </td>
-                <td className="border border-foreground">Current Value</td>
-                <td className="border border-foreground">Quantity</td>
-                <td className="border border-foreground"> Cost Basis</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td className="border border-foreground">&nbsp;</td>
-                <td className="border border-foreground">&nbsp;</td>
-                <td className="border border-foreground">&nbsp;</td>
-                <td className="border border-foreground">&nbsp;</td>
-                <td className="border border-foreground">&nbsp;</td>
-                <td className="border border-foreground">&nbsp;</td>
-                <td className="border border-foreground">&nbsp;</td>
-              </tr>
-              <tr>
-                <td className="border border-foreground">&nbsp;</td>
-                <td className="border border-foreground">&nbsp;</td>
-                <td className="border border-foreground">&nbsp;</td>
-                <td className="border border-foreground">&nbsp;</td>
-                <td className="border border-foreground">&nbsp;</td>
-                <td className="border border-foreground">&nbsp;</td>
-                <td className="border border-foreground">&nbsp;</td>
-              </tr>
-              <tr>
-                <td className="border border-foreground">&nbsp;</td>
-                <td className="border border-foreground">&nbsp;</td>
-                <td className="border border-foreground">&nbsp;</td>
-                <td className="border border-foreground">&nbsp;</td>
-                <td className="border border-foreground">&nbsp;</td>
-                <td className="border border-foreground">&nbsp;</td>
-                <td className="border border-foreground">&nbsp;</td>
-              </tr>
-              <tr>
-                <td className="border border-foreground">&nbsp;</td>
-                <td className="border border-foreground">&nbsp;</td>
-                <td className="border border-foreground">&nbsp;</td>
-                <td className="border border-foreground">&nbsp;</td>
-                <td className="border border-foreground">&nbsp;</td>
-                <td className="border border-foreground">&nbsp;</td>
-                <td className="border border-foreground">&nbsp;</td>
-              </tr>
-            </tbody>
-          </table>
+          </div>
         </p>
+
+
+        <h2
+          style={{
+            fontSize: "1.5em",
+            fontWeight: "400",
+            margin: "50px 0 10px",
+          }}
+        >
+          <strong>13. Storage</strong>
+        </h2>
+
+        <p
+          style={{
+            margin: "0 0 30 0",
+            fontSize: "18px",
+            textAlign: "justify",
+          }}
+        >
+        Update Storage (Process)<br/>
+        <div className="ml-5">
+        1. Add downloads, redirects, & applications to storage page in any applicable manner
+        (Hyperlinks, buttons, plain text, etc.).
+        </div>
+</p>
+
       </article>
     </>
   );
