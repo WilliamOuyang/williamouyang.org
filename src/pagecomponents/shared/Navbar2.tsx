@@ -69,18 +69,26 @@ const Navbar2 = () => {
       className="bg-card border"
     >
       <ul>
-        <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px"}}>
-          <a href="/schedule">Schedule</a>
-        </li>
+        <a href="/schedule">
+            <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px"}}>
+              Schedule
+            </li>
+        </a>
+        <a href="/vault">
+            <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
+            Vault
+            </li>
+        </a>
+        <a href="/storage">
         <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
-          <a href="/vault">Vault</a>
+          Storage
         </li>
+        </a>
+        <a href="/whitepaper">
         <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
-          <a href="/storage">Storage</a>
+          White paper
         </li>
-        <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
-          <a href="/whitepaper">White paper</a>
-        </li>
+        </a>
       </ul>
     </div>
   )}
