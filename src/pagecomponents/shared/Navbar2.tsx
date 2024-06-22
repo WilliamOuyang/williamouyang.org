@@ -42,44 +42,50 @@ const Navbar2 = () => {
         <a className="mx-4" href="/">Home</a>
 
 
-        <div className="mx-4" style={{ display: "flex", alignItems: "center", height:'100%', position: "relative",}} onMouseEnter={() => {setMenu1(true);}}>
-          <h1 className="mr-2">Resources</h1> <img src={ArrowDown} style={{transform: Menu1 ? "rotate(180deg)": "rotate(0deg)"}}/>
-        </div>
-        {Menu1 && (
-        <div style={{
-            position: "absolute",
-            top: '100%',
-            left: 0,
-            zIndex: 100,
-            minWidth: '220px',
-            maxWidth: '220px',
-          }}
-          onMouseLeave={() => setMenu1(false)}
-          className="bg-card border border-2px">
-          <ul>
-          <a href="/schedule">
-          <li className="hover:bg-accent" style={{padding: '6px 10px 3px 15px'}}>
-          Schedule
-          </li>
-          </a>
-          <a href="/vault">
-          <li className="hover:bg-accent" style={{padding: '6px 10px 3px 15px'}}>
-          Vault
-          </li>
-          </a>
-          <a href="/storage">
-            <li className="hover:bg-accent" style={{padding: '6px 10px 3px 15px'}}>
-                Storage
-            </li>
-          </a>
-          <a href="/whitepaper">
-            <li className="hover:bg-accent" style={{padding: '6px 10px 3px 15px'}}>
-                White paper
-            </li>
-          </a>
-          </ul>
-        </div>
-      )}
+        <div className="menu-parent" style={{ position: "relative"}}>
+
+            <div style={{display:'flex', alignContent:'center'}} onMouseEnter={() => setMenu1(true)} onMouseLeave={() => setMenu1(false)}>
+                <h1 className="mr-2">Resources</h1>
+                <img
+             src={ArrowDown}
+                style={{
+                transform: Menu1 ? "rotate(180deg)" : "rotate(0deg)",
+                cursor: "pointer",
+                }}/>
+            </div>
+
+  {Menu1 && (
+    <div
+      style={{
+        position: "absolute",
+        top: "100%",
+        right: 0,
+        zIndex: 100,
+        minWidth: "220px",
+        maxWidth: "220px",
+      }}
+      onMouseEnter={() => setMenu1(true)} 
+      onMouseLeave={() => setMenu1(false)}
+      className="bg-card border"
+    >
+      <ul>
+        <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px"}}>
+          <a href="/schedule">Schedule</a>
+        </li>
+        <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
+          <a href="/vault">Vault</a>
+        </li>
+        <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
+          <a href="/storage">Storage</a>
+        </li>
+        <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
+          <a href="/whitepaper">White paper</a>
+        </li>
+      </ul>
+    </div>
+  )}
+
+</div>
         
 
         <a className="mx-4" href="/docs">Documentation</a>
