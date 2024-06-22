@@ -1,133 +1,108 @@
 import { ModeToggle } from "@/components/mode-toggle";
-import { Link } from "react-router-dom";
-import {
-  CalendarDays,
-  Database,
-  File,
-  FileText,
-  FolderOpen,
-  Home,
-  Landmark,
-} from "lucide-react";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-
-function Navbar() {
-
-  return (
-    <div className="fixed top-2 inset-x-0 max-w-2xl mx-auto z-50">
-      <nav className="relative rounded-full border bg-card shadow-input flex justify-center space-x-4 px-8 py-6 drop-shadow-md">
-        <Link to="/">
-          <TooltipProvider>
-            <Tooltip>
-              <TooltipTrigger>
-                <Home />
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Home</p>
-              </TooltipContent>
-            </Tooltip>
-          </TooltipProvider>
-        </Link>
-
-        <Link to="/docs">
-          <TooltipProvider>
-            <Tooltip>
-              <TooltipTrigger>
-                <FileText />
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Docs</p>
-              </TooltipContent>
-            </Tooltip>
-          </TooltipProvider>
-        </Link>
-
-      <Link to={""}>
-        <DropdownMenu>
-          <DropdownMenuTrigger><FolderOpen /></DropdownMenuTrigger>
-          <DropdownMenuContent>
-            <DropdownMenuLabel>Resources</DropdownMenuLabel>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem>
-              <Link to="/schedule">
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                  }}
-                  className="select-none "
-                >
-                  <CalendarDays className="mr-2" />
-                  Schedule
-                </div>
-              </Link>
-            </DropdownMenuItem>
-            <DropdownMenuItem><Link to="/vault">
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                }}
-                className="select-none "
-              >
-                <Landmark className="mr-2" />
-                Vault
-              </div>
-            </Link></DropdownMenuItem>
-            <DropdownMenuItem> <Link to="/storage">
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                }}
-                className="select-none "
-              >
-                <Database className="mr-2" />
-                Storage
-              </div>
-            </Link></DropdownMenuItem>
-            <DropdownMenuItem>  <Link to="/whitepaper">
-              <div
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                }}
-                className="select-none "
-              >
-                <File className="mr-2" />
-                White paper
-              </div>
-            </Link></DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
-        </Link>
-
-        <Link to={""}>
-        <ModeToggle />
-        </Link>
-        </nav>
-    </div>
-  );
-}
+import ArrowDown from "@/assets/Icon_arrow_down.svg";
+import { useState } from "react";
 
 const Navbar2 = () => {
+  const [Menu1, setMenu1] = useState<boolean>(false);
+
   return (
-    <div className="relative w-full flex items-center justify-center">
-      <Navbar/>
+    <div
+      className="bg-card border drop-shadow-md"
+      style={{
+        position: "fixed",
+        top: "10px",
+        width: "100%",
+        height: "75px",
+        alignContent: "center",
+      }}
+>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          height:'100%'
+          
+        }}
+        onMouseEnter={() => {
+            setMenu1(false);
+          }}
+      >
+
+
+
+
+
+        <h1 style={{ position: "fixed", left: "40px" }}>WilliamOuyang</h1>
+
+
+        <a className="mx-4" href="/">Home</a>
+
+
+        <div className="menu-parent" style={{ position: "relative"}}>
+
+            <div style={{display:'flex', alignContent:'center'}} onMouseEnter={() => setMenu1(true)} onMouseLeave={() => setMenu1(false)}>
+                <h1 className="mr-2">Resources</h1>
+                <img
+             src={ArrowDown}
+                style={{
+                transform: Menu1 ? "rotate(180deg)" : "rotate(0deg)",
+                cursor: "pointer",
+                }}/>
+            </div>
+
+  {Menu1 && (
+    <div
+      style={{
+        position: "absolute",
+        top: "100%",
+        right: 0,
+        zIndex: 100,
+        minWidth: "220px",
+        maxWidth: "220px",
+      }}
+      onMouseEnter={() => setMenu1(true)} 
+      onMouseLeave={() => setMenu1(false)}
+      className="bg-card border"
+    >
+      <ul>
+        <a href="/schedule">
+            <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px"}}>
+              Schedule
+            </li>
+        </a>
+        <a href="/vault">
+            <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
+            Vault
+            </li>
+        </a>
+        <a href="/storage">
+        <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
+          Storage
+        </li>
+        </a>
+        <a href="/whitepaper">
+        <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
+          White paper
+        </li>
+        </a>
+      </ul>
+    </div>
+  )}
+
+</div>
+        
+
+        <a className="mx-4" href="/docs">Documentation</a>
+
+        <a className="mx-4" href="faq">FAQ</a>
+
+        <a style={{ position: "fixed", right: "40px" }}>
+          <ModeToggle />
+        </a>
+      </div>
     </div>
   );
 };
+
 export default Navbar2;
