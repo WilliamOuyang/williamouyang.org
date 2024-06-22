@@ -1,8 +1,9 @@
 import WhitepaperText from "@/pagecomponents/whitepapercomponents/WhitepaperText";
 import Download from "@/pagecomponents/whitepapercomponents/Download";
 import { motion, useScroll, useSpring } from "framer-motion";
-import Navbar from "@/pagecomponents/shared/Navbar";
+// import Navbar from "@/pagecomponents/shared/Navbar";
 import { useEffect } from "react";
+import Navbar2 from "@/pagecomponents/shared/Navbar2";
 
 const Whitepaper = () => {
   const { scrollYProgress } = useScroll();
@@ -17,7 +18,8 @@ const Whitepaper = () => {
 
   return (
     <div>
-      <Navbar />
+      <Navbar2 />
+      {/* <Navbar/> */}
       <>
         <motion.div className="progress-bar" style={{ scaleX }} />
         <WhitepaperText />

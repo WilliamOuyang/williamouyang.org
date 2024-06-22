@@ -1,5 +1,6 @@
 import CurrentTask from "@/pagecomponents/homecomponents/CurrentTask";
-import Navbar from "@/pagecomponents/shared/Navbar";
+import Navbar2 from "@/pagecomponents/shared/Navbar2";
+// import Navbar from "@/pagecomponents/shared/Navbar";
 import { useEffect, useState } from "react";
 
 const Home = () => {
@@ -53,7 +54,7 @@ const Home = () => {
 
   return (
     <div>
-      <Navbar />
+      <Navbar2 />
       <div
         className="flex w-full h-screen "
         style={{
