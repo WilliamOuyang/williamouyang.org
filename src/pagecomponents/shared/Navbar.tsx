@@ -2,7 +2,7 @@ import { ModeToggle } from "@/components/mode-toggle";
 import ArrowDown from "@/assets/Icon_arrow_down.svg";
 import { useState } from "react";
 
-const Navbar2 = () => {
+const Navbar = () => {
   const [Menu1, setMenu1] = useState<boolean>(false);
 
   return (
@@ -105,4 +105,4 @@ const Navbar2 = () => {
   );
 };
 
-export default Navbar2;
+export default Navbar;
