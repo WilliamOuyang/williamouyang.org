@@ -55,7 +55,7 @@ const Navbar = () => {
 {/* Introduction Code Below */}
 <div className="menu-parent" style={{ position: "relative"}}>
 
-<div style={{display:'flex', alignContent:'center'}} onMouseEnter={() => setMenu2(true)} onMouseLeave={() => setMenu2(false)}>
+<div style={{display:'flex', alignContent:'center'}} className="cursor-pointer" onMouseEnter={() => setMenu2(true)} onMouseLeave={() => setMenu2(false)}>
     <h1 className="mr-2">Introduction</h1>
     <img
  src={ArrowDown}
@@ -112,7 +112,7 @@ White paper
 {/* Resources Code Below */}
         <div className="menu-parent" style={{ position: "relative"}}>
 
-            <div style={{display:'flex', alignContent:'center'}} onMouseEnter={() => setMenu1(true)} onMouseLeave={() => setMenu1(false)}>
+            <div style={{display:'flex', alignContent:'center'}} className="cursor-pointer" onMouseEnter={() => setMenu1(true)} onMouseLeave={() => setMenu1(false)}>
                 <h1 className="mr-2">Resources</h1>
                 <img
              src={ArrowDown}

@@ -41,6 +41,9 @@
 @font-face {
   font-family: 'GT';
   src: local('GT'), url(public/GTWalsheimPro-Bold.ttf) format('truetype');}
+@font-face {
+  font-family: 'Robo';
+  src: local('Robo'), url(public/Roboto-Regular.ttf) format('truetype');}  
 /* logo font */
 
 @layer base {

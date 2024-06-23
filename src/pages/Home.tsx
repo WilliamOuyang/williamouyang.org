@@ -55,16 +55,16 @@ const Home = () => {
     <div>
       <Navbar />
       <div
-        className="flex w-full h-screen "
+        className="flex w-full h-full"
         style={{
           display: "flex",
           zIndex: 0,
           justifyContent: "center",
           alignItems: "center",
         }}
-      >
+      > 
         <div className="text-center select-none">
-          <span className="font-mono font-medium text-5xl sm:text-5xl md:text-6xl xl:text-7xl 2xl:text-8xl select-none text-center">
+          <span className="font-medium text-5xl sm:text-5xl md:text-6xl xl:text-7xl 2xl:text-8xl select-none text-center" style={{fontFamily:"robo"}}>
             {hourStr}:{minutesStr}:{secondsStr}
           </span>{" "}
           {amPmTag}
@@ -76,7 +76,7 @@ const Home = () => {
           </h3>
           <h3 className="text-2xl 2xl:text-3xl font-light select-none text-center">
             Task Timer:{" "}
-            <span className="font-mono">
+            <span style={{fontFamily:"robo"}}>
               {minutes2 < 10 ? "0" + minutes2 : minutes2}:
               {seconds2 < 10 ? "0" + seconds2 : seconds2}
             </span>
