@@ -114,17 +114,11 @@ const Faq = () => {
               </AccordionTrigger>
               <AccordionContent>
                 <h1>
-                Cash App
-                <br/>PayPal ()
-                <br/>Zelle 
-                <br/>Venmo 
-                <br/>Paypal
-                <br/>Bitcoin Main Network
-                <br/>Bitcoin Lightening
-                <br/>Strike
-                <br/>Physical Gold (Minted)
-                <br/>Physical Silver
-                <br/>Stock
+                Cash App ($WILLKOUYANG)
+                <br/>Zelle (+1 925-367-1375)
+                <br/>Bitcoin Lightning Network (williamouyang@strike.me)
+                <br/>Bitcoin Mainnet
+                <br/>Strike (strike.me/williamouyang)
                 </h1>
               </AccordionContent>
             </AccordionItem>
