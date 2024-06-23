@@ -85,10 +85,8 @@ const Faq = () => {
                 <h1>
                 <em>Note: Alternative contact is slower than primary e-mail, it may take up to 24 hours for a response.</em>
 
-                <br/><br/>If for any reason you are unable to use the primary email,
-                <br/>please refer to this list below: 
+                <br/><br/>If for any reason you are unable to use the primary email, please use: 
                 <br/>williamouyang@caramail.com            
-                <br/>williamouyang@aol.com
                 </h1>
               </AccordionContent>
             </AccordionItem>
