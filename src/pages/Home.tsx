@@ -1,4 +1,5 @@
 import CurrentTask from "@/pagecomponents/homecomponents/CurrentTask";
+import Footer from "@/pagecomponents/shared/Footer";
 import Navbar from "@/pagecomponents/shared/Navbar";
 import { useEffect, useState } from "react";
 
@@ -83,6 +84,7 @@ const Home = () => {
           </h3>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

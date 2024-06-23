@@ -169,16 +169,6 @@ className="bg-card border"
 Businesses
 </li>
 </a>
-<a href="/storage">
-<li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
-Developers
-</li>
-</a>
-<a href="/storage">
-<li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
-Contact
-</li>
-</a>
 </ul>
 </div>
 )}
@@ -245,11 +235,12 @@ Contact
 
 
 
-        <a href="/docs">Documentation</a>
+        <a href="/en/docs">Documentation</a>
 
-        <a href="faq">FAQ</a>
+        <a href="https://github.com/WilliamOuyang/williamouyang.org">Github</a>
 
-        <a href="faq">FIVE</a>
+        <a href="/en/faq">FAQ</a>
+
 
 
 

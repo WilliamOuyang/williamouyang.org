@@ -32,6 +32,7 @@ import Positas from "@/assets/positas.jpg"
 import PassGen from "@/assets/PassGen.png"
 import Canvas from "@/assets/Canvas.ico"
 import Navbar from "@/pagecomponents/shared/Navbar";  
+import Footer from "@/pagecomponents/shared/Footer";
 
 const Storage = () => {
   const [isLocked, setIsLocked] = useState(true);
@@ -1027,6 +1028,7 @@ const Storage = () => {
           </div>
         </Button>
       </div>
+      <Footer/>
     </>
   );
 };
