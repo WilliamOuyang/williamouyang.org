@@ -1190,8 +1190,6 @@ const whitepaperText = () => {
           </table>
         </p>
 
-        <br />
-
           <h2
             style={{
               fontSize: "1.5em",
@@ -1218,7 +1216,6 @@ const whitepaperText = () => {
           3. Review stock analysis – if applicable
           <br/>
           4. Buy and sell assets accordingly
-          <br/><br/>
           </div>
         </p>
 
