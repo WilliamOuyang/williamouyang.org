@@ -5,10 +5,37 @@ import { useState } from "react";
 const Navbar = () => {
   const [Menu1, setMenu1] = useState<boolean>(false);
   const [Menu2, setMenu2] = useState<boolean>(false);
+  const [Menu3, setMenu3] = useState<boolean>(false);
+  function sendEmail() {
+    var mail = 'mailto:contact@test.com';
+    var a = document.createElement('a');
+    a.href = mail;
+    a.click();
+};
   
 
   return (
     <>
+
+<div className="cursor-pointer" style={{
+  display: "flex",
+  backgroundColor: 
+  "#ff0055",
+  // "#F7931A",
+  width: "100%",
+  boxSizing: "border-box",
+  color: "#FFFFFF",
+  height: "55px",
+  fontWeight: '600',
+  border: 'none',
+  fontSize: '16px',
+  alignItems:'center',
+  justifyContent:'center',
+}}
+onClick={()=>{sendEmail()}}
+>
+  <h1>$40,000 Goal Reached! Check out the blog post to learn more.</h1>
+</div>
 
     <div
       className="bg-card border"
@@ -38,7 +65,7 @@ const Navbar = () => {
 
 
 <h1 style={{ position: "absolute", left: "60px", fontFamily: 'GT'}}>
-<a href="/">
+<a href="/en/">
      williamouyang.org
 </a>
 </h1>
@@ -46,6 +73,58 @@ const Navbar = () => {
 <div style={{position:'absolute', right:"60px"}}>
     <ModeToggle />
   </div>
+
+{/* English Code Below */}
+<div style={{position:'absolute', right:"120px"}}><div className="menu-parent" style={{ position: "relative"}}>
+
+<div style={{display:'flex', alignContent:'center'}} className="cursor-pointer" onMouseEnter={() => setMenu3(true)} onMouseLeave={() => setMenu3(false)}>
+    <h1 className="mr-2">English</h1>
+    <img
+ src={ArrowDown}
+    style={{
+    transform: Menu3 ? "rotate(180deg)" : "rotate(0deg)",
+    cursor: "pointer",
+    }}/>
+</div>
+
+{Menu3 && (
+<div
+style={{
+position: "absolute",
+top: "100%",
+right: 0,
+zIndex: 100,
+minWidth: "220px",
+maxWidth: "220px",
+}}
+onMouseEnter={() => setMenu3(true)} 
+onMouseLeave={() => setMenu3(false)}
+className="bg-card border"
+>
+<ul>
+<a href="/en/">
+<li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px"}}>
+English
+</li>
+</a>
+<a href="/en/">
+<li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
+Français
+</li>
+</a>
+<a href="/en/">
+<li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
+Español
+</li>
+</a>
+</ul>
+</div>
+)}
+
+</div>
+</div>
+{/* English Code Above */}
+
 
 
 
@@ -82,22 +161,22 @@ className="bg-card border"
 <ul>
 <a href="/">
 <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px"}}>
-  Home
+  Individuals
 </li>
 </a>
 <a href="/vault">
 <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
-About
+Businesses
+</li>
+</a>
+<a href="/storage">
+<li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
+Developers
 </li>
 </a>
 <a href="/storage">
 <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
 Contact
-</li>
-</a>
-<a href="/whitepaper">
-<li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
-White paper
 </li>
 </a>
 </ul>
@@ -137,22 +216,22 @@ White paper
       className="bg-card border"
     >
       <ul>
-        <a href="/schedule">
+        <a href="/en/schedule">
             <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px"}}>
               Schedule
             </li>
         </a>
-        <a href="/vault">
+        <a href="/en/vault">
             <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
             Vault
             </li>
         </a>
-        <a href="/storage">
+        <a href="/en/storage">
         <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
           Storage
         </li>
         </a>
-        <a href="/whitepaper">
+        <a href="/en/whitepaper">
         <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
           White paper
         </li>
@@ -168,7 +247,9 @@ White paper
 
         <a href="/docs">Documentation</a>
 
-        <a className="" href="faq">FAQ</a>
+        <a href="faq">FAQ</a>
+
+        <a href="faq">FIVE</a>
 
 
 

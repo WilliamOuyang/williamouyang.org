@@ -16,14 +16,14 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route index element={<Home />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/whitepaper" element={<Whitepaper />} />
-          <Route path="/vault" element={<Vault />} />
-          <Route path="/storage" element={<Storage />} />
-          <Route path="/schedule" element={<Schedule />} />
-          <Route path="/test" element={<Test />} />
-          <Route path="/docs" element={<Docs />} />
-          <Route path="/faq" element={<Faq />} />
+          <Route path="/en/" element={<Home />} />
+          <Route path="/en/whitepaper" element={<Whitepaper />} />
+          <Route path="/en/vault" element={<Vault />} />
+          <Route path="/en/storage" element={<Storage />} />
+          <Route path="/en/schedule" element={<Schedule />} />
+          <Route path="/en/test" element={<Test />} />
+          <Route path="/en/docs" element={<Docs />} />
+          <Route path="/en/faq" element={<Faq />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

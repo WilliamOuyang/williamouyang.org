@@ -73,7 +73,7 @@ const Storage = () => {
   return (
     <>
       <Navbar />
-      <div style={{ padding: "20px", marginTop: "100px" }}>
+      <div style={{ padding: "20px"}}>
         <div style={{ display: "flex", alignItems: "center" }}>
           <h2 className="text-3xl font-semibold tracking-tight">E-mail</h2>
              

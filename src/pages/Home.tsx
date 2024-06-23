@@ -55,7 +55,7 @@ const Home = () => {
     <div>
       <Navbar />
       <div
-        className="flex w-full h-full"
+        className="flex w-full h-screen"
         style={{
           display: "flex",
           zIndex: 0,
