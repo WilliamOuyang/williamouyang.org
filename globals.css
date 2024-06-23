@@ -33,7 +33,13 @@
 
 
 /* theme */
- 
+
+/* logo font  */
+@font-face {
+  font-family: 'Cloister';
+  src: local('Cloister'), url(public/CloisterBlack.ttf) format('truetype');}
+/* logo font */
+
 @layer base {
   :root {
     --background: 0, 0%, 96%;

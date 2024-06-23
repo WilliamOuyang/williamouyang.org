@@ -4,6 +4,8 @@ import { useState } from "react";
 
 const Navbar = () => {
   const [Menu1, setMenu1] = useState<boolean>(false);
+  const [Menu2, setMenu2] = useState<boolean>(false);
+  
 
   return (
     <div
@@ -32,13 +34,14 @@ const Navbar = () => {
 
 
 
-
-        <h1 style={{ position: "fixed", left: "40px" }}>WilliamOuyang</h1>
-
-
-        <a className="mx-4" href="/">Home</a>
+<h1 style={{ position: "fixed", left: "60px", fontSize:'30px', fontFamily: 'Cloister', /* Use a fallback serif font */}}>
+      <a href="/">  OUYANG</a>
+    </h1>
 
 
+        <a className="mx-4" href="/">Introduction</a>
+
+{/* Resources Code Below */}
         <div className="menu-parent" style={{ position: "relative"}}>
 
             <div style={{display:'flex', alignContent:'center'}} onMouseEnter={() => setMenu1(true)} onMouseLeave={() => setMenu1(false)}>
@@ -91,15 +94,18 @@ const Navbar = () => {
   )}
 
 </div>
-        
+{/* Resources code above */}
+
+
 
         <a className="mx-4" href="/docs">Documentation</a>
 
         <a className="mx-4" href="faq">FAQ</a>
 
-        <a style={{ position: "fixed", right: "40px" }}>
+        <a style={{ position: "fixed", right: "60px" }}>
           <ModeToggle />
         </a>
+
       </div>
     </div>
   );
