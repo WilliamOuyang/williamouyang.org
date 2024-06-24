@@ -7,19 +7,30 @@ import {
 } from "@/components/ui/accordion";
 import Footer from "@/pagecomponents/shared/Footer";
 import { Separator } from "@/components/ui/separator";
+import { useEffect } from "react";
 
 const Faq = () => {
+
+  useEffect(() => {
+    document.title = "FAQ | williamouyang.org";
+  }, []);
+
   return (
     <>
       <Navbar />
       <div
         style={{ display: "flex", justifyContent: "center"}}
       >
-        <div style={{ width: "750px", marginTop: "20px", marginBottom:'50px'}}>
-          <h1 style={{ fontWeight: "600" }} className="text-2xl">
-            FAQ
+        <div style={{ width: "750px", marginTop: "40px", marginBottom:'50px'}}>
+
+       
+          <h1 style={{ fontWeight: "600"}} className="text-2xl">
+          Frequently Asked Questions
           </h1>
+      
+
           <Separator />
+
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
               <AccordionTrigger>
@@ -117,8 +128,9 @@ const Faq = () => {
                 Cash App ($WILLKOUYANG)
                 <br/>Zelle (+1 925-367-1375)
                 <br/>Bitcoin Lightning Network (williamouyang@strike.me)
-                <br/>Bitcoin Mainnet
                 <br/>Strike (strike.me/williamouyang)
+                <br/>Bitcoin Mainnet (E-mail for information)
+                <br/>Bitcoin Mainnet (E-mail for information)
                 </h1>
               </AccordionContent>
             </AccordionItem>

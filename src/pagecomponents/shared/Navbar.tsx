@@ -6,6 +6,8 @@ const Navbar = () => {
   const [Menu1, setMenu1] = useState<boolean>(false);
   const [Menu2, setMenu2] = useState<boolean>(false);
   const [Menu3, setMenu3] = useState<boolean>(false);
+  const [Menu4, setMenu4] = useState<boolean>(false);
+  const [Menu5, setMenu5] = useState<boolean>(false);
   function sendEmail() {
     var mail = 'mailto:contact@test.com';
     var a = document.createElement('a');
@@ -21,7 +23,6 @@ const Navbar = () => {
   display: "flex",
   backgroundColor: 
   "#ff0055",
-  // "#F7931A",
   width: "100%",
   boxSizing: "border-box",
   color: "#FFFFFF",
@@ -34,7 +35,7 @@ const Navbar = () => {
 }}
 onClick={()=>{sendEmail()}}
 >
-  <h1>$40,000 Goal Reached! Check out the blog post to learn more.</h1>
+  <h1>Donate to William Ouyang!</h1>
 </div>
 
     <div
@@ -44,7 +45,7 @@ onClick={()=>{sendEmail()}}
         position: "relative",
         // top: "10px",
         width: "100%",
-        height: "75px",
+        height: "59px",
         alignContent: "center",
       }}
       
@@ -161,14 +162,25 @@ className="bg-card border"
 <ul>
 <a href="/">
 <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px"}}>
-  Individuals
+Overview
 </li>
 </a>
 <a href="/vault">
 <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
-Businesses
+About
 </li>
 </a>
+<a href="/">
+<li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px"}}>
+Achievements
+</li>
+</a>
+<a href="https://github.com/WilliamOuyang/williamouyang.org">
+<li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px"}}>
+Source Code (Github)
+</li>
+</a>
+
 </ul>
 </div>
 )}
@@ -234,10 +246,106 @@ Businesses
 {/* Resources code above */}
 
 
+{/* Contribute Code Below */}
+<div className="menu-parent" style={{ position: "relative"}}>
 
-        <a href="/en/docs">Documentation</a>
+<div style={{display:'flex', alignContent:'center'}} className="cursor-pointer" onMouseEnter={() => setMenu5(true)} onMouseLeave={() => setMenu5(false)}>
+    <h1 className="mr-2">Contribute</h1>
+    <img
+ src={ArrowDown}
+    style={{
+    transform: Menu5 ? "rotate(180deg)" : "rotate(0deg)",
+    cursor: "pointer",
+    }}/>
+</div>
 
-        <a href="https://github.com/WilliamOuyang/williamouyang.org">Github</a>
+{Menu5 && (
+<div
+style={{
+position: "absolute",
+top: "100%",
+right: 0,
+zIndex: 100,
+minWidth: "220px",
+maxWidth: "220px",
+}}
+onMouseEnter={() => setMenu5(true)} 
+onMouseLeave={() => setMenu5(false)}
+className="bg-card border"
+>
+<ul>
+<a href="/en/schedule">
+<li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px"}}>
+  Payments
+</li>
+</a>
+<a href="/en/vault">
+<li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
+Donations
+</li>
+</a>
+<a href="/en/storage">
+<li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
+Contact
+</li>
+</a>
+</ul>
+</div>
+)}
+
+</div>
+{/* Contribute code above */}
+
+
+
+
+        {/* Learn Code Below */}
+<div className="menu-parent" style={{ position: "relative"}}>
+
+<div style={{display:'flex', alignContent:'center'}} className="cursor-pointer" onMouseEnter={() => setMenu4(true)} onMouseLeave={() => setMenu4(false)}>
+    <h1 className="mr-2">Projects</h1>
+    <img
+ src={ArrowDown}
+    style={{
+    transform: Menu4 ? "rotate(180deg)" : "rotate(0deg)",
+    cursor: "pointer",
+    }}/>
+</div>
+
+{Menu4 && (
+<div
+style={{
+position: "absolute",
+top: "100%",
+right: 0,
+zIndex: 100,
+minWidth: "220px",
+maxWidth: "220px",
+}}
+onMouseEnter={() => setMenu4(true)} 
+onMouseLeave={() => setMenu4(false)}
+className="bg-card border"
+>
+<ul>
+<a href="/">
+<li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px"}}>
+  Developer Projects
+</li>
+</a>
+<a href="/vault">
+<li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
+Current Projects
+</li>
+</a>
+
+</ul>
+</div>
+)}
+
+</div>
+{/* Learn Code Above */}
+
+        
 
         <a href="/en/faq">FAQ</a>
 
