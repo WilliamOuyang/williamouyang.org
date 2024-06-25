@@ -79,8 +79,9 @@ function Schedule() {
             style={{display:'flex', padding: "10px", marginBottom: "30px",  justifyContent:'center', flexDirection: 'column',}}
           >
             <strong>
-              <h1 className="text-2xl">Supabase Organizer of William Ouyang</h1>
+              <h1 className="text-2xl" style={{fontFamily:'GT'}}>Supabase Organizer of William Ouyang</h1>
             </strong>
+
             <button
               style={{ display: "flex", alignItems: "center", justifyContent:'center', }}
               onClick={() =>
@@ -94,7 +95,7 @@ function Schedule() {
             </button>
           </div>
           <strong>
-            <h1 className="text-2xl">{formattedDate}</h1>
+            <h1 className="text-2xl" style={{fontFamily:'GT'}}>{formattedDate}</h1>
           </strong>
           <Separator className="border border-foreground" />
           <ul>

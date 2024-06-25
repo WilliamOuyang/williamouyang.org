@@ -24,9 +24,7 @@ const Faq = () => {
         <div style={{ width: "750px", marginTop: "40px", marginBottom:'50px'}}>
 
        
-          <h1 style={{ fontWeight: "600"}} className="text-2xl mb-4">
-          Frequently Asked Questions
-          </h1>
+        <h1 style={{fontFamily:'GT', fontSize:'30px'}}>Frequently Asked Questions</h1>
       
 
           <Separator />

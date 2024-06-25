@@ -37,7 +37,7 @@ const Navbar = () => {
 }}    
   onClick={()=>{window.open("/storage")}}
   >
-    <h1>Donate to William Ouyang!</h1>
+    <h1 style={{fontFamily:'GT', fontSize:"20px"}}>Donate to William Ouyang!</h1>
     <button style={{position:'absolute', right:'25px'}}
      onClick={(e) => { 
       e.stopPropagation(); // Prevent event from bubbling up
@@ -256,11 +256,11 @@ Source Code (Github)
 {/* Resources code above */}
 
 
-{/* Contribute Code Below */}
+{/* Support Code Below */}
 <div className="menu-parent" style={{ position: "relative"}}>
 
 <div style={{display:'flex', alignContent:'center'}} className="cursor-pointer" onMouseEnter={() => setMenu5(true)} onMouseLeave={() => setMenu5(false)}>
-    <h1 className="mr-2">Contribute</h1>
+    <h1 className="mr-2">Support</h1>
     <img
  src={ArrowDown}
     style={{
@@ -304,7 +304,7 @@ Contact
 )}
 
 </div>
-{/* Contribute code above */}
+{/* Participate code above */}
 
 
 

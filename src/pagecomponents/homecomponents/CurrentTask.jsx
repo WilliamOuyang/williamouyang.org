@@ -49,7 +49,7 @@ function CurrentTask() {
           if (index === getCurrentBlockIndex()) {
             return (
               <li key={block.id}>
-                <p className="text-2xl font-bold">
+                <p className="text-2xl" style={{fontFamily:'GT'}}>
                   {/* {block.time}{' '}: */}
                   {' '}{block.event}
                 </p>
