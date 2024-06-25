@@ -9,6 +9,8 @@ import Schedule from "./pages/Schedule";
 import Contact from "./pages/Contact";
 import Test from "./pages/Test";
 import Faq from "./pages/Faq";
+import Donate from "./pages/Donate";
+import Sitemap from "./pages/Sitemap";
 
 function App() {
   return (
@@ -16,14 +18,17 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route index element={<Home />} />
-          <Route path="/en/" element={<Home />} />
-          <Route path="/en/whitepaper" element={<Whitepaper />} />
-          <Route path="/en/vault" element={<Vault />} />
-          <Route path="/en/storage" element={<Storage />} />
-          <Route path="/en/schedule" element={<Schedule />} />
-          <Route path="/en/test" element={<Test />} />
-          <Route path="/en/contact" element={<Contact />} />
-          <Route path="/en/faq" element={<Faq />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/whitepaper" element={<Whitepaper />} />
+          <Route path="/vault" element={<Vault />} />
+          <Route path="/storage" element={<Storage />} />
+          <Route path="/schedule" element={<Schedule />} />
+          <Route path="/test" element={<Test />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/faq" element={<Faq />} />
+          <Route path="/donate" element={<Donate />} />
+          <Route path="/sitemap" element={<Sitemap />} />
+
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

@@ -35,7 +35,7 @@ const Navbar = () => {
   alignItems:'center',
   justifyContent:'center',
 }}    
-  onClick={()=>{window.open("/en/storage")}}
+  onClick={()=>{window.open("/storage")}}
   >
     <h1>Donate to William Ouyang!</h1>
     <button style={{position:'absolute', right:'25px'}}
@@ -76,7 +76,7 @@ const Navbar = () => {
 
 
 <h1 style={{ position: "absolute", left: "60px", fontFamily: 'GT'}}>
-<a href="/en/">
+<a href="/">
      williamouyang.org
 </a>
 </h1>
@@ -113,17 +113,17 @@ onMouseLeave={() => setMenu3(false)}
 className="bg-card border"
 >
 <ul>
-<a href="/en/">
+<a href="/">
 <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px"}}>
 English
 </li>
 </a>
-<a href="/en/">
+<a href="/">
 <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
 Français
 </li>
 </a>
-<a href="/en/">
+<a href="/">
 <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
 Español
 </li>
@@ -228,22 +228,22 @@ Source Code (Github)
       className="bg-card border"
     >
       <ul>
-        <a href="/en/schedule">
+        <a href="/schedule">
             <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px"}}>
               Schedule
             </li>
         </a>
-        <a href="/en/vault">
+        <a href="/vault">
             <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
             Vault
             </li>
         </a>
-        <a href="/en/storage">
+        <a href="/storage">
         <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
           Storage
         </li>
         </a>
-        <a href="/en/whitepaper">
+        <a href="/whitepaper">
         <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
           White paper
         </li>
@@ -284,17 +284,17 @@ onMouseLeave={() => setMenu5(false)}
 className="bg-card border"
 >
 <ul>
-<a href="/en/schedule">
+<a href="/schedule">
 <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px"}}>
   Payments
 </li>
 </a>
-<a href="/en/vault">
+<a href="/donate">
 <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
-Donations
+Donate
 </li>
 </a>
-<a href="/en/contact">
+<a href="/contact">
 <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
 Contact
 </li>
@@ -357,7 +357,7 @@ Current Projects
 
         
 
-        <a href="/en/faq">FAQ</a>
+        <a href="/faq">FAQ</a>
 
 
 
