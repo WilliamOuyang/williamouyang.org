@@ -27,7 +27,7 @@ const Donate = () => {
   }}>
     <ul>
       <li style={{display:'flex', alignItems:'center'}}><img src={CASH} style={{display:'flex', height:'30px', marginRight:'10px'}}/>Cash App ($WILLKOUYANG)</li>
-      <li>Zelle (+1 925-367-1375)</li>
+      <li style={{display:'flex', alignItems:'center'}}><img src={CASH} style={{display:'flex', height:'30px', marginRight:'10px'}}/>Zelle (+1 925-367-1375)</li>
       <li>ACH Transfer</li>
       <li>Bitcoin Lightning Network (williamouyang@strike.me)</li>
       <li style={{display:'flex', alignItems:'center'}}><img src={Strike} style={{display:'flex', height:'30px', width:'30px', marginRight:'10px', background:'black', borderRadius:'25%'}}/> Strike Tip (strike.me/williamouyang)</li>
