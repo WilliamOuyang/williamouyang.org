@@ -1,6 +1,7 @@
 import { ModeToggle } from "@/components/mode-toggle";
 import ArrowDown from "@/assets/Icon_arrow_down.svg";
 import { useState } from "react";
+import { X } from "lucide-react";
 
 const Navbar = () => {
   const [Menu1, setMenu1] = useState<boolean>(false);
@@ -8,19 +9,20 @@ const Navbar = () => {
   const [Menu3, setMenu3] = useState<boolean>(false);
   const [Menu4, setMenu4] = useState<boolean>(false);
   const [Menu5, setMenu5] = useState<boolean>(false);
-  function sendEmail() {
-    var mail = 'mailto:contact@test.com';
-    var a = document.createElement('a');
-    a.href = mail;
-    a.click();
-};
+
+  const [Banner, setBanner] = useState<boolean>(true);
+  
+
+
+
   
 
   return (
     <>
 
-<div className="cursor-pointer" style={{
+{Banner && (<div className="cursor-pointer" style={{
   display: "flex",
+  position: "relative",
   backgroundColor: 
   "#ff0055",
   width: "100%",
@@ -32,14 +34,22 @@ const Navbar = () => {
   fontSize: '16px',
   alignItems:'center',
   justifyContent:'center',
-}}
-onClick={()=>{sendEmail()}}
->
-  <h1>Donate to William Ouyang!</h1>
-</div>
+}}    
+  onClick={()=>{window.open("/en/storage")}}
+  >
+    <h1>Donate to William Ouyang!</h1>
+    <button style={{position:'absolute', right:'25px'}}
+     onClick={(e) => { 
+      e.stopPropagation(); // Prevent event from bubbling up
+      setBanner(false); // Hide the banner
+    }}    
+    ><X /></button>
+  </div>
+  )   }
+
 
     <div
-      className="bg-card border"
+      className="bg-card border"      
       // drop-shadow-md
       style={{
         position: "relative",
@@ -284,7 +294,7 @@ className="bg-card border"
 Donations
 </li>
 </a>
-<a href="/en/storage">
+<a href="/en/contact">
 <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
 Contact
 </li>

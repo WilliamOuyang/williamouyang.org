@@ -6,7 +6,7 @@ import Whitepaper from "./pages/Whitepaper";
 import Vault from "./pages/Vault";
 import Storage from "./pages/Storage";
 import Schedule from "./pages/Schedule";
-import Docs from "./pages/Docs";
+import Contact from "./pages/Contact";
 import Test from "./pages/Test";
 import Faq from "./pages/Faq";
 
@@ -22,7 +22,7 @@ function App() {
           <Route path="/en/storage" element={<Storage />} />
           <Route path="/en/schedule" element={<Schedule />} />
           <Route path="/en/test" element={<Test />} />
-          <Route path="/en/docs" element={<Docs />} />
+          <Route path="/en/contact" element={<Contact />} />
           <Route path="/en/faq" element={<Faq />} />
         </Routes>
       </BrowserRouter>

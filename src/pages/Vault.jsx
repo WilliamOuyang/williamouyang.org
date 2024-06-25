@@ -6,6 +6,7 @@ import { Edit2Icon, SquarePen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { IconEdit } from "@tabler/icons-react";
 import { lineSpinner } from "ldrs";
+import Footer from "@/pagecomponents/shared/Footer";
 lineSpinner.register();
 
 const supabase = createClient(
@@ -135,6 +136,7 @@ function Vault() {
           </button>
         </div>
       </div>
+      <Footer/>
     </>
   );
 }

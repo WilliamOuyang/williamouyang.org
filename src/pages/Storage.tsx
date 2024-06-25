@@ -33,9 +33,11 @@ import PassGen from "@/assets/PassGen.png"
 import Canvas from "@/assets/Canvas.ico"
 import Navbar from "@/pagecomponents/shared/Navbar";  
 import Footer from "@/pagecomponents/shared/Footer";
+import Cloud from "@/assets/Cloud.svg";
 
 const Storage = () => {
   const [isLocked, setIsLocked] = useState(true);
+  const [isLocked0, setIsLocked0] = useState(true);
   const [isLocked2, setIsLocked2] = useState(true);
   const [isLocked3, setIsLocked3] = useState(true);
   const [isLocked4, setIsLocked4] = useState(true);
@@ -994,6 +996,40 @@ const Storage = () => {
             </Button>
           </div>
         </Button>
+
+
+        <Button
+          variant="ouyang"
+          className="w-[55px] mr-2 bg-neutral-900 hover:bg-neutral-900 mt-3"
+          style={{ backgroundColor: "#143170", outline: "2px solid gray" }}
+        >
+          <div
+            style={{
+              transition: "transform 0.15s ease",
+              transform: isLocked0 ? "translateY(-8px)" : "translateY(0)",
+            }}
+            onMouseEnter={() => setIsLocked0(false)}
+            onMouseLeave={() => setIsLocked0(true)}
+          >
+            <Button
+              variant="ouyang"
+              className="w-[55px] bg-#1C449B"
+              style={{ backgroundColor: "#1c449b" }}
+              onClick={() => window.open("https://www.gmx.com/cloud/login/")}
+            >
+              <img
+                className="select-none"
+                draggable="false"
+                src={Cloud}
+                alt="GMX Cloud"
+                style={{ width: "100%", height: "100%" }}
+              />
+            </Button>
+          </div>
+        </Button>
+
+
+
         <h2 className="text-3xl font-semibold tracking-tight">Passwords</h2>
         <Button
           variant="ouyang"

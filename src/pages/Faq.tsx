@@ -24,7 +24,7 @@ const Faq = () => {
         <div style={{ width: "750px", marginTop: "40px", marginBottom:'50px'}}>
 
        
-          <h1 style={{ fontWeight: "600"}} className="text-2xl">
+          <h1 style={{ fontWeight: "600"}} className="text-2xl mb-4">
           Frequently Asked Questions
           </h1>
       
@@ -96,8 +96,15 @@ const Faq = () => {
                 <h1>
                 <em>Note: Alternative contact is slower than primary e-mail, it may take up to 24 hours for a response.</em>
 
-                <br/><br/>If for any reason you are unable to use the primary email, please use: 
-                <br/>williamouyang@caramail.com            
+                <br/><br/>If for any reason you are unable to use the primary e-mail, please use:    
+
+                <u className="text-blue-700">
+                  <h1>
+                    <a href="mailto:williamouyang@gmx.com">
+                    E-mail: williamouyang@caramail.com
+                    </a>
+                  </h1>
+                </u>       
                 </h1>
               </AccordionContent>
             </AccordionItem>
@@ -112,7 +119,7 @@ const Faq = () => {
                 This website is built using React on the Vite Framework. If you
                 are interested in the source code, you can
                 find the github repository in the top
-                navigation menu under "Github". 
+                navigation menu under "Introduction". 
               </AccordionContent>
             </AccordionItem>
           </Accordion>
