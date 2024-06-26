@@ -35,14 +35,13 @@ const Donate = () => {
     fontFamily:'GT',
     fontSize:'30px',
   }}>
-    <ul style={{gap:'20px'}}>
-      <li className="cursor-default" style={{display:'flex', alignItems:'center'}}><img src={CASH} style={{display:'flex', height:'30px', marginRight:'10px'}}/>Cash App ($WILLKOUYANG)</li>
-      <li className="cursor-default" style={{display:'flex', alignItems:'center'}}><img src={Z} style={{display:'flex', height:'30px', width:'30px', marginRight:'10px', background:'#6c1cd3', borderRadius:'25%', padding:'4px'}}/>Zelle (+1 925-367-1375)</li>
-      {/* <li>Wire or ACH Transfer</li> */}
-      <li style={{display:'flex', alignItems:'center'}}><img src={Lightning} style={{display:'flex', height:'30px', width:'30px', marginRight:'10px', background:'black', borderRadius:'25%', padding:'3px'}}/>Bitcoin Lightning Network (williamouyang@strike.me)</li>
-      <a href="strike.me/williamouyang"><li style={{display:'flex', alignItems:'center'}}><img src={Strike} style={{display:'flex', height:'30px', width:'30px', marginRight:'10px', background:'black', borderRadius:'25%'}}/> Strike Tip (strike.me/williamouyang)</li></a>
-      <a href="bitcoin:bc1q2f0u95v2qlyud5968fvkemp9wd5elqcn4mlyqs"><li style={{display:'flex', alignItems:'center'}}><img src={BTC} style={{display:'flex', height:'30px', width:'30px', marginRight:'10px', background:'black', borderRadius:'25%', padding:'4px'}}/>Bitcoin Mainnet (bc1q2f0u95v2qlyud5968fvkemp9wd5elqcn4mlyqs)</li></a>
-      <li style={{display:'flex', alignItems:'center'}}><img src={ETH} style={{display:'flex', height:'30px', width:'30px', marginRight:'10px', background:'black', borderRadius:'25%', padding:'2px'}}/>Ethereum Network   (E-mail for information)</li>
+    <ul style={{display:'flex', flexDirection: 'column', gap: '20px'}}>
+      <li className="cursor-pointer hover:underline" style={{display:'flex', alignItems:'center'}}><img src={CASH} style={{display:'flex', height:'30px', marginRight:'10px'}}/>Cash App ($WILLKOUYANG)</li>
+      <li className="cursor-pointer hover:underline" style={{display:'flex', alignItems:'center'}}><img src={Z} style={{display:'flex', height:'30px', width:'30px', marginRight:'10px', background:'#6c1cd3', borderRadius:'25%', padding:'4px'}}/>Zelle (+1 925-367-1375) </li>
+      <li style={{display:'flex', alignItems:'center'}} className="hover:underline cursor-pointer"><img src={Lightning} style={{display:'flex', height:'30px', width:'30px', marginRight:'10px', background:'black', borderRadius:'25%', padding:'3px'}}/>Bitcoin Lightning Network (williamouyang@strike.me)</li>
+      <a href="https://strike.me/williamouyang"><li style={{display:'flex', alignItems:'center'}} className="hover:underline"><img src={Strike} style={{display:'flex', height:'30px', width:'30px', marginRight:'10px', background:'black', borderRadius:'25%'}}/> <h1 className="hover:text-underline">Strike Tip (strike.me/williamouyang)</h1></li></a>
+      <a href="bitcoin:bc1q2f0u95v2qlyud5968fvkemp9wd5elqcn4mlyqs"><li style={{display:'flex', alignItems:'center'}} className="hover:underline"><img src={BTC} style={{display:'flex', height:'30px', width:'30px', marginRight:'10px', background:'black', borderRadius:'25%', padding:'4px'}}/>Bitcoin Mainnet (bc1q2f0u95v2qlyud5968fvkemp9wd5elqcn4mlyqs)</li></a>
+      <li style={{display:'flex', alignItems:'center'}} className="hover:underline cursor-pointer"><img src={ETH} style={{display:'flex', height:'30px', width:'30px', marginRight:'10px', background:'black', borderRadius:'25%', padding:'2px'}}/>Ethereum Network   (0x52d774971eC9746A724C11a087fAD161Ab30778A)</li>
     </ul>
     <Accordion type="single" collapsible>
   <AccordionItem value="item-1">
