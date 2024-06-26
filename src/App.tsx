@@ -11,6 +11,7 @@ import Test from "./pages/Test";
 import Faq from "./pages/Faq";
 import Donate from "./pages/Donate";
 import Sitemap from "./pages/Sitemap";
+import Transfer from "./pages/Transfer";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/faq" element={<Faq />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/sitemap" element={<Sitemap />} />
+          <Route path="/transfer" element={<Transfer />} />
 
         </Routes>
       </BrowserRouter>

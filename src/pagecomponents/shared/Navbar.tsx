@@ -35,7 +35,7 @@ const Navbar = () => {
   alignItems:'center',
   justifyContent:'center',
 }}    
-  onClick={()=>{window.open("/storage")}}
+  onClick={()=>{window.open("/donate")}}
   >
     <h1 style={{fontFamily:'GT', fontSize:"20px"}}>Donate to William Ouyang!</h1>
     <button style={{position:'absolute', right:'25px'}}
