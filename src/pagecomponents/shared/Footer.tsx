@@ -24,9 +24,9 @@ const Footer = () => {
 
     <div style={{display:'flex', position:'relative', alignItems:'center', justifyContent:'right', gap:'20px', marginRight:'40px', height:'80px'}}>
       <h1 style={{position:'absolute', left:'40px', fontFamily:'GT'}} className="cursor-default">williamouyang.org</h1>
-      <a href="/sitemap">Terms of Service</a>
-      <a href="/sitemap">Privacy</a>
-      <a href="/sitemap">Cookie Policy</a>
+      <a href="/tos" target="_blank">Terms of Service</a>
+      <a href="/privacy" target="_blank">Privacy</a>
+      <a href="/privacy" target="_blank">Cookie Policy</a>
       <a href="/sitemap">Sitemap</a>
     </div>
     <div style={{marginRight:'40px', marginLeft:'40px'}}>

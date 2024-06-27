@@ -15,6 +15,8 @@ import Payments from "./pages/Payments";
 import DevProjects from "./pages/DevProjects";
 import CurrentProjects from "./pages/CurrentProjects";
 import About from "./pages/About";
+import Privacy from "./pages/Privacy";
+import Tos from "./pages/Tos";
 
 function App() {
   return (
@@ -36,6 +38,8 @@ function App() {
           <Route path="/developerprojects" element={<DevProjects />} />
           <Route path="/currentprojects" element={<CurrentProjects />} />
           <Route path="/about" element={<About />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/tos" element={<Tos />} />
 
         </Routes>
       </BrowserRouter>
