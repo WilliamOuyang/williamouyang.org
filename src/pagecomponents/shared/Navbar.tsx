@@ -180,7 +180,7 @@ Overview
 About
 </li>
 </a>
-<a href="/">
+<a href="/achievements">
 <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px"}}>
 Achievements
 </li>

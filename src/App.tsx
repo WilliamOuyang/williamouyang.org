@@ -17,6 +17,7 @@ import CurrentProjects from "./pages/CurrentProjects";
 import About from "./pages/About";
 import Privacy from "./pages/Privacy";
 import Tos from "./pages/Tos";
+import Achievements from "./pages/Achievements";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/tos" element={<Tos />} />
+          <Route path="/achievements" element={<Achievements />} />
 
         </Routes>
       </BrowserRouter>

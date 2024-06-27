@@ -17,38 +17,38 @@ const Sitemap = () => {
         <h1 className="text-2xl">
         <div style={{display:'flex', justifyContent:'space-around'}}>
             
-        <ul style={{ display: 'grid', gap: '10px' }}>
+        <ul>
         <li className="cursor-default"><strong>Introduction</strong></li>
-        <li>  Overview</li>
-        <li>   About </li>
-        <li>   Achievements </li>
-        <li> <a href="https://github.com/WilliamOuyang/williamouyang.org">  Source Code </a></li>
+        <li className="mt-5"> <a href="/" className="hover:underline">  Overview </a></li>
+        <li className="mt-5"> <a href="/about" className="hover:underline">   About </a></li>
+        <li className="mt-5"> <a href="/achievements" className="hover:underline">  Achievements </a></li>
+        <li className="mt-5"> <a href="https://github.com/WilliamOuyang/williamouyang.org" className="hover:underline">  Source Code </a></li>
         </ul>
 
-        <ul style={{ display: 'grid', gap: '10px' }}>
+        <ul>
         <li className="cursor-default"><strong> Resources</strong></li>
-        <li>   <a href="/schedule">Schedule</a></li>
-        <li>   <a href="/vault">Vault</a></li>
-        <li>   <a href="/storage">Storage </a></li>
-        <li>   <a href="/whitepaper">White paper </a>  </li> 
+        <li className="mt-5">   <a href="/schedule" className="hover:underline">Schedule</a></li>
+        <li className="mt-5">   <a href="/vault" className="hover:underline">Vault</a></li>
+        <li className="mt-5">   <a href="/storage" className="hover:underline">Storage </a></li>
+        <li className="mt-5">   <a href="/whitepaper" className="hover:underline">White paper </a>  </li> 
         </ul>
 
-        <ul style={{ display: 'grid', gap: '10px' }}>
+        <ul>
         <li className="cursor-default"><strong>Support</strong></li>
-        <li><a href="/payments">Payments</a></li>
-        <li><a href="https://pay.williamouyang.org">Donate</a> </li>
-        <li><a href="/contact">Contact</a></li>
+        <li className="mt-5"><a href="/payments" className="hover:underline">Payments</a></li>
+        <li className="mt-5"><a href="https://pay.williamouyang.org" target="_blank" className="hover:underline">Donate</a> </li>
+        <li className="mt-5"><a href="/contact" className="hover:underline">Contact</a></li>
         </ul>
 
-        <ul style={{ display: 'grid', gap: '10px' }}>
+        <ul>
         <li className="cursor-default"><strong>Projects</strong></li>
-        <li>   Developer Projects </li>
-        <li>   Current Projects</li>
+        <li className="mt-5">  <a href="/developerprojects" className="hover:underline">Developer Projects</a> </li>
+        <li className="mt-5">   <a href="currentprojects" className="hover:underline">Current Projects</a></li>
         </ul>
 
         <ul>
         <li className="cursor-default"><strong>Other</strong></li>
-        <li className="mt-5"> <a href="/faq">FAQ</a> </li>
+        <li className="mt-5"> <a href="/faq" className="hover:underline">FAQ</a> </li>
         </ul>
         </div>
         

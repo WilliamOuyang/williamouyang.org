@@ -1,7 +1,14 @@
 import Footer from "@/pagecomponents/shared/Footer"
 import Navbar from "@/pagecomponents/shared/Navbar"
+import { useEffect } from "react";
 
 const About = () => {
+
+  useEffect(() => {
+    document.title = "About | williamouyang.org";
+  }, []);
+
+
   return (
     <>
     <Navbar/>
@@ -16,8 +23,7 @@ const About = () => {
             <li><h1>Net Worth: $42,000</h1></li>
             <li><h1>Current Income: $32,000</h1></li>
             <li><h1>Personal Hobbies: Guitar, Piano</h1></li>
-            <li><h1>Work Hobbies: Cryptocurrency, Stock</h1></li>
-            <li><h1>Feats: Eagle Scout (Silver Palm), </h1></li>
+            <li><h1>Work Hobbies: Cryptocurrency, Stocks</h1></li>
             
         </ul>    
       </div>
