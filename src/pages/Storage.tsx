@@ -36,8 +36,21 @@ import Footer from "@/pagecomponents/shared/Footer";
 import Cloud from "@/assets/Cloud.svg";
 import Meta from "@/assets/MetaMask_Fox.svg";
 import Electrum from "@/assets/electrum-wallet-seeklogo.svg";
+import ORG from "@/assets/Organizer.svg"
 
 const Storage = () => {
+
+
+  // Current Date Number below
+  const [currentDay, setCurrentDay] = useState<number>(1); // Initialize with a default value
+  useEffect(() => {
+    const getCurrentDayOfMonth = (): number => {
+      const currentDate = new Date();
+      return currentDate.getDate(); 
+    };
+    setCurrentDay(getCurrentDayOfMonth());
+  }, []); 
+  // Current Date Number Above
   const [isLocked, setIsLocked] = useState(true);
   const [isLocked0, setIsLocked0] = useState(true);
   const [isLocked2, setIsLocked2] = useState(true);
@@ -72,6 +85,7 @@ const Storage = () => {
   const [isLocked31, setIsLocked31] = useState(true);
   const [isLocked32, setIsLocked32] = useState(true);
   const [isLocked33, setIsLocked33] = useState(true);
+  const [isLocked34, setIsLocked34] = useState(true);
 
   useEffect(() => {
     document.title = "Storage | williamouyang.org";
@@ -82,7 +96,7 @@ const Storage = () => {
       <Navbar />
       <div style={{ padding: "20px"}}>
         <div style={{ display: "flex", alignItems: "center" }}>
-          <h2 className="text-3xl font-semibold tracking-tight">E-mail</h2>
+          <h2 className="text-3xl font-semibold tracking-tight">E-Mail</h2>
              
            
 
@@ -165,8 +179,43 @@ const Storage = () => {
               </Button>
             </div>   
           </Button>
+      
 
-        <h2 className="text-3xl font-semibold tracking-tight">Applications</h2>
+        <h2 className="text-3xl font-semibold tracking-tight">Everyday Applications</h2>
+        <Button
+          variant="ouyang"
+          className="w-[55px] mr-2 bg-neutral-900 hover:bg-neutral-900 mt-3" 
+          style={{ outline: "2px solid gray", backgroundColor: "#143170"  }}
+        >
+          <div
+            style={{
+              transition: "transform 0.15s ease",
+              transform: isLocked34 ? "translateY(-8px)" : "translateY(0)",
+            }}
+            onMouseEnter={() => setIsLocked34(false)}
+            onMouseLeave={() => setIsLocked34(true)}
+          >
+            <Button
+              variant="ouyang"
+              className="w-[55px]"
+              onClick={() => window.open("https://www.gmx.com/features/organizer/login/")}
+              style={{backgroundColor: "#1c449b"}}
+            >
+        <div style={{ position: 'relative', width: '100%', height: '100%' }}>
+  <img
+    className="select-none"
+    draggable="false"
+    src={ORG}
+    alt="GMX Organizer"
+    style={{ position: 'absolute', width: '100%', height: '100%' }}
+  />
+  <h1 style={{ position: 'absolute', right: '5.7px', top: '5px', color: "#1c449b", margin: '0', fontFamily:'Robo', fontSize:'10px'}}>{currentDay}</h1>
+</div>
+              
+            </Button>
+          </div>
+        </Button>
+        
         <Button
           variant="ouyang"
           className="w-[55px] mr-2 bg-neutral-900 hover:bg-neutral-900 mt-3"
