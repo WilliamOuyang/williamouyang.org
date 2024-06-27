@@ -185,7 +185,7 @@ About
 Achievements
 </li>
 </a>
-<a href="https://github.com/WilliamOuyang/williamouyang.org">
+<a href="https://github.com/WilliamOuyang/williamouyang.org" target="_blank">
 <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px"}}>
 Source Code (Github)
 </li>

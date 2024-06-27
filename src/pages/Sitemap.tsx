@@ -22,7 +22,7 @@ const Sitemap = () => {
         <li className="mt-5"> <a href="/" className="hover:underline">  Overview </a></li>
         <li className="mt-5"> <a href="/about" className="hover:underline">   About </a></li>
         <li className="mt-5"> <a href="/achievements" className="hover:underline">  Achievements </a></li>
-        <li className="mt-5"> <a href="https://github.com/WilliamOuyang/williamouyang.org" className="hover:underline">  Source Code </a></li>
+        <li className="mt-5"> <a href="https://github.com/WilliamOuyang/williamouyang.org" target="_blank" className="hover:underline">  Source Code </a></li>
         </ul>
 
         <ul>
