@@ -37,13 +37,13 @@
 /* logo font  */
 @font-face {
   font-family: 'Cloister';
-  src: local('Cloister'), url(public/CloisterBlack.ttf) format('truetype');}
+  src: local('Cloister'), url(/CloisterBlack.ttf) format('truetype');}
 @font-face {
   font-family: 'GT';
-  src: local('GT'), url(public/GTWalsheimPro-Bold.ttf) format('truetype');}
+  src: local('GT'), url(/GTWalsheimPro-Bold.ttf) format('truetype');}
 @font-face {
   font-family: 'Robo';
-  src: local('Robo'), url(public/Roboto-Regular.ttf) format('truetype');}  
+  src: local('Robo'), url(/Roboto-Regular.ttf) format('truetype');}  
 /* logo font */
 
 @layer base {
