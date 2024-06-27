@@ -1,8 +1,13 @@
 import Footer from "@/pagecomponents/shared/Footer"
 import Navbar from "@/pagecomponents/shared/Navbar"
+import { useEffect } from "react";
 
 
 const DevProjects = () => {
+  useEffect(() => {
+    document.title = "Developer Projects | williamouyang.org";
+  }, []);
+
   return (
     <>
     <Navbar/>

@@ -1,4 +1,12 @@
+import { useEffect } from "react";
+
 const Privacy = () => {
+
+  useEffect(() => {
+    document.title = "Privacy Policy";
+  }, []);
+
+
   return (
     <div>
       

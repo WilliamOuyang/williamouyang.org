@@ -1,4 +1,12 @@
+import { useEffect } from "react";
+
 const Tos = () => {
+
+  useEffect(() => {
+    document.title = "Terms of Service";
+  }, []);
+
+
     return (
       <div>
         
