@@ -51,7 +51,7 @@ function Vault() {
         }}
       >
         <div>
-          <h1 className="text-2xl" style={{ marginBottom: "10px", fontFamily:'GT'}}>
+          <h1 className="text-2xl" style={{ marginBottom: "10px", fontFamily:'GT', fontsize:'30px'}}>
             VAULT - A record of personal financial assets
           </h1>
           <div className="overflow-x-auto">

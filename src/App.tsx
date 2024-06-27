@@ -12,6 +12,9 @@ import Faq from "./pages/Faq";
 import Sitemap from "./pages/Sitemap";
 import Transfer from "./pages/Transfer";
 import Payments from "./pages/Payments";
+import DevProjects from "./pages/DevProjects";
+import CurrentProjects from "./pages/CurrentProjects";
+import About from "./pages/About";
 
 function App() {
   return (
@@ -30,6 +33,9 @@ function App() {
           <Route path="/payments" element={<Payments />} />
           <Route path="/sitemap" element={<Sitemap />} />
           <Route path="/transfer" element={<Transfer />} />
+          <Route path="/developerprojects" element={<DevProjects />} />
+          <Route path="/currentprojects" element={<CurrentProjects />} />
+          <Route path="/about" element={<About />} />
 
         </Routes>
       </BrowserRouter>

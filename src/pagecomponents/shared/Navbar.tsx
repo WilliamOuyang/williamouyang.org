@@ -175,7 +175,7 @@ className="bg-card border"
 Overview
 </li>
 </a>
-<a href="/vault">
+<a href="/about">
 <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
 About
 </li>
@@ -337,12 +337,12 @@ onMouseLeave={() => setMenu4(false)}
 className="bg-card border"
 >
 <ul>
-<a href="/">
+<a href="/developerprojects">
 <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px"}}>
   Developer Projects
 </li>
 </a>
-<a href="/vault">
+<a href="/currentprojects">
 <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
 Current Projects
 </li>

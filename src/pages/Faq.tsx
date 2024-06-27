@@ -32,7 +32,7 @@ const Faq = () => {
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
               <AccordionTrigger>
-                <h1>What is your e-mail?</h1>
+                <h1 style={{fontFamily:'GT'}}>What is your e-mail?</h1>
               </AccordionTrigger>
               <AccordionContent>
                 <u className="text-blue-700">
@@ -51,7 +51,7 @@ const Faq = () => {
 
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
-              <AccordionTrigger>What is your phone number?</AccordionTrigger>
+              <AccordionTrigger><h1 style={{fontFamily:'GT'}}>What is your phone number?</h1></AccordionTrigger>
               <AccordionContent>
               <a href="tel:+1 925-367-1375">+1 925-367-1375</a>
 
@@ -73,7 +73,7 @@ const Faq = () => {
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
               <AccordionTrigger>
-                <h1>What is the best way to contact you?</h1>
+                <h1 style={{fontFamily:'GT'}}>What is the best way to contact you?</h1>
               </AccordionTrigger>
               <AccordionContent>
                 E-mail. It is my preferred method of communication.
@@ -88,7 +88,7 @@ const Faq = () => {
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
               <AccordionTrigger>
-                <h1>I need alternative contact information, how can I contact you?</h1>
+                <h1 style={{fontFamily:'GT'}}>I need alternative contact information, how can I contact you?</h1>
               </AccordionTrigger>
               <AccordionContent>
                 <h1>
@@ -111,7 +111,7 @@ const Faq = () => {
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
               <AccordionTrigger>
-                <h1>How was this website built?</h1>
+                <h1 style={{fontFamily:'GT'}}>How was this website built?</h1>
               </AccordionTrigger>
               <AccordionContent>
                 This website is built using React on the Vite Framework. If you
@@ -126,7 +126,7 @@ const Faq = () => {
           <Accordion type="single" collapsible>
             <AccordionItem value="item-1">
               <AccordionTrigger>
-                <h1>What payment methods do you accept?</h1>
+                <h1 style={{fontFamily:'GT'}}>What payment methods do you accept?</h1>
               </AccordionTrigger>
               <AccordionContent>
                 <h1>
