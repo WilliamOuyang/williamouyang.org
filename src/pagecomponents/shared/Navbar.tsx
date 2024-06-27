@@ -289,7 +289,7 @@ className="bg-card border"
   Payments
 </li>
 </a>
-<a href="https://pay.williamouyang.org/">
+<a href="https://pay.williamouyang.org/" target="_blank">
 <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
 Donate
 </li>

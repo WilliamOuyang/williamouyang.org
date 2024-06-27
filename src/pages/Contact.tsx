@@ -7,14 +7,14 @@ import { useEffect } from "react";
 
 const Docs = () => {
   useEffect(() => {
-    document.title = "Docs | williamouyang.org";
+    document.title = "Contact | williamouyang.org";
   }, []);
 
   return (
     <>
       <Navbar />
       <div style={{padding:'30px'}}>
-        <h1 style={{fontFamily:'GT', fontSize:'30px'}}>Contact us</h1>
+        <h1 style={{fontFamily:'GT', fontSize:'30px'}}>Contact</h1>
         <br/>
 
 <em>If you have to troubleshoot problems, business inquries, casual contact, and want to get answers to your questions, feel free to contact me.</em>
