@@ -9,9 +9,9 @@ import Schedule from "./pages/Schedule";
 import Contact from "./pages/Contact";
 import Test from "./pages/Test";
 import Faq from "./pages/Faq";
-import Donate from "./pages/Donate";
 import Sitemap from "./pages/Sitemap";
 import Transfer from "./pages/Transfer";
+import Payments from "./pages/Payments";
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
           <Route path="/test" element={<Test />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/faq" element={<Faq />} />
-          <Route path="/donate" element={<Donate />} />
+          <Route path="/payments" element={<Payments />} />
           <Route path="/sitemap" element={<Sitemap />} />
           <Route path="/transfer" element={<Transfer />} />
 

@@ -8,6 +8,7 @@ import BTC from "@/assets/bitcoin-btc-logo.svg"
 import Z from "@/assets/ZBL.svg"
 // import Lightning from "@/assets/lightning.svg"
 import WIRE from "@/assets/bank-transfer.svg"
+import GODADDY from "@/assets/godaddy-v2-svgrepo-com.svg"
 
 import {
   Accordion,
@@ -16,7 +17,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 
-const Donate = () => {
+const Payments = () => {
   return (
     <>
     <Navbar/>
@@ -40,8 +41,10 @@ const Donate = () => {
       <li className="cursor-pointer hover:underline" style={{display:'flex', alignItems:'center'}}><img src={Z} style={{display:'flex', height:'30px', width:'30px', marginRight:'10px', background:'#6c1cd3', borderRadius:'25%', padding:'4px'}}/>Zelle (+1 925-367-1375) </li>
       {/* <li style={{display:'flex', alignItems:'center'}} className="hover:underline cursor-pointer"><img src={Lightning} style={{display:'flex', height:'30px', width:'30px', marginRight:'10px', background:'black', borderRadius:'25%', padding:'3px'}}/>Bitcoin Lightning Network (williamouyang@strike.me)</li> */}
       <a href="https://strike.me/williamouyang"><li style={{display:'flex', alignItems:'center'}} className="hover:underline"><img src={Strike} style={{display:'flex', height:'30px', width:'30px', marginRight:'10px', background:'black', borderRadius:'25%'}}/> <h1 className="hover:text-underline">Strike Tip (strike.me/williamouyang)</h1></li></a>
-      <a href="bitcoin:bc1q7j00jhl0lsnedzz49ph5uraehqhskftke3h69d?message=Never%20Expire%20Bitcoin%20Transfer"><li style={{display:'flex', alignItems:'center'}} className="hover:underline"><img src={BTC} style={{display:'flex', height:'30px', width:'30px', marginRight:'10px', background:'black', borderRadius:'25%', padding:'4px'}}/>Bitcoin Mainnet (bc1q7j00jhl0lsnedzz49ph5uraehqhskftke3h69d)</li></a>
-      <a href="https://etherscan.io/address/0x52d774971eC9746A724C11a087fAD161Ab30778A"><li style={{display:'flex', alignItems:'center'}} className="hover:underline cursor-pointer"><img src={ETH} style={{display:'flex', height:'30px', width:'30px', marginRight:'10px', background:'black', borderRadius:'25%', padding:'2px'}}/>Ethereum Network   (0x52d774971eC9746A724C11a087fAD161Ab30778A)</li></a>
+      <a href="bitcoin:bc1q7j00jhl0lsnedzz49ph5uraehqhskftke3h69d?message=Never%20Expire%20Bitcoin%20Transfer"><li style={{display:'flex', alignItems:'center'}} className="hover:underline"><img src={BTC} style={{display:'flex', height:'30px', width:'30px', marginRight:'10px'}}/>Bitcoin Mainnet (bc1q7j00jhl0lsnedzz49ph5uraehqhskftke3h69d)</li></a>
+      <a href="https://etherscan.io/address/0x52d774971eC9746A724C11a087fAD161Ab30778A"><li style={{display:'flex', alignItems:'center'}} className="hover:underline cursor-pointer"><img src={ETH} style={{display:'flex', height:'30px', width:'30px', marginRight:'10px'}}/>Ethereum Network (0x52d774971eC9746A724C11a087fAD161Ab30778A)</li></a>
+      <a href="https://pay.williamouyang.org/"><li style={{display:'flex', alignItems:'center'}} className="hover:underline cursor-pointer"><img src={GODADDY} style={{display:'flex', height:'30px', width:'30px', marginRight:'10px'}}/>Payment Link - pay.williamouyang.org</li></a>
+    
     </ul>
     <Accordion type="single" collapsible>
   <AccordionItem value="item-1">
@@ -89,4 +92,4 @@ const Donate = () => {
   )
 }
 
-export default Donate
+export default Payments

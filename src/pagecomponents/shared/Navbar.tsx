@@ -35,7 +35,7 @@ const Navbar = () => {
   alignItems:'center',
   justifyContent:'center',
 }}    
-  onClick={()=>{window.open("/donate")}}
+  onClick={()=>{window.open("https://pay.williamouyang.org")}}
   >
     <h1 style={{fontFamily:'GT', fontSize:"20px"}}>Donate to William Ouyang!</h1>
     <button style={{position:'absolute', right:'25px'}}
@@ -284,12 +284,12 @@ onMouseLeave={() => setMenu5(false)}
 className="bg-card border"
 >
 <ul>
-<a href="/schedule">
+<a href="/payments">
 <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px"}}>
   Payments
 </li>
 </a>
-<a href="/donate">
+<a href="https://pay.williamouyang.org/">
 <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
 Donate
 </li>
