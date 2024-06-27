@@ -35,9 +35,9 @@ const Sitemap = () => {
 
         <ul style={{ display: 'grid', gap: '10px' }}>
         <li className="cursor-default"><strong>Support</strong></li>
-        <li>   Payments </li>
-        <li><a href="/donate">Donate</a> </li>
-        <li><a href="/donate">Contact</a></li>
+        <li><a href="/payments">Payments</a></li>
+        <li><a href="https://pay.williamouyang.org">Donate</a> </li>
+        <li><a href="/contact">Contact</a></li>
         </ul>
 
         <ul style={{ display: 'grid', gap: '10px' }}>

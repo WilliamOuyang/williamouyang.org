@@ -130,12 +130,7 @@ const Faq = () => {
               </AccordionTrigger>
               <AccordionContent>
                 <h1>
-                Cash App ($WILLKOUYANG)
-                <br/>Zelle (+1 925-367-1375)
-                <br/>Bitcoin Lightning Network (williamouyang@strike.me)
-                <br/>Strike (strike.me/williamouyang)
-                <br/>Bitcoin Mainnet (E-mail for information)
-                <br/>Bitcoin Mainnet (E-mail for information)
+                To find accepted payment methods, visit the "Payments" page under "Support {">"} Payments"
                 </h1>
               </AccordionContent>
             </AccordionItem>
