@@ -104,7 +104,7 @@ const Storage = () => {
        
         <Button
           variant="ouyang"
-          className="w-[55px] mr-2 bg-neutral-900 hover:bg-neutral-900 mt-3"
+          className="w-[70px] mr-2 bg-neutral-900 hover:bg-neutral-900 mt-3"
           style={{ backgroundColor: "#143170", outline: "2px solid gray" }}
         >
           <div
@@ -117,7 +117,7 @@ const Storage = () => {
           >
             <Button
               variant="ouyang"
-              className="w-[55px] bg-#1C449B"
+              className="w-[70px] bg-#1C449B"
               style={{ backgroundColor: "#1c449b" }}
               onClick={() => window.open("https://www.gmx.com/")}
             >
@@ -276,7 +276,7 @@ const Storage = () => {
 
         <Button
           variant="ouyang"
-          className="w-[100px] mr-2 mt-3"
+          className="w-[120px] mr-2 mt-3"
           style={{ background: "lightgray", outline: "2px solid gray" }}
         >
           <div
@@ -289,7 +289,7 @@ const Storage = () => {
           >
             <Button
               variant="ouyang"
-              className="w-[100px]"
+              className="w-[120px]"
               style={{ background: "white" }}
               onClick={() => window.open("https://rumble.com/")}
             >
@@ -305,7 +305,7 @@ const Storage = () => {
         </Button>
         <Button
           variant="ouyang"
-          className="w-[100px] mr-2 mt-3"
+          className="w-[130px] mr-2 mt-3"
           style={{ background: "lightgray", outline: "2px solid gray" }}
         >
           <div
@@ -318,7 +318,7 @@ const Storage = () => {
           >
             <Button
               variant="ouyang"
-              className="w-[100px]"
+              className="w-[130px]"
               style={{ background: "white" }}
               onClick={() => window.open("https://app.grammarly.com/")}
             >
@@ -502,7 +502,7 @@ const Storage = () => {
 
         <Button
           variant="ouyang"
-          className="w-[100px] bg-neutral-900 hover:bg-neutral-900 mr-2 mt-3"
+          className="w-[150px] bg-neutral-900 hover:bg-neutral-900 mr-2 mt-3"
           style={{ outline: "2px solid gray" }}
         >
           <div
@@ -515,7 +515,7 @@ const Storage = () => {
           >
             <Button
               variant="ouyang"
-              className="w-[100px]"
+              className="w-[150px]"
               onClick={() =>
                 window.open("https://supabase.com/dashboard/projects")
               }
@@ -595,7 +595,7 @@ const Storage = () => {
        
         <Button
           variant="ouyang"
-          className="w-[100px] bg-neutral-900 hover:bg-neutral-900 mr-2 mt-3"
+          className="w-[150px] bg-neutral-900 hover:bg-neutral-900 mr-2 mt-3"
           style={{ outline: "2px solid gray" }}
         >
           <div
@@ -608,7 +608,7 @@ const Storage = () => {
           >
             <Button
               variant="ouyang"
-              className="w-[100px]"
+              className="w-[150px]"
               onClick={() => window.open("https://www.godaddy.com/")}
             >
               <img
