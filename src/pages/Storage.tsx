@@ -17,7 +17,7 @@ import CASHAPP from "@/assets/cashapp.svg";
 import TRW from "@/assets/TRW.svg";
 import TV from "@/assets/TradingView.svg";
 import GMX from "@/assets/GMX.svg";
-import Passwords from "@/assets/passwords.svg";
+import Passwords from "@/assets/svg-gobbler.svg";
 import Extend from "@/assets/extension.svg";
 import Vercel from "@/assets/Vercel_logo_black.svg";
 import Go from "@/assets/GoDaddy.svg";
@@ -1117,7 +1117,7 @@ const Storage = () => {
         <Button
           variant="ouyang"
           className="w-[55px] bg-neutral-900 hover:bg-neutral-900 mr-2 mt-3"
-          style={{ outline: "2px solid gray" }}
+          style={{ outline: "2px solid gray" , backgroundColor: "#143170"}}
         >
           <div
             style={{
@@ -1130,6 +1130,7 @@ const Storage = () => {
             <Button
               variant="ouyang"
               className="w-[55px]"
+              style={{ backgroundColor: "#1c449b" }}
               onClick={() =>
                 window.open(
                   "https://c.gmx.com/@1383933226673766769/aBhSBM0OQ_mf0DjvbJL6xw"
