@@ -25,6 +25,7 @@ const Whitepaper = () => {
       </>
       <Download />
       <Footer/>
+      <TheSystem/>
     </>
   );
 };
