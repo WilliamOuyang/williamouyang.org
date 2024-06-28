@@ -35,7 +35,7 @@ import Navbar from "@/pagecomponents/shared/Navbar";
 import Footer from "@/pagecomponents/shared/Footer";
 import Cloud from "@/assets/Cloud.svg";
 import Meta from "@/assets/MetaMask_Fox.svg";
-import Electrum from "@/assets/electrum-wallet-seeklogo.svg";
+import Electrum from "@/assets/electrum_text.png";
 import ORG from "@/assets/Organizer.svg"
 
 const Storage = () => {
@@ -978,7 +978,7 @@ const Storage = () => {
         </Button>
         <Button
           variant="ouyang"
-          className="w-[55px] mr-2 mt-3 bg-neutral-900 hover:bg-neutral-900"
+          className="w-[150px] mr-2 mt-3 bg-neutral-900 hover:bg-neutral-900"
           style={{ outline: "2px solid gray" }}
         >
           <div
@@ -991,7 +991,7 @@ const Storage = () => {
           >
             <Button
               variant="ouyang"
-              className="w-[55px]"
+              className="w-[150px]"
               onClick={() => window.open("https://www.tradingview.com/")}
             >
               <img
@@ -1004,9 +1004,9 @@ const Storage = () => {
             </Button>
           </div>
         </Button>
-        <Button variant="ouyang"className="w-[55px] mr-2 mt-3" style={{ outline: '2px solid gray', background:'#0090c9'}}>
+        <Button variant="ouyang"className="w-[150px] mr-2 mt-3" style={{ outline: '2px solid gray', background:'#0090c9'}}>
             <div style={{transition: 'transform 0.15s ease',  transform: isLocked29 ? 'translateY(-8px)' : 'translateY(0)'}} onMouseEnter={() => setIsLocked29(false)} onMouseLeave={() => setIsLocked29(true)}>
-           <Button variant="ouyang"className="w-[54.5px]" onClick={() => window.open('https://www.schwab.com/')} style={{background:'#00A0DF'}}>
+           <Button variant="ouyang"className="w-[150px]" onClick={() => window.open('https://www.schwab.com/')} style={{background:'#00A0DF'}}>
             <img className="select-none"
                 draggable="false"
                     src={Schwab} 
@@ -1019,9 +1019,9 @@ const Storage = () => {
 
 
 
-          <Button variant="ouyang"className="w-[55px] mr-2 mt-3 bg-neutral-900 hover:bg-neutral-900" style={{ outline: '2px solid gray',background: "lightgray"}}>
+          <Button variant="ouyang"className="w-[150px] mr-2 mt-3 bg-neutral-900 hover:bg-neutral-900" style={{ outline: '2px solid gray',background: "lightgray"}}>
             <div style={{transition: 'transform 0.15s ease',  transform: isLocked32 ? 'translateY(-8px)' : 'translateY(0)'}} onMouseEnter={() => setIsLocked32(false)} onMouseLeave={() => setIsLocked32(true)}>
-           <Button variant="ouyang"className="w-[55px]" style={{background:'white'}} onClick={() => window.open('https://metamask.io/download/')}>
+           <Button variant="ouyang"className="w-[150px]" style={{background:'white'}} onClick={() => window.open('https://metamask.io/download/')}>
             <img className="select-none"
                 draggable="false"
                     src={Meta} 
@@ -1031,9 +1031,9 @@ const Storage = () => {
             </div>   
           </Button>
 
-          <Button variant="ouyang"className="w-[55px] mr-2 mt-3 bg-neutral-900 hover:bg-neutral-900" style={{ outline: '2px solid gray'}}>
+          <Button variant="ouyang"className="w-[200px] mr-2 mt-3 bg-neutral-900 hover:bg-neutral-900" style={{ outline: '2px solid gray'}}>
             <div style={{transition: 'transform 0.15s ease',  transform: isLocked33 ? 'translateY(-8px)' : 'translateY(0)'}} onMouseEnter={() => setIsLocked33(false)} onMouseLeave={() => setIsLocked33(true)}>
-           <Button variant="ouyang"className="w-[55px]" onClick={() => window.open('https://electrum.org/#download')}>
+           <Button variant="ouyang"className="w-[200px]" onClick={() => window.open('https://electrum.org/#download')}>
             <img className="select-none"
                 draggable="false"
                     src={Electrum} 
