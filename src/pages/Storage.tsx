@@ -641,7 +641,8 @@ const Storage = () => {
               className="w-[55px]"
               onClick={() =>
                 window.open(
-                  "https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user"
+                  // "https://code.visualstudio.com/sha/download?build=stable&os=win32-x64-user"
+                  "https://code.visualstudio.com/download"
                 )
               }
             >
@@ -673,7 +674,8 @@ const Storage = () => {
               className="w-[100px]"
               onClick={() =>
                 window.open(
-                  "https://nodejs.org/dist/v20.13.1/node-v20.13.1-x64.msi"
+                  // "https://nodejs.org/dist/v20.13.1/node-v20.13.1-x64.msi"
+                  "https://nodejs.org/en/download/prebuilt-installer"
                 )
               }
             >
@@ -705,7 +707,8 @@ const Storage = () => {
               className="w-[55px]"
               onClick={() =>
                 window.open(
-                  "https://github.com/git-for-windows/git/releases/download/v2.45.1.windows.1/Git-2.45.1-64-bit.exe"
+                  // "https://github.com/git-for-windows/git/releases/download/v2.45.1.windows.1/Git-2.45.1-64-bit.exe"
+                  "https://git-scm.com/downloads"
                 )
               }
             >
