@@ -7,7 +7,9 @@ import { Button } from "@/components/ui/button";
 import { IconEdit } from "@tabler/icons-react";
 import { lineSpinner } from "ldrs";
 import Footer from "@/pagecomponents/shared/Footer";
-import Lock from "@/assets/Lock.svg"
+// import Lock from "@/assets/Lock.svg"
+import Lock from "@/SVGJSX/Lock"
+
 import {
   Table,
   TableBody,
@@ -66,7 +68,8 @@ function Vault() {
           <h1 className="text-2xl" style={{ marginBottom: "10px", fontFamily:'GT', fontSize:'30px'}}>
             VAULT
           </h1>
-          <img src={Lock} style={{height:'30px'}}/>
+          <Lock/>
+          {/* <img src={Lock} style={{height:'30px'}}/> */}
         </div>
 
           <div className="overflow-x-auto bg-card border" >
