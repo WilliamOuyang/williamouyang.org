@@ -6,6 +6,7 @@ import Strike from "@/assets/strike.svg"
 import ETH from "@/assets/Ethereum.svg"
 import BTC from "@/assets/bitcoin-btc-logo.svg"
 import Z from "@/assets/ZBL.svg"
+import QR from "@/assets/BitcoinQR.png"
 // import Lightning from "@/assets/lightning.svg"
 import WIRE from "@/assets/bank-transfer.svg"
 import GODADDY from "@/assets/godaddy-v2-svgrepo-com.svg"
@@ -41,7 +42,7 @@ const Payments = () => {
       <li className="cursor-pointer hover:underline" style={{display:'flex', alignItems:'center'}}><img src={Z} style={{display:'flex', height:'30px', width:'30px', marginRight:'10px', background:'#6c1cd3', borderRadius:'25%', padding:'4px'}}/>Zelle (+1 925-367-1375) </li>
       {/* <li style={{display:'flex', alignItems:'center'}} className="hover:underline cursor-pointer"><img src={Lightning} style={{display:'flex', height:'30px', width:'30px', marginRight:'10px', background:'black', borderRadius:'25%', padding:'3px'}}/>Bitcoin Lightning Network (williamouyang@strike.me)</li> */}
       <a href="https://strike.me/williamouyang" target="_blank"><li style={{display:'flex', alignItems:'center'}} className="hover:underline"><img src={Strike} style={{display:'flex', height:'30px', width:'30px', marginRight:'10px', background:'black', borderRadius:'25%'}}/> <h1 className="hover:text-underline">Strike Tip (strike.me/williamouyang)</h1></li></a>
-      <a href="bitcoin:bc1q7j00jhl0lsnedzz49ph5uraehqhskftke3h69d?message=Never%20Expire%20Bitcoin%20Transfer"><li style={{display:'flex', alignItems:'center'}} className="hover:underline"><img src={BTC} style={{display:'flex', height:'30px', width:'30px', marginRight:'10px'}}/>Bitcoin Mainnet (bc1q7j00jhl0lsnedzz49ph5uraehqhskftke3h69d)</li></a>
+      {/* <a href="bitcoin:bc1q7j00jhl0lsnedzz49ph5uraehqhskftke3h69d?message=Never%20Expire%20Bitcoin%20Transfer"><li style={{display:'flex', alignItems:'center'}} className="hover:underline"><img src={BTC} style={{display:'flex', height:'30px', width:'30px', marginRight:'10px'}}/>Bitcoin Mainnet (bc1q7j00jhl0lsnedzz49ph5uraehqhskftke3h69d)</li></a> */}
       <a href="https://etherscan.io/address/0x52d774971eC9746A724C11a087fAD161Ab30778A" target="_blank"><li style={{display:'flex', alignItems:'center'}} className="hover:underline cursor-pointer"><img src={ETH} style={{display:'flex', height:'30px', width:'30px', marginRight:'10px'}}/>Ethereum Network (0x52d774971eC9746A724C11a087fAD161Ab30778A)</li></a>
       <a href="https://pay.williamouyang.org/" target="_blank"><li style={{display:'flex', alignItems:'center'}} className="hover:underline cursor-pointer"><img src={GODADDY} style={{display:'flex', height:'30px', width:'30px', marginRight:'10px'}}/>Payment Link - pay.williamouyang.org</li></a>
     
@@ -66,6 +67,25 @@ const Payments = () => {
     <li><u>Routing numbers:</u></li>
     <li>&nbsp;&nbsp;&nbsp;&nbsp;Electronic (for Direct Deposit and Automatic Payments):	121000358</li>
     <li>&nbsp;&nbsp;&nbsp;&nbsp;Wire (for Wire Transfer):	026009593</li>
+    </ul>
+      </h1>
+    </AccordionContent>
+  </AccordionItem>
+</Accordion>
+
+
+<Accordion type="single" collapsible>
+  <AccordionItem value="item-1">
+    <AccordionTrigger>  <div style={{display:'flex', alignItems:'center'}} className="hover:underline"><img src={BTC} style={{display:'flex', height:'30px', width:'30px', marginRight:'10px'}}/>Bitcoin Mainnet</div></AccordionTrigger>
+    <AccordionContent>
+    <u><strong><h1>Bitcoin Mainnet Payment Information (Bitcoin Core):</h1></strong></u>
+    <h1>
+    <ul>
+    <li>Label: William Ouyang's Bitcoin Core Address</li>
+    <li>Wallet: William Ouyang's Bitcoin Core Wallet</li>
+    <li>QR Code: <img src={QR}></img></li>
+    <li>URI: <a href="bitcoin:BC1QC62EQFWZTCRQMX83P0YLKMFHFWD229ZC2KAD54?label=William%20Ouyang%27s%20Bitcoin%20Core%20Address">bitcoin:BC1QC62EQFWZTCRQMX83P0YLKMFHFWD229ZC2KAD54?label=William%20Ouyang%27s%20Bitcoin%20Core%20Address</a></li>
+    <li>Address: bc1qc62eqfwztcrqmx83p0ylkmfhfwd229zc2kad54</li>
     </ul>
       </h1>
     </AccordionContent>
