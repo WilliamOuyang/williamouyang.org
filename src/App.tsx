@@ -21,7 +21,7 @@ import Achievements from "./pages/Achievements";
 
 function App() {
   return (
-    <ThemeProvider defaultTheme="light" storageKey="vite-ui-theme">
+    <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
       <BrowserRouter>
         <Routes>
           <Route index element={<Home />} />
