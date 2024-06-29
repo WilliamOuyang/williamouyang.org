@@ -69,7 +69,7 @@ function Vault() {
           <img src={Lock} style={{height:'30px'}}/>
         </div>
 
-          <div className="overflow-x-auto" style={{backgroundColor:'white'}}>
+          <div className="overflow-x-auto bg-card border" >
           <Table>
   <TableCaption>A list of your personal financial assets.</TableCaption>
   <TableHeader>
