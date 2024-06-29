@@ -38,7 +38,7 @@ import Meta from "@/assets/MetaMask_Fox.svg";
 import Electrum from "@/assets/electrum_text.png";
 import ORG from "@/assets/Organizer.svg"
 import PayPal from "@/assets/paypal-color.svg"
-import Store from "@/assets/storage.svg"
+// import Store from "@/assets/storage.svg"
 
 const Storage = () => {
 
@@ -103,7 +103,7 @@ const Storage = () => {
           <h1 className="text-2xl" style={{ marginBottom: "10px", fontFamily:'GT', fontSize:'30px'}}>
             STORAGE
           </h1>
-          <img src={Store} style={{height:'30px'}} className="ml-1"/>
+          {/* <img src={Store} style={{height:'30px'}} className="ml-1"/> */}
         </div>
 
         <div style={{ display: "flex", alignItems: "center" }}>

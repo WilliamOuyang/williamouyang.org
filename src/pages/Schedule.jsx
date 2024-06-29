@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { IconEdit } from "@tabler/icons-react";
 import { lineSpinner } from "ldrs";
 import Footer from "@/pagecomponents/shared/Footer";
-import Organizer from "@/assets/Organizer2.svg"
+// import Organizer from "@/assets/Organizer2.svg"
 lineSpinner.register();
 
 const supabase = createClient(
@@ -81,7 +81,7 @@ function Schedule() {
           >
             <div style={{display:'flex', justifyContent:'center', alignItems:'baseline'}}>
               <h1 className="text-2xl" style={{fontFamily:'GT', fontSize:'30px'}}>Schedule Organizer</h1>
-              <img src={Organizer} className="ml-1" style={{height:'20px'}}/>
+              {/* <img src={Organizer} className="ml-1" style={{height:'20px'}}/> */}
             </div>
 
             <button
