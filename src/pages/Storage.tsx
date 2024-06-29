@@ -38,6 +38,7 @@ import Meta from "@/assets/MetaMask_Fox.svg";
 import Electrum from "@/assets/electrum_text.png";
 import ORG from "@/assets/Organizer.svg"
 import PayPal from "@/assets/paypal-color.svg"
+import BTCCORE from "@/assets/bitcoin-core.svg"
 // import Store from "@/assets/storage.svg"
 
 const Storage = () => {
@@ -89,6 +90,7 @@ const Storage = () => {
   const [isLocked33, setIsLocked33] = useState(true);
   const [isLocked34, setIsLocked34] = useState(true);
   const [isLocked35, setIsLocked35] = useState(true);
+  const [isLocked36, setIsLocked36] = useState(true);
 
   useEffect(() => {
     document.title = "Storage | williamouyang.org";
@@ -1064,6 +1066,18 @@ const Storage = () => {
                 draggable="false"
                     src={PayPal} 
                     alt="PayPal" 
+                    style={{width:'100%', height:'100%'}}/>
+              </Button>
+            </div>   
+          </Button>
+
+          <Button variant="ouyang"className="w-[120px] mr-2 mt-3 bg-neutral-900 hover:bg-neutral-900" style={{ outline: '2px solid gray',background: "lightgray"}}>
+            <div style={{transition: 'transform 0.15s ease',  transform: isLocked36 ? 'translateY(-8px)' : 'translateY(0)'}} onMouseEnter={() => setIsLocked36(false)} onMouseLeave={() => setIsLocked36(true)}>
+           <Button variant="ouyang"className="w-[120px]" style={{background:'white'}} onClick={() => window.open('https://bitcoin.org/en/bitcoin-core/')}>
+            <img className="select-none"
+                draggable="false"
+                    src={BTCCORE} 
+                    alt="Bitcoin Core" 
                     style={{width:'100%', height:'100%'}}/>
               </Button>
             </div>   
