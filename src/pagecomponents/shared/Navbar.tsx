@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <>
-
+<div style={{display:'visible'}}>
 {Banner && (<div className="cursor-pointer" style={{
   display: "flex",
   position: "relative",
@@ -364,6 +364,9 @@ Current Projects
 
 
       </div>
+    </div>
+
+
     </div>
     </>
   );

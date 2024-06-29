@@ -7,6 +7,16 @@ import { Button } from "@/components/ui/button";
 import { IconEdit } from "@tabler/icons-react";
 import { lineSpinner } from "ldrs";
 import Footer from "@/pagecomponents/shared/Footer";
+import Lock from "@/assets/Lock.svg"
+import {
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table"
 lineSpinner.register();
 
 const supabase = createClient(
@@ -51,11 +61,41 @@ function Vault() {
         }}
       >
         <div>
-          <h1 className="text-2xl" style={{ marginBottom: "10px", fontFamily:'GT', fontsize:'30px'}}>
-            VAULT - A record of personal financial assets
+
+          <div style={{display:'flex', justifyContent:'center'}}>
+          <h1 className="text-2xl" style={{ marginBottom: "10px", fontFamily:'GT', fontSize:'30px'}}>
+            VAULT
           </h1>
-          <div className="overflow-x-auto">
-            <table className="min-w-full table-auto">
+          <img src={Lock} style={{height:'30px'}}/>
+        </div>
+
+          <div className="overflow-x-auto" style={{backgroundColor:'white'}}>
+          <Table>
+  <TableCaption>A list of your personal financial assets.</TableCaption>
+  <TableHeader>
+    <TableRow>
+      <TableHead className="w-[100px]">Category</TableHead>
+      <TableHead>Cost Basis</TableHead>
+      <TableHead>Total Quantity</TableHead>
+      <TableHead>Storage Method</TableHead>
+      <TableHead >Date Acquired</TableHead>
+    </TableRow>
+  </TableHeader>
+  <TableBody>
+  {blocks.map((block) => (  
+    <TableRow key={block.id}>
+      <TableCell className="font-medium">{block.category}</TableCell>
+      <TableCell>  {block.costbasis}</TableCell>
+      <TableCell>{block.totalquantity}</TableCell>
+      <TableCell> {block.storagemethod}</TableCell>
+      <TableCell>  {block.dateacquired}</TableCell>
+    </TableRow>
+  ))}
+  </TableBody>
+</Table>
+
+            
+            {/* <table className="min-w-full table-auto">
               <thead>
                 <tr className="text-left">
                   <th
@@ -111,7 +151,7 @@ function Vault() {
                   </tr>
                 ))}
               </tbody>
-            </table>
+            </table> */}
           </div>
           {loading ? (
             <l-line-spinner
