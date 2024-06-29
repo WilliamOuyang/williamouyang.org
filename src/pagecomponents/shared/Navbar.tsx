@@ -2,6 +2,7 @@ import { ModeToggle } from "@/components/mode-toggle";
 import ArrowDown from "@/assets/Icon_arrow_down.svg";
 import { useState } from "react";
 import { X } from "lucide-react";
+import Language from "@/assets/Languages.svg"
 
 const Navbar = () => {
   const [Menu1, setMenu1] = useState<boolean>(false);
@@ -88,7 +89,8 @@ const Navbar = () => {
 {/* English Code Below */}
 <div style={{position:'absolute', right:"120px"}}><div className="menu-parent" style={{ position: "relative"}}>
 
-<div style={{display:'flex', alignContent:'center'}} className="cursor-pointer" onMouseEnter={() => setMenu3(true)} onMouseLeave={() => setMenu3(false)}>
+<div style={{display:'flex', alignContent:'baseline'}} className="cursor-pointer" onMouseEnter={() => setMenu3(true)} onMouseLeave={() => setMenu3(false)}>
+    <img src={Language} style={{height:'25px'}} className="mr-2"/>
     <h1 className="mr-2">English</h1>
     <img
  src={ArrowDown}
