@@ -53,10 +53,10 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div style={{display:'flex', height:'100vh', flexDirection:'column'}}>
       <Navbar />
       <div
-        className="flex w-full h-screen"
+        className="flex w-full h-full"
         style={{
           display: "flex",
           zIndex: 0,

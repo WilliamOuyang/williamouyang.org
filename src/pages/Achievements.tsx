@@ -9,9 +9,10 @@ const Achievements = () => {
       }, []);
 
   return (
-    <>
+    <div style={{display:'flex', height:'100vh',flexDirection:'column'}}>
     <Navbar/>
-        <div style={{marginTop:'40px', marginBottom:'170px'}}>
+
+        <div style={{display:'flex', height:'100vh', flexDirection:'column', marginTop:'40px', marginBottom:'170px'}}>
       <div style={{display:'flex', justifyContent:'center', marginBottom:'10px'}}><h1 style={{fontFamily:'GT', fontSize:'30px'}} className="cursor-default">Achievements</h1></div>
       <div style={{display:'flex', justifyContent:'center', marginBottom:'10px'}}><h1 style={{fontFamily:'GT'}}>Information about milestones and accomplishments.</h1></div>
       <div style={{display:'flex', justifyContent:'center'}}>
@@ -24,7 +25,7 @@ const Achievements = () => {
 
       </div>
       <Footer/>
-    </>
+    </div>
   )
 }
 

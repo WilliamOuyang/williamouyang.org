@@ -11,9 +11,9 @@ const Docs = () => {
   }, []);
 
   return (
-    <>
+    <div style={{display:'flex', height:'100vh', flexDirection:'column'}}>
       <Navbar />
-      <div style={{padding:'30px'}}>
+      <div style={{display:'flex', height:'100%', flexDirection:'column', padding:'30px'}}>
         <h1 style={{fontFamily:'GT', fontSize:'30px'}}>Contact</h1>
         <br/>
 
@@ -73,7 +73,7 @@ If this list does not contain the answer to your question, please reply to that 
     <br/>You can expect an immediate response to any e-mails sent between 6:00 AM to 10:00 PM (GMT-7). E-Mails received outside of these hours will be addressed within 8 hours.
 </div>
       <Footer/>
-    </>
+    </div>
   );
 };
 

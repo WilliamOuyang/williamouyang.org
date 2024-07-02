@@ -10,9 +10,9 @@ const About = () => {
 
 
   return (
-    <>
+    <div style={{display:'flex', height:'100vh', width:'100vw', flexDirection:'column'}}>
     <Navbar/>
-        <div style={{marginTop:'40px', marginBottom:'170px'}}>
+        <div style={{display:'flex', height:'100%', marginTop:'40px', marginBottom:'170px', flexDirection:'column'}}>
       <div style={{display:'flex', justifyContent:'center', marginBottom:'10px'}}><h1 style={{fontFamily:'GT', fontSize:'30px'}} className="cursor-default">About</h1></div>
       <div style={{display:'flex', justifyContent:'center', marginBottom:'10px'}}><h1 style={{fontFamily:'GT'}}>Profile Information:</h1></div>
       <div style={{display:'flex', justifyContent:'center'}}>
@@ -30,7 +30,7 @@ const About = () => {
 
       </div>
       <Footer/>
-    </>
+    </div>
   )
 }
 
