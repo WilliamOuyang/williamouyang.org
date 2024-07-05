@@ -174,7 +174,7 @@ className="bg-card border"
 <ul>
 <a href="/">
 <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px"}}>
-Overview
+Home
 </li>
 </a>
 <a href="/about">
