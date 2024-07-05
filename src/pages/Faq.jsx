@@ -7,19 +7,49 @@ import {
 } from "@/components/ui/accordion";
 import Footer from "@/pagecomponents/shared/Footer";
 import { Separator } from "@/components/ui/separator";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { createClient } from "@supabase/supabase-js";
+import { lineSpinner } from "ldrs";
+lineSpinner.register();
+
+const supabase = createClient(
+  "https://bsqkowajqcuuiaybhumq.supabase.co",
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJzcWtvd2FqcWN1dWlheWJodW1xIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTg2ODY3MjYsImV4cCI6MjAzNDI2MjcyNn0.JQziKNIcTKGBK0jbF7GZj5a0PawnZY2vHX9-vILJcJw"
+);
+
+
 
 const Faq = () => {
+  
+  const [loading, setLoading] = useState(true);
+  const [blocks, setBlocks] = useState([]);
+  useEffect(() => {
+    fetchBlocks();
+  }, []);
+  async function fetchBlocks() {
+    try {
+      const { data, error } = await supabase.from("FAQ").select("*");
+      if (error) {
+        throw error;
+      }
+      setBlocks(data);
+      setLoading(false);
+    } catch (error) {
+      console.error("Error fetching blocks:", error.message);
+    }
+  }
+
+
 
   useEffect(() => {
     document.title = "FAQ | williamouyang.org";
   }, []);
 
   return (
-    <>
+    <div style={{height:'100vh', flexDirection:'column'}}>
       <Navbar />
       <div
-        style={{ display: "flex", justifyContent: "center"}}
+        style={{ display: "flex", height:'100%', justifyContent: "center"}}
       >
         <div style={{ width: "750px", marginTop: "40px", marginBottom:'50px'}}>
 
@@ -138,9 +168,51 @@ const Faq = () => {
           
         </div>
       </div>
+      
+      
+      
+      
+      
+      
+      
+      <ul>
+      {blocks.map((block) => (  
+    <li key={block.id}>
+     <h1>{block.title}</h1>
+     <h1>{block.description}</h1>
+    </li>
+  ))}
+  </ul>
+      
+      {loading ? 
+<l-line-spinner
+  size="40"
+  stroke="3"
+  speed="1" 
+  color="#ff0055" 
+></l-line-spinner>
+: ""}
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       <Footer />
-    </>
+      
+    </div>
   );
 };
 
-export default Faq;
+export default Faq
