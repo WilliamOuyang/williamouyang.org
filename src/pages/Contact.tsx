@@ -17,7 +17,7 @@ const Docs = () => {
         <h1 style={{fontFamily:'GT', fontSize:'30px'}}>Contact</h1>
         <br/>
 
-<em>If you have to troubleshoot problems, business inquries, casual contact, and want to get answers to your questions, feel free to contact me.</em>
+<em>If you have business inquries, questions, or want to get answers to your questions, feel free to contact me.</em>
 
 <br/>
 <br/>
