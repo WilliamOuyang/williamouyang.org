@@ -39,6 +39,7 @@ import Electrum from "@/assets/electrum_text.png";
 import ORG from "@/assets/Organizer.svg"
 import PayPal from "@/assets/paypal-color.svg"
 import BTCCORE from "@/assets/bitcoin-core.svg"
+import LCS from "@/assets/lcs_logo_colored.svg"
 // import Store from "@/assets/storage.svg"
 
 const Storage = () => {
@@ -91,6 +92,7 @@ const Storage = () => {
   const [isLocked34, setIsLocked34] = useState(true);
   const [isLocked35, setIsLocked35] = useState(true);
   const [isLocked36, setIsLocked36] = useState(true);
+  const [isLocked37, setIsLocked37] = useState(true);
 
   useEffect(() => {
     document.title = "Storage | williamouyang.org";
@@ -741,7 +743,7 @@ const Storage = () => {
         </h2>
         <Button
           variant="ouyang"
-          className="w-[100px] mr-2 mt-3"
+          className="w-[120px] mr-2 mt-3"
           style={{ background: "#094231", outline: "2px solid gray" }}
         >
           <div
@@ -754,7 +756,7 @@ const Storage = () => {
           >
             <Button
               variant="ouyang"
-              className="w-[100px]"
+              className="w-[120px]"
               style={{ background: "rgb(15, 97, 72)" }}
               onClick={() =>
                 window.open(
@@ -1078,6 +1080,18 @@ const Storage = () => {
                 draggable="false"
                     src={BTCCORE} 
                     alt="Bitcoin Core" 
+                    style={{width:'100%', height:'100%'}}/>
+              </Button>
+            </div>   
+          </Button>
+
+          <Button variant="ouyang"className="w-[80px] mr-2 mt-3 bg-neutral-900 hover:bg-neutral-900" style={{ outline: '2px solid gray',background: "lightgray"}}>
+            <div style={{transition: 'transform 0.15s ease',  transform: isLocked37 ? 'translateY(-8px)' : 'translateY(0)'}} onMouseEnter={() => setIsLocked37(false)} onMouseLeave={() => setIsLocked37(true)}>
+           <Button variant="ouyang"className="w-[80px]" style={{background:'white'}} onClick={() => window.open('https://localcoinswap.com/')}>
+            <img className="select-none"
+                draggable="false"
+                    src={LCS} 
+                    alt="LocalCoinSwap" 
                     style={{width:'100%', height:'100%'}}/>
               </Button>
             </div>   
