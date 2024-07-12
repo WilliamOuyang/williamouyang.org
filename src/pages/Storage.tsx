@@ -839,7 +839,7 @@ const Storage = () => {
               style={{ background: "rgb(15, 97, 72)" }}
               onClick={() =>
                 window.open(
-                  "https://github.com/trezor/trezor-suite/releases/download/v24.5.2/Trezor-Suite-24.5.2-win-x64.exe"
+                  "https://trezor.io/trezor-suite"
                 )
               }
             >
