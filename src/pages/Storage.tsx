@@ -40,6 +40,8 @@ import ORG from "@/assets/Organizer.svg"
 import PayPal from "@/assets/paypal-color.svg"
 import BTCCORE from "@/assets/bitcoin-core.svg"
 import LCS from "@/assets/lcs_logo_colored.svg"
+import Linux from "@/assets/The_Linux_Mint_Logo.svg"
+import BE from "@/assets/Etcher_(software)_logo.svg"
 // import Store from "@/assets/storage.svg"
 
 const Storage = () => {
@@ -147,6 +149,81 @@ const Storage = () => {
           </div>
         </Button>
     
+        <h2 className="text-3xl font-semibold tracking-tight">
+          Linux Operating System
+        </h2>
+          
+
+
+
+        <Button
+          variant="ouyang"
+          className="w-[180px] mr-2 mt-3"
+          style={{ background: "lightgray", outline: "2px solid gray" }}
+        >
+          <div
+            style={{
+              transition: "transform 0.15s ease",
+              transform: isLocked13 ? "translateY(-8px)" : "translateY(0)",
+            }}
+            onMouseEnter={() => setIsLocked13(false)}
+            onMouseLeave={() => setIsLocked13(true)}
+          >
+            <Button
+              variant="ouyang"
+              className="w-[180px]"
+              style={{ background: "white" }}
+              onClick={() =>
+                window.open("https://www.linuxmint.com/download.php")
+              }
+            >
+              <img
+                className="select-none"
+                draggable="false"
+                src={Linux}
+                alt="Linux"
+                style={{ width: "100%", height: "100%" }}
+              />
+            </Button>
+          </div>
+        </Button>
+
+
+        <Button
+          variant="ouyang"
+          className="w-[180px] mr-2 mt-3"
+          style={{ background: "lightgray", outline: "2px solid gray" }}
+        >
+          <div
+            style={{
+              transition: "transform 0.15s ease",
+              transform: isLocked13 ? "translateY(-8px)" : "translateY(0)",
+            }}
+            onMouseEnter={() => setIsLocked13(false)}
+            onMouseLeave={() => setIsLocked13(true)}
+          >
+            <Button
+              variant="ouyang"
+              className="w-[180px]"
+              style={{ background: "white" }}
+              onClick={() =>
+                window.open("https://etcher.balena.io/#download-etcher")
+              }
+            >
+              <img
+                className="select-none"
+                draggable="false"
+                src={BE}
+                alt="BalenaEtcher"
+                style={{ width: "100%", height: "100%" }}
+              />
+            </Button>
+          </div>
+        </Button>
+
+
+
+
         <h2 className="text-3xl font-semibold tracking-tight">
           Browser Download & Extensions
         </h2>
