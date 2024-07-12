@@ -1216,7 +1216,7 @@ const Storage = () => {
 
         <Button
           variant="ouyang"
-          className="w-[55px] mr-2 bg-neutral-900 hover:bg-neutral-900 mt-3"
+          className="w-[70px] mr-2 bg-neutral-900 hover:bg-neutral-900 mt-3"
           style={{ backgroundColor: "#143170", outline: "2px solid gray" }}
         >
           <div
@@ -1229,7 +1229,7 @@ const Storage = () => {
           >
             <Button
               variant="ouyang"
-              className="w-[55px] bg-#1C449B"
+              className="w-[70px] bg-#1C449B"
               style={{ backgroundColor: "#1c449b" }}
               onClick={() => window.open("https://www.gmx.com/cloud/login/")}
             >
