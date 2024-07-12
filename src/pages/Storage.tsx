@@ -95,6 +95,8 @@ const Storage = () => {
   const [isLocked35, setIsLocked35] = useState(true);
   const [isLocked36, setIsLocked36] = useState(true);
   const [isLocked37, setIsLocked37] = useState(true);
+  const [isLocked38, setIsLocked38] = useState(true);
+  const [isLocked39, setIsLocked39] = useState(true);
 
   useEffect(() => {
     document.title = "Storage | williamouyang.org";
@@ -164,10 +166,10 @@ const Storage = () => {
           <div
             style={{
               transition: "transform 0.15s ease",
-              transform: isLocked13 ? "translateY(-8px)" : "translateY(0)",
+              transform: isLocked38 ? "translateY(-8px)" : "translateY(0)",
             }}
-            onMouseEnter={() => setIsLocked13(false)}
-            onMouseLeave={() => setIsLocked13(true)}
+            onMouseEnter={() => setIsLocked38(false)}
+            onMouseLeave={() => setIsLocked38(true)}
           >
             <Button
               variant="ouyang"
@@ -197,10 +199,10 @@ const Storage = () => {
           <div
             style={{
               transition: "transform 0.15s ease",
-              transform: isLocked13 ? "translateY(-8px)" : "translateY(0)",
+              transform: isLocked39 ? "translateY(-8px)" : "translateY(0)",
             }}
-            onMouseEnter={() => setIsLocked13(false)}
-            onMouseLeave={() => setIsLocked13(true)}
+            onMouseEnter={() => setIsLocked39(false)}
+            onMouseLeave={() => setIsLocked39(true)}
           >
             <Button
               variant="ouyang"
