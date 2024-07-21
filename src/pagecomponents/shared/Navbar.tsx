@@ -36,9 +36,9 @@ const Navbar = () => {
   alignItems:'center',
   justifyContent:'center',
 }}    
-  onClick={()=>{window.open("https://pay.williamouyang.org")}}
+  onClick={()=>{window.open("mailto:williamouyang@gmx.com")}}
   >
-    <h1 style={{fontFamily:'GT', fontSize:"20px"}}>Donate to William Ouyang!</h1>
+    <h1 style={{fontFamily:'GT', fontSize:"20px"}}>Click here to get in contact with us!</h1>
     <button style={{position:'absolute', right:'25px'}}
      onClick={(e) => { 
       e.stopPropagation(); // Prevent event from bubbling up
@@ -76,9 +76,9 @@ const Navbar = () => {
       >
 
 
-<h1 style={{ position: "absolute", left: "60px", fontFamily: 'GT'}}>
+<h1 style={{ position: "absolute", left: "60px", fontFamily: 'GT', fontSize:'25px'}}>
 <a href="/">
-     williamouyang.org
+     K&W LLC
 </a>
 </h1>
 
@@ -179,12 +179,12 @@ Home
 </a>
 <a href="/about">
 <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px" }}>
-About
+About Us
 </li>
 </a>
 <a href="/achievements">
 <li className="hover:bg-accent" style={{ padding: "6px 10px 3px 15px"}}>
-Achievements
+Our Services
 </li>
 </a>
 <a href="https://github.com/WilliamOuyang/williamouyang.org" target="_blank">
@@ -262,7 +262,7 @@ Source Code (Github)
 <div className="menu-parent" style={{ position: "relative"}}>
 
 <div style={{display:'flex', alignContent:'center'}} className="cursor-pointer" onMouseEnter={() => setMenu5(true)} onMouseLeave={() => setMenu5(false)}>
-    <h1 className="mr-2">Support</h1>
+    <h1 className="mr-2">Payments & Support</h1>
     <img
  src={ArrowDown}
     style={{
